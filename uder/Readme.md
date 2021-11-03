@@ -1,4 +1,5 @@
 
+
 # Universal Derivations, OntoLex-Morph edition
 
 ## OntoLex edition
@@ -6,6 +7,36 @@
 Build it with
 
   $> make
+
+UDer data consists primarily of tsv tables, e.g., for German (`src/de/DErivBase/0.5/`):
+
+* `relations.tsv` (`BASE+POS`, `DERIVATION+POS` and `RULE_ID`)
+
+	    Aachen_Nn	Aachener_Nm	dNN05>
+	    Aalen_Nn	Aalener_Nm	dNN05>
+	    Aalen_Nn	aalen_V	dNV09>
+	    aalen_V	Aalen_Nn	dVN09>
+	    Aal_Nn	aalen_V	dNV09>
+	    abändern_V	Abänderung_Nf	dVN07>
+	    Abarbeiten_Nn	abarbeiten_V	dNV09>
+	    abartig_A	Abartigkeit_Nf	dAN03>
+	    Abart_Nf	abartig_A	dNA05>
+	    abbaggern_V	Abbaggern_Nn	dVN09>
+
+* `singletons.tsv` (`FORM+POS`)
+
+	    Besatzer_Nm
+	    Rückbesetzung_Nf
+	    daruntersetzen_V
+	    daransetzen_V
+	    Rücksitz_Nm
+	    versitzen_V
+	    Beisatz_Nm
+	    Ansitz_Nm
+	    ersitzen_V
+	    Durchsatz_Nm
+
+
 
 ## Source data (UDer 1.1)
 

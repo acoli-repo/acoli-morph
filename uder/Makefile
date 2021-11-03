@@ -10,4 +10,5 @@ src/py3env: src
 German: src/py3env
 	@echo build German sample data
 	@# note that we cannot build everything at once, because some components require to download external resources beforehand
-	@(cd src/de/DErivBase; make &)
+	@(cd src/de/DErivBase; make)
+	@# build 
