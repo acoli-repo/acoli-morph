@@ -26,21 +26,21 @@ PREFIX uder: <https://ufal.mff.cuni.cz/universal-derivations/>
   ##############################
   # entries and their relation #
   ##############################
-  ?aentry a ontolex:LexicalEntry; uder:POS ?apos; ontolex:canonicalForm ?aform. ?aform ontolex:writtenRep ?arep.
-  ?bentry a ontolex:LexicalEntry; uder:POS ?bpos; ontolex:canonicalForm ?bform. ?bform ontolex:writtenRep ?brep.
+   ?aentry a ontolex:LexicalEntry; uder:POS ?apos; ontolex:canonicalForm ?aform. ?aform ontolex:writtenRep ?arep.
+   ?bentry a ontolex:LexicalEntry; uder:POS ?bpos; ontolex:canonicalForm ?bform. ?bform ontolex:writtenRep ?brep.
 
-  ?rel morph:associatedRelation [ a morph:DerivationRelation; vartrans:source ?aentry; vartrans:target ?bentry  ].
-  # wrong direction ???
+   ?rel morph:associatedRelation [ a morph:DerivationRelation; vartrans:source ?aentry; vartrans:target ?bentry  ].
+   # wrong direction ???
 
-  ?bentry morph:wordFormationRule ?rel.
-  # this is redundant, we get it from the DerivationRelation, already
+   ?bentry morph:wordFormationRule ?rel.
+   # this is redundant, we get it from the DerivationRelation, already
 
-  ?rel a morph:WordFormationType; morph:wordFormationRule ?rule.
-  # I don't quite get the difference between ?rel and ?rule. is there any information in a ?rel that would not be in a ?rule ?
+   ?rel a morph:WordFormationType; morph:wordFormationRule ?rule.
+   # I don't quite get the difference between ?rel and ?rule. is there any information in a ?rel that would not be in a ?rule ?
 
-  #########
-  # rules #
-  #########
+   #########
+   # rules #
+   #########
   ?rule a morph:DerivationRule.
 
   ?rule morph:example ?example.
@@ -52,6 +52,20 @@ PREFIX uder: <https://ufal.mff.cuni.cz/universal-derivations/>
   # can we use perl s/// notation?
 
   # we *cannot* represent that source and target of that relation *must* have a specific POS (this is encoded in rel id, e.g., "NN08>" means that a noun is formed from a noun
+
+  ##########
+  # morphs #
+  ##########
+  ?morph a morph:Morph.
+
+  # how do we represent the string form of the morph??? this is ?morph_form
+  ?morph morph:PLEASE_GIVE_ME_A_NAME_FOR_VALUE ?morph_form .
+
+  # how do we represent source and target characteristics of a morph? these are two different morph:grammaticalMeanings !!!
+  ?morph morph:PLEASE_GIVE_ME_A_NAME_FOR_CONSTRAINTS ?apos.
+  ?morph morph:grammaticalMeaning ?bpos.
+
+  ?bform morph:consistsOf ?morph.  # how do we specify the base?
 
  } WHERE {
 
@@ -79,14 +93,31 @@ PREFIX uder: <https://ufal.mff.cuni.cz/universal-derivations/>
   ################
   # "generative" #
   ################
-  BIND(concat(?a, ">", ?b) as ?example)
+  BIND(concat(?a, " > ", ?b) as ?example)
 
   # TODO: aggregate over some Jena-specific string operations, works for simple replacements, only
   # https://jena.apache.org/documentation/query/library-propfunc.html
-  BIND("s/src_pattern/tgt_pattern/" as ?replacement)
+
+  # replacement returns blank node if our heuristics don't work
+  BIND(lcase(str(?arep)) as ?anorm)
+  BIND(lcase(str(?brep)) as ?bnorm)
+  BIND(if(strstarts(?bnorm,?anorm), concat("s/$/",strafter(?bnorm,?anorm),"/"),
+       if(strends(?bnorm,?anorm), concat("s/^/",strbefore(?bnorm,?anorm),"/"),
+       bnode())) as ?replacement)
+
+  # this replacement is basically a diff, and normally, this diff should correspond to exactly one morph:Morph
+
+
+  # morph
+  BIND(
+    if(?bnorm=?anorm,             "0",         # zero morpheme: shall we do anything with it?
+    if(strstarts(?bnorm,?anorm),  concat("-",strafter(?bnorm,?anorm)),
+    if(strends(?bnorm,?anorm),    concat(strbefore(?bnorm,?anorm),"-"),
+                                  bnode()))) as ?morph_form)
+
+  bind(uri(concat("morph#",encode_for_uri(concat(?c)))) as ?morph)
 
   # how can we encode constraints on source and target POS?
 
-  # this replacement is basically a diff, and normally, this diff should correspond to exactly one morph:Morph
 
  }

@@ -25,5 +25,5 @@ de/DErivBase/0.5: src/py3env tarql
 	@(cd src/de/DErivBase; make)
 	@echo build German OntoLex
 	mkdir -p de/DErivBase/0.5
-	./tarql -t --base http://purl.org/acoli/morph/UDer/de/DErivBase/0.5/ --write-base -H sparql/relations.sparql src/de/DErivBase/0.5/relations.tsv | tee de/DErivBase/0.5/relations.ttl
-	./tarql -t --base http://purl.org/acoli/morph/UDer/de/DErivBase/0.5/ --write-base -H sparql/relations.sparql src/de/DErivBase/0.5/singletons.tsv | tee de/DErivBase/0.5/singletons.ttl
+	./tarql -t --base http://purl.org/acoli/morph/UDer/de/DErivBase/0.5/ --write-base -H sparql/relations.sparql src/de/DErivBase/0.5/relations.tsv | gzip -f > de/DErivBase/0.5/relations.ttl.gz
+	./tarql -t --base http://purl.org/acoli/morph/UDer/de/DErivBase/0.5/ --write-base -H sparql/relations.sparql src/de/DErivBase/0.5/singletons.tsv | gzip -f > de/DErivBase/0.5/singletons.ttl.gz
