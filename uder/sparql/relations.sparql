@@ -20,7 +20,7 @@
 # temporary namespaces
 PREFIX uder: <https://ufal.mff.cuni.cz/universal-derivations/>
 
-# sample conversion, module draft 4.5.1
+# sample conversion, module draft 4.5.2
 
  CONSTRUCT {
   ##############################
@@ -29,19 +29,17 @@ PREFIX uder: <https://ufal.mff.cuni.cz/universal-derivations/>
    ?aentry a ontolex:LexicalEntry; uder:POS ?apos; ontolex:canonicalForm ?aform. ?aform ontolex:writtenRep ?arep.
    ?bentry a ontolex:LexicalEntry; uder:POS ?bpos; ontolex:canonicalForm ?bform. ?bform ontolex:writtenRep ?brep.
 
-   ?rel morph:associatedRelation [ a morph:DerivationRelation; vartrans:source ?aentry; vartrans:target ?bentry  ].
-   # wrong direction ???
+   ?rel a morph:DerivationRelation;
+        vartrans:source ?aentry,
+                        ?morph; # yay! we still need to encode the relative position of both elements, but this can be via Morph subclass
+        vartrans:target ?bentry .
 
-   ?bentry morph:wordFormationRule ?rel.
-   # this is redundant, we get it from the DerivationRelation, already
-
-   ?rel a morph:WordFormationType; morph:wordFormationRule ?rule.
-   # I don't quite get the difference between ?rel and ?rule. is there any information in a ?rel that would not be in a ?rule ?
+   ?rel morph:wordFormationRule ?rule.
 
    #########
    # rules #
    #########
-  ?rule a morph:DerivationRule.
+  ?rule a morph:DerivationRule; morph:generates ?bentry.
 
   ?rule morph:example ?example.
   # are there rules for examples ?
@@ -56,10 +54,9 @@ PREFIX uder: <https://ufal.mff.cuni.cz/universal-derivations/>
   ##########
   # morphs #
   ##########
-  ?morph a morph:Morph.
-
-  # how do we represent the string form of the morph??? this is ?morph_form
-  ?morph morph:PLEASE_GIVE_ME_A_NAME_FOR_VALUE ?morph_form .
+  ?morph a morph:Morph;  a ?morphclass;
+         morph:hasMorphStatus [ a morph:MorphValue; rdf:value ?morph_form; morph:derivational "true" ] .
+  # I use rdf:value here -- is that intended?
 
   # how do we represent source and target characteristics of a morph? these are two different morph:grammaticalMeanings !!!
   ?morph morph:PLEASE_GIVE_ME_A_NAME_FOR_CONSTRAINTS ?apos.
@@ -107,7 +104,6 @@ PREFIX uder: <https://ufal.mff.cuni.cz/universal-derivations/>
 
   # this replacement is basically a diff, and normally, this diff should correspond to exactly one morph:Morph
 
-
   # morph
   BIND(
     if(?bnorm=?anorm,             "0",         # zero morpheme: shall we do anything with it?
@@ -117,7 +113,21 @@ PREFIX uder: <https://ufal.mff.cuni.cz/universal-derivations/>
 
   bind(uri(concat("morph#",encode_for_uri(concat(?c)))) as ?morph)
 
-  # how can we encode constraints on source and target POS?
+  # morphtype
+  BIND(
+    if(?bnorm=?anorm,             "0",
+    if(strstarts(?bnorm,?anorm),  "-x",
+    if(strends(?bnorm,?anorm),    "x-",
+                                  "?"))) as ?morphtype)
 
+  VALUES(?morphtype  ?morphclass) {
+    ("0" morph:ZeroMorph)
+    ("-x" morph:AffixMorph)   # suffix!
+    ("x-" morph:AffixMorph)   # prefix!
+    ("?" UNDEF)
+  }
+
+
+  # how can we encode constraints on source and target POS?
 
  }
