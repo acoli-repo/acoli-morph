@@ -7,8 +7,8 @@ idea:
 - morphological rules
 
 phenomena covered:
-- [`uder/`](uder): derivation
-- ???: inflection
-- ???: 
+- [`uder/`](uder): derivation, sample conversion for German
+- [`unimorph/`](unimorph): inflection, smaple conversion for German
+- [`germanet/`](germanet): compounding, German only
 
 OntoLex-Morph is still under development, so this is explorative work, mostly. The vocabulary may change.
