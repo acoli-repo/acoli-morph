@@ -1,0 +1,92 @@
+ PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+ PREFIX morph: <http://www.w3.org/ns/lemon/morph#>
+ PREFIX synsem: <http://www.w3.org/ns/lemon/synsem#>
+ PREFIX decomp: <http://www.w3.org/ns/lemon/decomp#>
+ PREFIX vartrans: <http://www.w3.org/ns/lemon/vartrans#>
+ PREFIX lime: <http://www.w3.org/ns/lemon/lime#>
+ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ PREFIX owl: <http://www.w3.org/2002/07/owl#>
+ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+ PREFIX skos: <http://www.w3.org/2004/02/skos#>
+ PREFIX dbr: <http://dbpedia.org/resource/>
+ PREFIX dbo: <http://dbpedia.org/ontology/>
+ PREFIX void: <http://rdfs.org/ns/void#>
+ PREFIX lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#>
+ PREFIX semiotics: <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#>
+ PREFIX oils: <http://lemon-model.net/oils#>
+ PREFIX dct: <http://purl.org/dc/terms/>
+ PREFIX provo: <http://www.w3.org/ns/prov#>
+
+# temporary namespaces
+PREFIX uder: <https://ufal.mff.cuni.cz/universal-derivations/>
+
+# sample conversion, module draft 4.5.1
+
+ CONSTRUCT {
+  ##############################
+  # entries and their relation #
+  ##############################
+  ?aentry a ontolex:LexicalEntry; uder:POS ?apos; ontolex:canonicalForm ?aform. ?aform ontolex:writtenRep ?arep.
+  ?bentry a ontolex:LexicalEntry; uder:POS ?bpos; ontolex:canonicalForm ?bform. ?bform ontolex:writtenRep ?brep.
+
+  ?rel morph:associatedRelation [ a morph:DerivationRelation; vartrans:source ?aentry; vartrans:target ?bentry  ].
+  # wrong direction ???
+
+  ?bentry morph:wordFormationRule ?rel.
+  # this is redundant, we get it from the DerivationRelation, already
+
+  ?rel a morph:WordFormationType; morph:wordFormationRule ?rule.
+  # I don't quite get the difference between ?rel and ?rule. is there any information in a ?rel that would not be in a ?rule ?
+
+  #########
+  # rules #
+  #########
+  ?rule a morph:DerivationRule.
+
+  ?rule morph:example ?example.
+  # are there rules for examples ?
+  # how to distinguish input and output ?
+
+  ?rule morph:replacement ?replacement.
+  # how to distinguish source and target expressions?
+  # can we use perl s/// notation?
+
+  # we *cannot* represent that source and target of that relation *must* have a specific POS (this is encoded in rel id, e.g., "NN08>" means that a noun is formed from a noun
+
+ } WHERE {
+
+  #############
+  # TSV table #
+  #############
+  # ?a (SOURCE+POS), ?b (TARGET+POS), ?c (RULE_ID, incl. constraints on source and target POS)
+
+  #################
+  # "descriptive" #
+  #################
+  BIND(strbefore(?a,'_') as ?arep )
+  BIND(uri(concat("form#",encode_for_uri(?a),"_form")) as ?aform)
+  BIND(strafter(?a,'_') as ?apos)
+  BIND(uri(concat("entry#",encode_for_uri(?a))) as ?aentry)
+
+  BIND(strbefore(?b,'_') as ?brep )
+  BIND(uri(concat("form#",encode_for_uri(?b),"_form")) as ?bform)
+  BIND(strafter(?b,'_') as ?bpos)
+  BIND(uri(concat("entry#",encode_for_uri(?b))) as ?bentry)
+
+  BIND(uri(concat("rel#",encode_for_uri(?c))) as ?rel)
+  BIND(uri(concat("rule#",encode_for_uri(?c))) as ?rule)
+
+  ################
+  # "generative" #
+  ################
+  BIND(concat(?a, ">", ?b) as ?example)
+
+  # TODO: aggregate over some Jena-specific string operations, works for simple replacements, only
+  # https://jena.apache.org/documentation/query/library-propfunc.html
+  BIND("s/src_pattern/tgt_pattern/" as ?replacement)
+
+  # how can we encode constraints on source and target POS?
+
+  # this replacement is basically a diff, and normally, this diff should correspond to exactly one morph:Morph
+
+ }
