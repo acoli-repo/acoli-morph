@@ -86,7 +86,7 @@ PREFIX uder: <https://ufal.mff.cuni.cz/universal-derivations/>
   BIND(uri(concat("entry#",encode_for_uri(?a))) as ?aentry)
 
   BIND(strbefore(?b,'_') as ?brep )
-  BIND(uri(concat("form#",encode_for_uri(?b),"_form")) as ?bform)
+  BIND(uri(concat("form#",encode_for_uri(?b))) as ?bform)
   BIND(strafter(?b,'_') as ?bpos)
   BIND(uri(concat("entry#",encode_for_uri(?b))) as ?bentry)
 
@@ -106,7 +106,8 @@ PREFIX uder: <https://ufal.mff.cuni.cz/universal-derivations/>
   BIND(lcase(str(?brep)) as ?bnorm)
   BIND(if(strstarts(?bnorm,?anorm), concat("s/$/",strafter(?bnorm,?anorm),"/"),
        if(strends(?bnorm,?anorm), concat("s/^/",strbefore(?bnorm,?anorm),"/"),
-       bnode())) as ?replacement)
+       if(contains(?bnorm,?arorm), concat("s/^(.*)$/",strbefore(?bnorm,?anorm),"${1}",strafter(?bnorm,?anorm),"/),
+       bnode()))) as ?replacement)
 
   # this replacement is basically a diff, and normally, this diff should correspond to exactly one morph:Morph
 
@@ -115,7 +116,8 @@ PREFIX uder: <https://ufal.mff.cuni.cz/universal-derivations/>
     if(?bnorm=?anorm,             "0",         # zero morpheme: shall we do anything with it?
     if(strstarts(?bnorm,?anorm),  concat("-",strafter(?bnorm,?anorm)),
     if(strends(?bnorm,?anorm),    concat(strbefore(?bnorm,?anorm),"-"),
-                                  bnode()))) as ?morph_form)
+    if(contains(?bnorm,?arorm),   concat(strbefore(?bnorm,?anorm),"-...-",strafter(?bnorm,?anorm)),
+                                  bnode())))) as ?morph_form)
 
   bind(uri(concat("morph#",encode_for_uri(concat(?c)))) as ?morph)
 
@@ -124,12 +126,14 @@ PREFIX uder: <https://ufal.mff.cuni.cz/universal-derivations/>
     if(?bnorm=?anorm,             "0",
     if(strstarts(?bnorm,?anorm),  "-x",
     if(strends(?bnorm,?anorm),    "x-",
-                                  "?"))) as ?morphtype)
+    if(contains(?bnorm,?anorm),   "x-...-y",
+                                  "?")))) as ?morphtype)
 
   VALUES(?morphtype  ?morphclass) {
     ("0" morph:ZeroMorph)
-    ("-x" morph:SuffixMorph)   # suffix!  # the current model has morph:Affix, only
-    ("x-" morph:PrefixMorph)   # prefix!  # but if prefix and suffix are distinguished, we don't need to care about order anymore
+    ("-x" morph:Suffix)   # suffix!  # the current model has morph:Affix, only
+    ("x-" morph:Prefix)   # prefix!  # but if prefix and suffix are distinguished, we don't need to care about order anymore
+    ("x-...-y" morph:Circumfix)
     ("?" UNDEF)
   }
 

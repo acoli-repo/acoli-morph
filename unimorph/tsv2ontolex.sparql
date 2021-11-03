@@ -1,0 +1,124 @@
+ PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+ PREFIX morph: <http://www.w3.org/ns/lemon/morph#>
+ PREFIX synsem: <http://www.w3.org/ns/lemon/synsem#>
+ PREFIX decomp: <http://www.w3.org/ns/lemon/decomp#>
+ PREFIX vartrans: <http://www.w3.org/ns/lemon/vartrans#>
+ PREFIX lime: <http://www.w3.org/ns/lemon/lime#>
+ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ PREFIX owl: <http://www.w3.org/2002/07/owl#>
+ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+ PREFIX skos: <http://www.w3.org/2004/02/skos#>
+ PREFIX dbr: <http://dbpedia.org/resource/>
+ PREFIX dbo: <http://dbpedia.org/ontology/>
+ PREFIX void: <http://rdfs.org/ns/void#>
+ PREFIX lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#>
+ PREFIX semiotics: <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#>
+ PREFIX oils: <http://lemon-model.net/oils#>
+ PREFIX dct: <http://purl.org/dc/terms/>
+ PREFIX provo: <http://www.w3.org/ns/prov#>
+ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# temporary namespaces
+PREFIX unimorph: <https://unimorph.github.io/>
+
+# sample conversion, module draft 4.6
+# note that we don't parse UniMorph tags, yet (but there is an OLiA ontology, already)
+
+ CONSTRUCT {
+  ?entry a ontolex:LexicalEntry;
+         ontolex:canonicalForm [ ontolex:writtenRep ?lemma ];
+         ontolex:otherForm ?form;
+         morph:paradigm ?paradigm.
+
+  ?form a ontolex:Form;
+        ontolex:writtenRep ?rep;
+        unimorph:feats ?feats;
+        morph:consistsOf ?morph;
+        morph:inflectionType ?type.
+
+  ?type a morph:InflectionType; morph:inflectionRule ?rule; morph:paradigm ?paradigm.
+
+  ?rule a morph:InflectionRule;
+        morph:replacement ?replacement;
+        morph:example ?example;
+        morph:inflects ?morph.
+
+  ?morph a morph:Morph, ?morphclass;
+         ontolex:lexicalForm ?morph_form;
+         morph:grammaticalMeaning [ rdfs:label ?feats ].
+
+ } WHERE {
+
+  #############
+  # TSV table #
+  #############
+  # ?a (LEMMA), ?b (FORM), ?c (FEATS)
+
+  #################
+  # "descriptive" #
+  #################
+  BIND(?a as ?lemma)
+  BIND(?b as ?rep)
+  BIND(?c as ?feats)
+
+  # paradigm: here: one paradigm per word class
+  BIND(uri(concat("paradigm#",encode_for_uri(ucase(substr(?feats,1,2))))) as ?paradigm)
+
+  BIND(uri(concat("entry#",encode_for_uri(concat(?lemma, "_",?paradigm)))) as ?entry)
+  BIND(uri(concat("form#",encode_for_uri(concat(?lemma,"_",?paradigm,"_",?form)))) as ?form)
+
+  ################
+  # "generative" #
+  ################
+  # bootstrap inflection rules from string matches
+  # note that this will fail for cases where the lemma form is derived from the base, e.g.,
+  # German verbs, where the lemma is baseform + "-en"
+  BIND(concat(?lemma, " > ", ?form) as ?example)
+
+  # replacement returns blank node if our heuristics don't work
+  BIND(lcase(str(?lemma)) as ?lnorm)
+  BIND(lcase(str(?rep)) as ?fnorm)
+  BIND(if(strstarts(?fnorm,?lnorm), concat("s/$/",strafter(?fnorm,?lnorm),"/"),
+       if(strends(?fnorm,?lnorm), concat("s/^/",strbefore(?fnorm,?lnorm),"/"),
+       if(contains(?form,?lnorm), concat("s/^(.*)$/",strbefore(?fnorm,?lnorm),"${1}",strafter(?fnorm,?lnorm),"/"),
+       bnode()))) as ?replacement)
+
+  # this replacement is basically a diff, and normally, this diff should correspond to exactly one morph:Morph
+
+  # morph
+  BIND(
+    if(?lnorm=?fnorm,             "0",         # zero morpheme: shall we do anything with it?
+    if(strstarts(?fnorm,?lnorm),  concat("-",strafter(?fnorm,?lnorm)),
+    if(strends(?fnorm,?lnorm),    concat(strbefore(?fnorm,?lnorm),"-"),
+    if(contains(?fnorm,?lnorm),   concat(strbefore(?fnorm,?lnorm),"-...-",strafter(?fnorm, ?lnorm)),
+                                  bnode())))) as ?morph_form)
+
+  # same form and same features => same morph, but only if we have a concrete form
+  BIND(if(isblank(?morph_form),   bnode(),
+                                  uri(concat("morph#",encode_for_uri(concat(?morph_form,"_",?feats))))) as ?morph)
+
+  BIND(if(isblank(?morph_form),   bnode(),
+                                  uri(concat("rule#",encode_for_uri(concat(?morph_form,"_",?feats))))) as ?rule)
+
+  # no paradigms yet, we just assume that every feature combination is one inflection type
+  # what is the relation between inflection type and inflection rule ?
+  BIND(uri(concat("type#",encode_for_uri(?feats))) as ?type)
+
+  BIND(
+    if(?lnorm=?fnorm,             "0",         # zero morpheme: shall we do anything with it?
+    if(strstarts(?fnorm,?lnorm),  "-x",
+    if(strends(?fnorm,?lnorm),    "x-",
+    if(contains(?fnorm,?lnorm),   "x-...-y",
+                                  "?")))) as ?morphtype)
+
+  # morphtype
+
+  VALUES(?morphtype  ?morphclass) {
+    ("0" morph:ZeroMorph)
+    ("-x" morph:Suffix)   # suffix!  # the current model has morph:Affix, only
+    ("x-" morph:Prefix)   # prefix!  # but if prefix and suffix are distinguished, we don't need to care about order anymore
+    ("x-...-y" morph:Circumfix)
+    ("?" UNDEF)
+  }
+
+ }
