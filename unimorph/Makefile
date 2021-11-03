@@ -19,4 +19,4 @@ tarql: bin/tarql
 deu: src/deu tarql
 		 @echo build German sample data
 	   mkdir deu
-		 ./tarql -t --base http://purl.org/acoli/morph/UniMorph/deu/ --write-base -H tsv2ontolex.sparql src/deu/deu | gzip -f > deu/deu.ttl.gz
+		 ./tarql --dedup 5000 -t --base http://purl.org/acoli/morph/UniMorph/deu/ --write-base -H tsv2ontolex.sparql src/deu/deu | gzip -f > deu/deu.ttl.gz

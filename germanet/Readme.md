@@ -2,6 +2,16 @@
 
 GermaNet is a proprietary resource for lexical semantics in German, but its list of compound words is freely available from [University Tübingen](https://uni-tuebingen.de/en/faculties/faculty-of-humanities/departments/modern-languages/department-of-linguistics/chairs/general-and-computational-linguistics/ressources/lexica/germanet/description/compounds/#c1081926) and used as a basis for modelling compounds here.
 
+## GermaNet compounds, OntoLex-Morph edition
+
+GermaNet doesn't annotate Simulfixes, but these are inferred from the data.
+
+A practical problem is that `morph:CompoundRelation`s are `vartrans:LexicoSemanticRelation`s and that these hold between exactly two lexical entries. As a result, the only viable way to model compounds in Ontolex-Morph is by annotating each constituent individually. We lose any information about their order, but also about the headedness (which is annotated in GermaNet).
+
+We apply a hybrid strategy that minimizes reduncancy with `decomp`:
+- annotate compounds and simulfix(es) using `decomp`. This is possible with OntoLex-Morph 4.6 because `morph:Morph` is a `ontolex:LexicalEntry`
+- use `morph:CompoundRelation` as a relation between the (lexical entry of the) morphological head and the resulting compound
+
 ## Composition in GermaNet
 
 *excerpt from [website](https://uni-tuebingen.de/en/faculties/faculty-of-humanities/departments/modern-languages/department-of-linguistics/chairs/general-and-computational-linguistics/ressources/lexica/germanet/description/compounds/#c1081926)*

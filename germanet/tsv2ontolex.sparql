@@ -1,0 +1,110 @@
+ PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+ PREFIX morph: <http://www.w3.org/ns/lemon/morph#>
+ PREFIX synsem: <http://www.w3.org/ns/lemon/synsem#>
+ PREFIX decomp: <http://www.w3.org/ns/lemon/decomp#>
+ PREFIX vartrans: <http://www.w3.org/ns/lemon/vartrans#>
+ PREFIX lime: <http://www.w3.org/ns/lemon/lime#>
+ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ PREFIX owl: <http://www.w3.org/2002/07/owl#>
+ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+ PREFIX skos: <http://www.w3.org/2004/02/skos#>
+ PREFIX dbr: <http://dbpedia.org/resource/>
+ PREFIX dbo: <http://dbpedia.org/ontology/>
+ PREFIX void: <http://rdfs.org/ns/void#>
+ PREFIX lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#>
+ PREFIX semiotics: <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#>
+ PREFIX oils: <http://lemon-model.net/oils#>
+ PREFIX dct: <http://purl.org/dc/terms/>
+ PREFIX provo: <http://www.w3.org/ns/prov#>
+
+# Apache Jena, extensions
+PREFIX apf: <http://jena.apache.org/ARQ/property#>
+
+ # sample conversion, module draft 4.6
+
+ CONSTRUCT {
+
+  # OntoLex core
+  ?centry a ontolex:LexicalEntry; ontolex:canonicalForm ?cform.
+  ?cform a ontolex:Form; ontolex:writtenRep ?compound.
+
+  ?mentry a ontolex:LexicalEntry; ontolex:canonicalForm ?mform.
+  ?mform a ontolex:Form; ontolex:writtenRep ?modifier.
+
+  ?hentry a ontolex:LexicalEntry; ontolex:canonicalForm ?hform.
+  ?hform a ontolex:Form; ontolex:writtenRep ?head.
+
+  # morph:CompoundRelation to mark the head
+  [ a morph:CompoundRelation ]
+      vartrans:source ?hentry;
+      vartrans:target ?centry;
+      morph:contains ?morph.
+
+  ?morph a morph:Morph, ?morphclass, ontolex:Affix;
+    ontolex:lexicalForm ?mform_uri.
+  ?mform_uri ontolex:writtenRep ?morph_form.
+
+  # decomp to mark the elements of the composition (but not the morph -- in the current design the simulfix is detected only if between all modifiers and head)
+  ?centry decomp:subterm ?hentry, ?mentry.
+
+  # rule should be bound only if morph_form is bound
+  ?rule a morph:CompoundRule;
+        morph:generates ?centry;
+        morph:example ?example.
+  ?rel morph:wordFormationRule ?rule.
+
+ } WHERE {
+
+  #############
+  # TSV table #
+  #############
+  # ?compound ?modifier1__modifier2_ ?head
+  # if there are multiple modifiers, these are separated by space
+
+  # more handy ;)
+  BIND(?modifier1__modifier2_ as ?modifiers)
+
+  # for parsing spaces, we rely on Apache extensions as provided in TARQL
+
+  #################
+  # "descriptive" #
+  #################
+  ?modifier apf:strSplit(?modifiers" ")
+
+  BIND(uri(concat("entry#",encode_for_uri(?compound))) as ?centry)
+  BIND(uri(concat("entry#",encode_for_uri(?modifier))) as ?mentry)
+  BIND(uri(concat("entry#",encode_for_uri(?head))) as ?hentry)
+
+  BIND(uri(concat("form#",encode_for_uri(?compound))) as ?cform)
+  BIND(uri(concat("form#",encode_for_uri(?modifier))) as ?mform)
+  BIND(uri(concat("form#",encode_for_uri(?head))) as ?hform)
+
+  ################
+  # "generative" #
+  ################
+  # infer morphs and rules
+  BIND(concat(?modifiers, " + " ,?head, " > ", ?compound) as ?example)
+  # no replacement (not clear how to write a rule if we cannot address all parts of the compound)
+
+  # simulfix inference is approximative and works for ascii characters only
+
+  BIND(replace(lcase(?head),"[^a-z]","") as ?hnorm)
+  BIND(replace(lcase(?modifiers),"[^a-z]","") as ?mnorm)
+  BIND(replace(lcase(?compound),"[^a-z]","") as ?cnorm)
+
+  BIND( if (concat(?hnorm,?mnorm)=?cnorm, ?nothing,
+        if (concat(?mnorm,?hnorm)=?cnorm, ?nothing,
+        if (strstarts(?cnorm,?mnorm) && strends(?cnorm,?hnorm), strbefore(strafter(?cnorm, ?mnorm),?hnorm),
+        if (strstarts(?cnorm,?hnorm) && strends(?cnorm,?mnorm), strbefore(strafter(?cnorm, ?hnorm),?mnorm),
+                                                                ?nothing)))) as ?morph_form)
+
+  # these should produce rules only if ?morph_form is not a blank node
+  BIND(if(!bound(?morph_form), ?nothing, uri(concat("morph#",encode_for_uri(?morph_form)))) as ?morph)
+  BIND(if(!bound(?morph_form), ?nothing, uri(concat("rule#",encode_for_uri(?morph_form)))) as ?rule)
+  BIND(if(!bound(?morph_form), ?nothing, morph:Simulfix) as ?morphcat)
+
+  BIND(if(!bound(?morph_form), ?nothing,uri(concat("form#",encode_for_uri(concat("-",?morph_form,"-"))))) as ?mform_uri)
+
+  # how can we encode constraints on source and target POS? e.g., simulfix -s- in German requires a nominal modifier
+
+ }
