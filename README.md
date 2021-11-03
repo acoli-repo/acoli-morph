@@ -6,4 +6,9 @@ idea:
 - derivational morphology of an OntoLex entry (morphological segmentation plus linguistic analysis)
 - morphological rules
 
+phenomena covered:
+- [`uder/`](uder): derivation
+- ???: inflection
+- ???: 
+
 OntoLex-Morph is still under development, so this is explorative work, mostly. The vocabulary may change.

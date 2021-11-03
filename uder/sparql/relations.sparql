@@ -28,18 +28,20 @@ PREFIX uder: <https://ufal.mff.cuni.cz/universal-derivations/>
   ##############################
    ?aentry a ontolex:LexicalEntry; uder:POS ?apos; ontolex:canonicalForm ?aform. ?aform ontolex:writtenRep ?arep.
    ?bentry a ontolex:LexicalEntry; uder:POS ?bpos; ontolex:canonicalForm ?bform. ?bform ontolex:writtenRep ?brep.
+   # TODO: uder:POS to be decomposed into lexinfo features
 
    ?rel a morph:DerivationRelation;
-        vartrans:source ?aentry,
-                        ?morph; # yay! we still need to encode the relative position of both elements, but this can be via Morph subclass
-        vartrans:target ?bentry .
+        vartrans:source ?aentry;  # OntoLex no more than two relates/source/target properties
+        vartrans:target ?bentry;
+        morph:contains ?morph.    # from 4.5.3
 
    ?rel morph:wordFormationRule ?rule.
 
    #########
    # rules #
    #########
-  ?rule a morph:DerivationRule; morph:generates ?bentry.
+  ?rule a morph:DerivationRule.
+  ?rule morph:generates ?bentry.
 
   ?rule morph:example ?example.
   # are there rules for examples ?
@@ -50,19 +52,23 @@ PREFIX uder: <https://ufal.mff.cuni.cz/universal-derivations/>
   # can we use perl s/// notation?
 
   # we *cannot* represent that source and target of that relation *must* have a specific POS (this is encoded in rel id, e.g., "NN08>" means that a noun is formed from a noun
+  # this should be placed in either Rule or Morph or both
 
   ##########
   # morphs #
   ##########
-  ?morph a morph:Morph;  a ?morphclass;
-         morph:hasMorphStatus [ a morph:MorphValue; rdf:value ?morph_form; morph:derivational "true" ] .
-  # I use rdf:value here -- is that intended?
+  ?morph a morph:Morph, ?morphclass, ontolex:Affix;
+      ontolex:lexicalForm [ a ontolex:Form; ontolex:writtenRep ?morph_form  ].
+      # we can use ontolex:otherForm for allomorphy, ontolex:canonicalForm for "abstract" string values of morphemes
+      # but in this data, the form is bootstrapped from a string comparison, so we cannot make sure there is only one
+      # form per rule [NB: for this data, there seems to be]
 
   # how do we represent source and target characteristics of a morph? these are two different morph:grammaticalMeanings !!!
   ?morph morph:PLEASE_GIVE_ME_A_NAME_FOR_CONSTRAINTS ?apos.
   ?morph morph:grammaticalMeaning ?bpos.
 
   ?bform morph:consistsOf ?morph.  # how do we specify the base?
+  # could be a bit of a misnomer
 
  } WHERE {
 
@@ -122,8 +128,8 @@ PREFIX uder: <https://ufal.mff.cuni.cz/universal-derivations/>
 
   VALUES(?morphtype  ?morphclass) {
     ("0" morph:ZeroMorph)
-    ("-x" morph:AffixMorph)   # suffix!
-    ("x-" morph:AffixMorph)   # prefix!
+    ("-x" morph:SuffixMorph)   # suffix!  # the current model has morph:Affix, only
+    ("x-" morph:PrefixMorph)   # prefix!  # but if prefix and suffix are distinguished, we don't need to care about order anymore
     ("?" UNDEF)
   }
 

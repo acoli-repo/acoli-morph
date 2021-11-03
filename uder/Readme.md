@@ -1,5 +1,3 @@
-
-
 # Universal Derivations, OntoLex-Morph edition
 
 ## OntoLex edition
@@ -36,6 +34,59 @@ UDer data consists primarily of tsv tables, e.g., for German (`src/de/DErivBase/
 	    ersitzen_V
 	    Durchsatz_Nm
 
+Sample data
+
+- `relations.tsv`
+
+      Aal_Nn	aalen_V	dNV09>
+
+- `relations.ttl`
+
+      # ?a: "Aal_Nn_form"
+      <entry#Aal_Nn>  rdf:type       ontolex:LexicalEntry ;
+              uder:POS               "Nn" ;
+              ontolex:canonicalForm  <form#Aal_Nn_form> .
+
+      <form#Aal_Nn_form>  ontolex:writtenRep  "Aal" .
+
+      # ?b: "aalen_V"
+      <entry#aalen_V>  rdf:type      ontolex:LexicalEntry ;
+              uder:POS               "V" ;
+              ontolex:canonicalForm  <form#aalen_V_form> .
+
+      <form#aalen_V_form>  ontolex:writtenRep  "aalen" .
+
+      # ?c: "NV09>"
+      <rel#dNV09%3E>  rdf:type         morph:DerivationRelation ;
+              vartrans:source          <entry#Aal_Nn> ;
+              vartrans:target          <entry#aalen_V> .
+
+      # derived information
+      <rel#dNV09%3E>
+              morph:contains           <morph#dNV09%3E> ;
+              morph:wordFormationRule  <rule#dNV09%3E> .
+
+      <rule#dNV09%3E>  rdf:type  morph:DerivationRule ;
+              morph:generates    <entry#aalen_V> ;
+              morph:example      "Aal_Nn > aalen_V" ;
+              morph:replacement  "s/$/en/" .
+
+      <morph#dNV09%3E>  rdf:type   morph:Morph ;
+              rdf:type             morph:SuffixMorph ;
+              # this is change to the model: if had morph:Affix only
+              rdf:type             ontolex:Affix ;
+              ontolex:lexicalForm  _:b6571 .
+              # "-en" is obtained from a string match between ?a and ?b
+              # we don't know whether these are uniqure for the rule "NV09>"
+
+      _:b6571  rdf:type           ontolex:Form ;
+              ontolex:writtenRep  "-en" .
+      # this is obtained automatically from comparing ?a (Aal) and ?b (aalen)
+
+      <morph#dNV09%3E>  morph:PLEASE_GIVE_ME_A_NAME_FOR_CONSTRAINTS  "Nn" ;
+              morph:grammaticalMeaning  "V" .
+
+      <form#aalen_V_form>  morph:consistsOf  <morph#dNV09%3E> .
 
 
 ## Source data (UDer 1.1)
@@ -94,3 +145,4 @@ The current version of the collection is **UDer 1.1**. It contains 31 harmonized
 -   Lukáš Kyjánek, Zdeněk Žabokrtský, Magda Ševčíková, Jonáš     Vidra. 2019. [Universal Derivations Kickoff: A Collection of Eleven     Harmonized Derivational Resources for Eleven     Languages](https://ufal.mff.cuni.cz/derimo2019/pdf-files/derimo2019.pdf#page=109). In     Proceedings of the 2nd Workshop on Resources and Tools for     Derivational Morphology. Prague: Charles University. ISBN:     978-80-88132-08-0.
 -   Jonáš Vidra, Zdeněk Žabokrtský, Magda Ševčíková, Lukáš     Kyjánek. 2019. [DeriNet 2.0: Towards an All-in-One Word-Formation     Resource](https://ufal.mff.cuni.cz/derimo2019/pdf-files/derimo2019.pdf#page=89). In     Proceedings of the 2nd Workshop on Resources and Tools for     Derivational Morphology. Prague: Charles University. ISBN:     978-80-88132-08-0.
 -   Lukáš Kyjánek. 2018. [Morphological Resources of Derivational     Word-Formation Relations](http://ufal.mff.cuni.cz/techrep/tr61.pdf).     Technical Report TR-2018-61. Prague: Faculty of Mathematics and     Physics, Charles University.
+        morph:wordFormationRule  <rule#dNN05%3E> .
