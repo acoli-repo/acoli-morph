@@ -1,6 +1,12 @@
 
 # Universal Derivations, OntoLex-Morph edition
 
+## OntoLex edition
+
+Build it with
+
+  $> make
+
 ## Source data (UDer 1.1)
 
 *Excerpt from original website*
