@@ -1,4 +1,16 @@
-all: src
+all: src deu
+
+deu: src
+	mkdir deu
+	cat src/lexicon | \
+	sed -e s/'\t'/' '/g \
+			-e s/"<>"/"\&lt;\&gt;"/g \
+			-e s/'>'/'>\t'/g \
+			-e s/'<'/'\t<'/g \
+			-e s/'\t\t*'/'\t'/g \
+			-e s/'\&lt;'/'<'/g \
+			-e s/'\&gt;'/'>'/g \
+			> deu/lexicon.tsv
 
 src:
 	wget -nc https://storage.googleapis.com/google-code-archive-source/v2/code.google.com/morphisto/source-archive.zip
@@ -7,3 +19,4 @@ src:
 	mv tmp/morphisto/trunk/src src
 	@(for file in `find src | egrep '/.svn$$'`; do rm -rf $$file; done)
 	rm -rf tmp
+	@(cd src; make)
