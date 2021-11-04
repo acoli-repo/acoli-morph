@@ -8,8 +8,9 @@ idea:
 
 phenomena covered:
 - [`uder/`](uder): derivation, sample conversion for German, includes bootstrapping of `morph:Morph`s and `morph:DerivationalRule`s
-- [`unimorph/`](unimorph): inflection, smaple conversion for German, includes bootstrapping of `morph:Morph`s and `morph:InflectionalRule`s
+- [`unimorph/`](unimorph): inflection, sample conversion for German, includes bootstrapping of `morph:Morph`s and `morph:InflectionalRule`s
 - [`germanet/`](germanet): compounding, German only, includes bootstrapping of `morph:Morph`s and `morph:CompoundingRule`s
+- [`morphisto/`](morphisto): German SFST morphology, focus is the preservation of rules in OntoLex
 
 OntoLex-Morph is still under development, so this is explorative work, mostly. The vocabulary may change.
 
