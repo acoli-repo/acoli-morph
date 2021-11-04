@@ -11,6 +11,7 @@ deu: src
 			-e s/'\&lt;'/'<'/g \
 			-e s/'\&gt;'/'>'/g \
 			> deu/lexicon.tsv
+	python3 fst2ontolex.py src/flexion.fst > deu/flexion.ttl
 
 src:
 	wget -nc https://storage.googleapis.com/google-code-archive-source/v2/code.google.com/morphisto/source-archive.zip

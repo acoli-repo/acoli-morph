@@ -8,6 +8,26 @@ links:
 
 ## OntoLex-Morph edition
 
+We convert the Morphisto lexicon and the inflection rules, but not the full (S)FST apparatus.
+For encoding finite state automata in OntoLex-Morph, we use the `morph:InflectionType` element to represent states (nonterminals).
+The `morph:next` property expresses the transition between states, the `morph:inflectionRule` provides the string replacement.
+
+For triggering an inflection, an `ontolex:Form` needs to point to the (inflection type that represents the) start state.
+However, this is problematic, because the Morphisto generation generates all possible forms from abstract concepts, so that this top-level state
+is the POS of the lexical entry and the morphological features are generated along the way -- but not in an OntoLex-compliant way.
+
+**Alternative**: So, instead, it would be better to make these top-level nodes an `ontolex:Paradigm` and to not specify indivdual forms.
+Then, morphological features must be encoded explicitly as part of the inflection type (from which they could be transferred to the `ontolex:Form` as soon as it is generated.
+In this case, the form would point to the *last* state that lead to its generation. However, it does have no trace of the full path, and if multiple paths terminate in the same state,
+we lose any information on how we came from the paradigm to the morphological features.
+
+Note that we have no formal notion of tags, but treat them as explicit substrings.
+Also note that we do not support filters.
+
+Note that the current OntoLex encoding of inflection rules is deficient because it does not allow us to define an end state.
+By default, we would assume that we the path until no more `morph:next` properties are found.
+But this leaves us without validation possibility and violates the Open World Assumption.
+
 Build with
 
     $> make

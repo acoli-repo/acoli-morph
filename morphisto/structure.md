@@ -51,7 +51,9 @@ Note: `<PREF>` marks where BASE_POS entries begin, but these may occupy more tha
 3. POS: `<ABK>`, `<ADJ>`, `<ADV>`, `<NE>`, `<NN>`, `<OTHER>`, `<V>`
 4. RULE_TYPE: `<base>`
 5. META: `<frei>`, `<fremd>`, `<klassisch>`, `<nativ>`
-6. FEATS: e.g., `<NFem_0_s>`
+6. PARADIGM: e.g., `<NFem_0_s>`
+
+The PARADIGM column represents the start state in the SFST from which possible inflections can be generated. So for `<Name-Neut_s>`, this is generated from the `$FLEXION$` state that replaces the empty tag `<>` by `<Name-Neut_s>` and hands over to the state `$Name-Neut_s$`. But these are just naming conventions, and for linking lexicon and inflection, we go directly from `<Name-Neut_s>` to the URI generated from `$Name-Neut_s$`, i.e., `:type%23%24Name-Neut_s%24`. The problem is that the initial string insertion does not take place.
 
 The META criterion includes information about either origin `<nativ>`, `<fremd>` or morphological patterns (`frei`, `gebunden`). Not clear how this is internally used.
 
@@ -80,7 +82,7 @@ The META criterion includes information about either origin `<nativ>`, `<fremd>`
     <Suff_Stems>	<prefderiv,simplex,suffderiv>	<frei,fremd,gebunden,lang>	<deriv>	<ADJ,NN,V>	isch	<ADJ>	<SUFF>	<base>	<nativ>	<Adj+>
     <Suff_Stems>	<prefderiv,simplex,suffderiv>	<frei,fremd,gebunden,lang>	<deriv>	<ADJ,NN,V>	isch	<ADJ>	<SUFF>	<kompos>	<nativ>
 
-11. RESULT_FEATS (optional): paradigm information about the derived word (may be an identifier for a paradigm or inflection type)
+11. RESULT_PARADIGM (optional): paradigm information about the derived word (may be an identifier for a paradigm or inflection type)
    values: ADJ: `<Adj+>`, `<Adj0>`; NN: `<NMasc_s_0>`, `<NNeut_s_0>`; V: `<VVReg-el/er>`
 
 ### Kompos_Stems
@@ -93,7 +95,7 @@ Apparently, this is for stems that cannot occur in isolation (but some have the 
 4. RULE_TYPE: `<kompos>`
 5. META: `<frei>` ("Pharma"), `<gebunden>` ("anti"), `<nativ>`, `<fremd>` ("Mini"), `<klassisch>` ("Mega", "Micro", "Pseudo")
 
-No FEATS column because these do never occur in isolation. Not sure I understand the difference between `<fremd>` and `<klassisch>`. I guess the latter is primarily for words of Latin and Greek origin, the former for modern loan words (but even though "Mini" may have come through English, it is Latin in origin)
+No PARADIGM column because these do never occur in isolation. Not sure I understand the difference between `<fremd>` and `<klassisch>`. I guess the latter is primarily for words of Latin and Greek origin, the former for modern loan words (but even though "Mini" may have come through English, it is Latin in origin)
 
 ### Other entry types
 
@@ -131,7 +133,7 @@ If the first column contains a different tag, this is something like a modifier 
 
 ## Form notation
 
-Aside from plain strings (`[a-zA-Z\-\.]`), the following reserved characters occur:
+Aside from plain strings (`[a-zA-Z\-\.]+`), the following reserved characters occur:
 
 `/` this seems indicate an alternative lexicalization of the full word (global scope), e.g., in the following expression
 
@@ -154,3 +156,4 @@ Aside from plain strings (`[a-zA-Z\-\.]`), the following reserved characters occ
     <Suff_Stems>	<simplex>	<nativ>	<deriv>	<CARD>	<>	<NN>	<SUFF>	<base>	<nativ>	<NFem_0_en>
 
 Note that these forms provide no information about disambigutation, the morphology is thus primary intended for parsing, not for generation. (It would overgenerate for any case of stem alternation.)
+However, for the OntoLex conversion, I assume that the first alternative given is the canonical form.
