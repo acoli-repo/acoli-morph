@@ -1,0 +1,9 @@
+These files contain the distribution of the computational morphology SMOR 
+as they were made public by the IMS Stuttgart in the 1.4.2 release of SFST
+in 2011. However, for your convenience, we have made the following changes
+wrt Morphisto:
+- converted the SMOR source files to UTF-8
+- applied the patch smor.patch as distributed with Morphisto's original release
+
+You can find the original sources at:
+ftp://ftp.ims.uni-stuttgart.de/pub/corpora/SFST/SFST-1.4.2.tar.gz

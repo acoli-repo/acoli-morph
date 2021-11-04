@@ -1,0 +1,6304 @@
+<?xml version = '1.0' encoding = 'utf-8' ?>
+<?xml-stylesheet type="text/xsl" href="lexicon-transform.xslt"?>
+<smor>
+	<SuffStem>
+		<MorphMarker>QUANT</MorphMarker>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>er</Upper>
+		<Lower>er</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NMasc_s_0</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<MorphMarker>QUANT</MorphMarker>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>er</Upper>
+		<Lower>er</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<MorphMarker>QUANT</MorphMarker>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>ig</Upper>
+		<Lower>ig</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<MorphMarker>QUANT</MorphMarker>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>ig</Upper>
+		<Lower>ig</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<MorphMarker>QUANT</MorphMarker>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>ORD</Pos>
+		</PrevStem>
+		<Upper>el</Upper>
+		<Lower>el</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj0</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<MorphMarker>QUANT</MorphMarker>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>ORD</Pos>
+		</PrevStem>
+		<Upper>el</Upper>
+		<Lower>el</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NNeut_s_0</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<MorphMarker>QUANT</MorphMarker>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>ORD</Pos>
+		</PrevStem>
+		<Upper>eln</Upper>
+		<Lower>eln</Lower>
+		<NewStem stem_type="base">
+			<Pos>V</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>VVReg-el/er</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>kurz</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>is</Upper>
+		<Lower>is</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>V</Pos>
+			<Origin>kurz</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>kurz</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>isat</Upper>
+		<Lower>isat</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>V</Pos>
+			<Origin>lang</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>kurz</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>ifikat</Upper>
+		<Lower>ifikat</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>V</Pos>
+			<Origin>lang</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>kurz</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>ifiz</Upper>
+		<Lower>ifiz</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>V</Pos>
+			<Origin>kurz</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>lang</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>isch</Upper>
+		<Lower>isch</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>lang</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>isch</Upper>
+		<Lower>isch</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ik</Upper>
+		<Lower>ik</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NFem_0_en</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ik</Upper>
+		<Lower>ik</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ik</Upper>
+		<Lower>ik</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>iker</Upper>
+		<Lower>iker</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NMasc_s_0</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>iker</Upper>
+		<Lower>iker</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>iker</Upper>
+		<Lower>iker</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ikum</Upper>
+		<Lower>ikum</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NNeut-um/a</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ikum</Upper>
+		<Lower>ikum</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ikum</Upper>
+		<Lower>ikum</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>lang</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>or</Upper>
+		<Lower>oren</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>lang</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>or</Upper>
+		<Lower>or</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NMasc_s_en</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>lang</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>or</Upper>
+		<Lower>or</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>lang</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>or</Upper>
+		<Lower>or</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>ismus</Upper>
+		<Lower>ismen</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>ist</Upper>
+		<Lower>isten</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>ist</Upper>
+		<Lower>ist</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NMasc_en_en</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>ist</Upper>
+		<Lower>ist</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>kurz</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ier</Upper>
+		<Lower>ier</Lower>
+		<NewStem stem_type="base">
+			<Pos>V</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>VVReg</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>kurz</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ier</Upper>
+		<Lower>ier</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>V</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>kurz</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ier</Upper>
+		<Lower>ier</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>V</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ABK</Pos>
+			<Pos>ADJ</Pos>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>chen</Upper>
+		<Lower>chen</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NNeut-Dimin</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ABK</Pos>
+			<Pos>ADJ</Pos>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>chen</Upper>
+		<Lower>chen</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ADJ</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>en</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ADJ</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>0</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>AdjNNSuff</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>bar</Upper>
+		<Lower>bar</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>bar</Upper>
+		<Lower>bar</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>bar</Upper>
+		<Lower>bar</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ABK</Pos>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>los</Upper>
+		<Lower>los</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj+e</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>voll</Upper>
+		<Lower>voll</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ABK</Pos>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>los</Upper>
+		<Lower>los</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ABK</Pos>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>los</Upper>
+		<Lower>los</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>froh</Upper>
+		<Lower>froh</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ADJ</Pos>
+		</PrevStem>
+		<Upper>erweise</Upper>
+		<Lower>erweise</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADV</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adv</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>weise</Upper>
+		<Lower>weise</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>AdjPos</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>weise</Upper>
+		<Lower>weise</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADV</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adv</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>kurz</Origin>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>iös</Upper>
+		<Lower>ios</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>kurz</Origin>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>iös</Upper>
+		<Lower>iös</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>kurz</Origin>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>iös</Upper>
+		<Lower>iös</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ivum</Upper>
+		<Lower>ivum</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NNeut-um/a</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ivum</Upper>
+		<Lower>ivum</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ivum</Upper>
+		<Lower>ivum</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>ADJ</Pos>
+		</PrevStem>
+		<Upper>itär</Upper>
+		<Lower>itar</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>ADJ</Pos>
+		</PrevStem>
+		<Upper>itär</Upper>
+		<Lower>itär</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ADJ</Pos>
+		</PrevStem>
+		<Upper>ität</Upper>
+		<Lower>itäten</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ADJ</Pos>
+		</PrevStem>
+		<Upper>ität</Upper>
+		<Lower>itäts</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ADJ</Pos>
+		</PrevStem>
+		<Upper>ität</Upper>
+		<Lower>ität</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NFem-Deriv</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>CARD</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>är</Upper>
+		<Lower>ärs</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>CARD</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>är</Upper>
+		<Lower>är</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>CARD</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>är</Upper>
+		<Lower>är</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>CARD</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>är</Upper>
+		<Lower>är</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NMasc_s_e</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>CARD</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>är</Upper>
+		<Lower>är</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>CARD</Pos>
+		</PrevStem>
+		<Upper>fach</Upper>
+		<Lower>fach</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>CARD</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>0</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ur</Upper>
+		<Lower>ür</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ur</Upper>
+		<Lower>uren</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ur</Upper>
+		<Lower>ur</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NFem_0_en</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ur</Upper>
+		<Lower>ur</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>lich</Upper>
+		<Lower>lich</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>lich</Upper>
+		<Lower>lich</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>lich</Upper>
+		<Lower>lich</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>nativ</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>ens</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>nativ</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>en</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NNeut_s_x</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>nativ</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>en</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>nativ</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ung</Upper>
+		<Lower>ungs</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>nativ</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ung</Upper>
+		<Lower>ung</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NFem-Deriv</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>nativ</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ung</Upper>
+		<Lower>ung</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>lang</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ion</Upper>
+		<Lower>iön</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>lang</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ion</Upper>
+		<Lower>ions</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>lang</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ion</Upper>
+		<Lower>ion</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NFem-Deriv</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>lang</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ion</Upper>
+		<Lower>ion</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>ADJ</Pos>
+		</PrevStem>
+		<Upper>igkeit</Upper>
+		<Lower>igkeits</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>ADJ</Pos>
+		</PrevStem>
+		<Upper>igkeit</Upper>
+		<Lower>igkeit</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NFem-Deriv</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>ADJ</Pos>
+		</PrevStem>
+		<Upper>igkeit</Upper>
+		<Lower>igkeit</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>ADJ</Pos>
+		</PrevStem>
+		<Upper>keit</Upper>
+		<Lower>keits</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>ADJ</Pos>
+		</PrevStem>
+		<Upper>keit</Upper>
+		<Lower>keit</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NFem-Deriv</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>er</Upper>
+		<Lower>er</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NMasc_s_0</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>er</Upper>
+		<Lower>er</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>er</Upper>
+		<Lower>er</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>NSFem_0_en</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>en</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>NSFem_0_en</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>s</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>NSFem_0_en</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>0</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NFem_0_en</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>NSFem_0_en</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>0</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>NSFem_0_n</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>en</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>NSFem_0_n</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>e</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NFem_0_n</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>NSFem_0_n</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>e</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>NSFem_0_n</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>0</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>NSMasc-s/$sse</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>0</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NMasc-s/$sse</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>NSMasc-s/$sse</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>0</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>NSMasc_es_$e</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>s</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>NSMasc_es_$e</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>0</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NMasc_es_$e</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>NSMasc_es_$e</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>0</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>NSMasc_es_e</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>e</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>NSMasc_es_e</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>s</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>NSMasc_es_e</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>0</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NMasc_es_e</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>NSMasc_es_e</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>0</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>NSNeut_es_e</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>e</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>NSNeut_es_e</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>s</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>NSNeut_es_e</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>0</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NNeut_es_e</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>NSNeut_es_e</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>0</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>kurz</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>age</Upper>
+		<Lower>agen</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>fremd</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>kurz</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>age</Upper>
+		<Lower>age</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>fremd</Origin>
+			<InfClass>NFem_0_n</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>kurz</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ant</Upper>
+		<Lower>ant</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NMasc_en_en</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>kurz</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ant</Upper>
+		<Lower>ant</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>ös</Upper>
+		<Lower>os</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>ös</Upper>
+		<Lower>ös</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+			<InfClass>Adj+e</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>kurz</Origin>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>abel</Upper>
+		<Lower>abil</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>kurz</Origin>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>abel</Upper>
+		<Lower>abel</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+			<InfClass>Adj-el/er</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>kurz</Origin>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>abel</Upper>
+		<Lower>abel</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ive</Upper>
+		<Lower>ive</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NFem_0_n</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>er</Upper>
+		<Lower>er</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NMasc_s_0</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>er</Upper>
+		<Lower>er</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>er</Upper>
+		<Lower>er</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>isch</Upper>
+		<Lower>isch</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj+Lang</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>isch</Upper>
+		<Lower>isch</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>izität</Upper>
+		<Lower>izitäts</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>izität</Upper>
+		<Lower>izität</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NFem-Deriv</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>kurz</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ent</Upper>
+		<Lower>enten</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>kurz</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ent</Upper>
+		<Lower>ent</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+			<InfClass>Adj+e</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>kurz</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ent</Upper>
+		<Lower>ent</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>kurz</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ent</Upper>
+		<Lower>ent</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NMasc_en_en</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>kurz</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ent</Upper>
+		<Lower>ent</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>kurz</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>enz</Upper>
+		<Lower>enz</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NFem_0_en</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>kurz</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>enz</Upper>
+		<Lower>enz</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>kurz</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>enz</Upper>
+		<Lower>enz</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>en</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>0</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NNeut_es_e</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>0</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>0</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>eur</Upper>
+		<Lower>eurs</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>eur</Upper>
+		<Lower>eur</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NMasc_s_e</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>eur</Upper>
+		<Lower>eur</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>orat</Upper>
+		<Lower>orat</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NNeut_es_e</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>orat</Upper>
+		<Lower>orat</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>orium</Upper>
+		<Lower>orium</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NNeut-um/en</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>orium</Upper>
+		<Lower>orium</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>oriums</Upper>
+		<Lower>oriums</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>er</Upper>
+		<Lower>er</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NMasc_s_0</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>er</Upper>
+		<Lower>er</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>er</Upper>
+		<Lower>er</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>lich</Upper>
+		<Lower>lich</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>lich</Upper>
+		<Lower>lich</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>ie</Upper>
+		<Lower>ien</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>ie</Upper>
+		<Lower>ie</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NFem_0_n</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>ie</Upper>
+		<Lower>ie</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>ie</Upper>
+		<Lower>ie</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>in</Upper>
+		<Lower>innen</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>in</Upper>
+		<Lower>in</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NFem-in</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ABK</Pos>
+			<Pos>ADJ</Pos>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>mäßig</Upper>
+		<Lower>mäßig</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj+e</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ABK</Pos>
+			<Pos>ADJ</Pos>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>mäßig</Upper>
+		<Lower>mäßig</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ABK</Pos>
+			<Pos>ADJ</Pos>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>mäßig</Upper>
+		<Lower>mäßig</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ABK</Pos>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>artig</Upper>
+		<Lower>artig</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ABK</Pos>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>artig</Upper>
+		<Lower>artig</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ABK</Pos>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>haft</Upper>
+		<Lower>haft</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj+e</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ABK</Pos>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>haft</Upper>
+		<Lower>haft</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ABK</Pos>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>haft</Upper>
+		<Lower>haft</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>tum</Upper>
+		<Lower>tüm</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>tum</Upper>
+		<Lower>tums</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>tum</Upper>
+		<Lower>tum</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NNeut_es_$er</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>haft</Upper>
+		<Lower>haft</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj+e</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>haft</Upper>
+		<Lower>haft</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>haft</Upper>
+		<Lower>haft</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>ABK</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>ell</Upper>
+		<Lower>ell</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>ABK</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>ell</Upper>
+		<Lower>ell</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>ial</Upper>
+		<Lower>ial</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>ial</Upper>
+		<Lower>ial</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>ial</Upper>
+		<Lower>ial</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>iell</Upper>
+		<Lower>iell</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>iell</Upper>
+		<Lower>iell</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>al</Upper>
+		<Lower>al</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>al</Upper>
+		<Lower>al</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>al</Upper>
+		<Lower>al</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>ell</Upper>
+		<Lower>ell</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>ik</Upper>
+		<Lower>ik</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NFem_0_en</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>ik</Upper>
+		<Lower>ik</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>ik</Upper>
+		<Lower>ik</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>ual</Upper>
+		<Lower>ual</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>ual</Upper>
+		<Lower>ual</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>ual</Upper>
+		<Lower>ual</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>uell</Upper>
+		<Lower>uell</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>CARD</Pos>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ling</Upper>
+		<Lower>lings</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>CARD</Pos>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ling</Upper>
+		<Lower>ling</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NMasc_s_e</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ei</Upper>
+		<Lower>ei</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NFem_0_en</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ei</Upper>
+		<Lower>ei</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ei</Upper>
+		<Lower>ei</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>ADJ</Pos>
+		</PrevStem>
+		<Upper>keit</Upper>
+		<Lower>keits</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>ADJ</Pos>
+		</PrevStem>
+		<Upper>keit</Upper>
+		<Lower>keit</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NFem-Deriv</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>sam</Upper>
+		<Lower>sam</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>sam</Upper>
+		<Lower>sam</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>sam</Upper>
+		<Lower>sam</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>schaft</Upper>
+		<Lower>schafts</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>schaft</Upper>
+		<Lower>schaft</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NFem-Deriv</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>schaft</Upper>
+		<Lower>schaft</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-0-Adj0-Up</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>0</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj0-Up</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-0-NMasc_s_0</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>0</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NMasc_s_0</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-0-NMasc_s_0</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>in</Upper>
+		<Lower>in</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NFem-in</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-0-Name-Fem_0</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>0</Lower>
+		<NewStem stem_type="base">
+			<Pos>NE</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Name-Fem_0</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-0-Name-Masc_s</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>0</Lower>
+		<NewStem stem_type="base">
+			<Pos>NE</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Name-Masc_s</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-0-Name-Neut_s</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>0</Lower>
+		<NewStem stem_type="base">
+			<Pos>NE</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Name-Neut_s</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-a-Name-Fem_s</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>a</Upper>
+		<Lower>a</Lower>
+		<NewStem stem_type="base">
+			<Pos>NE</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Name-Fem_s</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-a-Name-Neut_s</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>a</Upper>
+		<Lower>a</Lower>
+		<NewStem stem_type="base">
+			<Pos>NE</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Name-Neut_s</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-aner-Adj0-Up</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>aner</Upper>
+		<Lower>aner</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj0-Up</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-aner-NMasc_s_0</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>aner</Upper>
+		<Lower>aner</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NMasc_s_0</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-aner-NMasc_s_0</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>anerin</Upper>
+		<Lower>anerin</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NFem-in</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-anisch-Adj+</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>anisch</Upper>
+		<Lower>anisch</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-e-NMasc_n_n</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>e</Upper>
+		<Lower>e</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NMasc_n_n</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-e-NMasc_n_n</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>in</Upper>
+		<Lower>in</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NFem-in</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-e-Name-Fem_0</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>e</Upper>
+		<Lower>e</Lower>
+		<NewStem stem_type="base">
+			<Pos>NE</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Name-Fem_0</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-e-Name-Neut_s</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>e</Upper>
+		<Lower>e</Lower>
+		<NewStem stem_type="base">
+			<Pos>NE</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Name-Neut_s</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-ei-Name-Fem_0</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>ei</Upper>
+		<Lower>ei</Lower>
+		<NewStem stem_type="base">
+			<Pos>NE</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Name-Fem_0</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-en-Name-Neut_s</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>en</Upper>
+		<Lower>en</Lower>
+		<NewStem stem_type="base">
+			<Pos>NE</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Name-Neut_s</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-er-Adj0-Up</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>er</Upper>
+		<Lower>er</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj0-Up</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-er-NMasc_s_0</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>er</Upper>
+		<Lower>er</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NMasc_s_0</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-er-NMasc_s_0</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>erin</Upper>
+		<Lower>erin</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NFem-in</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-erisch-Adj+</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>erisch</Upper>
+		<Lower>erisch</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-ese-NMasc_n_n</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>ese</Upper>
+		<Lower>ese</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NMasc_n_n</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-ese-NMasc_n_n</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>esin</Upper>
+		<Lower>esin</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NFem-in</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-esisch-Adj+</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>esisch</Upper>
+		<Lower>esisch</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-ianer-NMasc_s_0</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>ianer</Upper>
+		<Lower>ianer</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NMasc_s_0</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-ianer-NMasc_s_0</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>ianerin</Upper>
+		<Lower>ianerin</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NFem-in</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-ianisch-Adj+</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>ianisch</Upper>
+		<Lower>ianisch</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-ien-Name-Neut_s</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>ien</Upper>
+		<Lower>ien</Lower>
+		<NewStem stem_type="base">
+			<Pos>NE</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Name-Neut_s</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-ier-NMasc_s_0</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>ier</Upper>
+		<Lower>ier</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NMasc_s_0</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-ier-NMasc_s_0</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>ierin</Upper>
+		<Lower>ierin</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NFem-in</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-isch-Adj+</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>isch</Upper>
+		<Lower>isch</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-istan-Name-Neut_s</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>istan</Upper>
+		<Lower>istan</Lower>
+		<NewStem stem_type="base">
+			<Pos>NE</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Name-Neut_s</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-land-Name-Neut_s</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>land</Upper>
+		<Lower>land</Lower>
+		<NewStem stem_type="base">
+			<Pos>NE</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Name-Neut_s</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-ner-Adj0-Up</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>ner</Upper>
+		<Lower>ner</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj0-Up</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-ner-NMasc_s_0</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>ner</Upper>
+		<Lower>ner</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NMasc_s_0</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-ner-NMasc_s_0</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>nerin</Upper>
+		<Lower>nerin</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>NGeo-nisch-Adj+</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>nisch</Upper>
+		<Lower>nisch</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>kurz</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ant</Upper>
+		<Lower>anten</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>kurz</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ant</Upper>
+		<Lower>ant</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+			<InfClass>Adj+e</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>kurz</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ant</Upper>
+		<Lower>ant</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>kurz</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ant</Upper>
+		<Lower>ant</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>lang</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>eut</Upper>
+		<Lower>euten</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>lang</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>eut</Upper>
+		<Lower>eut</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NMasc_en_en</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>lang</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>eut</Upper>
+		<Lower>eut</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ABK</Pos>
+			<Pos>ADJ</Pos>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ler</Upper>
+		<Lower>ler</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NMasc_s_0</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ABK</Pos>
+			<Pos>ADJ</Pos>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ler</Upper>
+		<Lower>ler</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ABK</Pos>
+			<Pos>ADJ</Pos>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ler</Upper>
+		<Lower>ler</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>esk</Upper>
+		<Lower>esk</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>fremd</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>esk</Upper>
+		<Lower>esk</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>fremd</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>isch</Upper>
+		<Lower>isch</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>isch</Upper>
+		<Lower>isch</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>lein</Upper>
+		<Lower>lein</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NNeut-Dimin</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>lein</Upper>
+		<Lower>lein</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>in</Upper>
+		<Lower>innen</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>In</Upper>
+		<Lower>Innen</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>in</Upper>
+		<Lower>in</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NFem-in</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>In</Upper>
+		<Lower>In</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NFem-in</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>thek</Upper>
+		<Lower>theks</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>thek</Upper>
+		<Lower>thek</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NFem_0_en</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>thek</Upper>
+		<Lower>thek</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ABK</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>haltig</Upper>
+		<Lower>haltig</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ABK</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>haltig</Upper>
+		<Lower>haltig</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ABK</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>haltig</Upper>
+		<Lower>haltig</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>schaft</Upper>
+		<Lower>schafts</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>schaft</Upper>
+		<Lower>schaft</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NFem-Deriv</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>schaft</Upper>
+		<Lower>schaft</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>kurz</Origin>
+			<Origin>lang</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ibel</Upper>
+		<Lower>ibil</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>kurz</Origin>
+			<Origin>lang</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ibel</Upper>
+		<Lower>ibel</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+			<InfClass>Adj-el/er</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>kurz</Origin>
+			<Origin>lang</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ibel</Upper>
+		<Lower>ibel</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>lang</Origin>
+			<Pos>CARD</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>är</Upper>
+		<Lower>ar</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>iv</Upper>
+		<Lower>iv</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>iv</Upper>
+		<Lower>iv</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>lang</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>iv</Upper>
+		<Lower>iv</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Origin>lang</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>iv</Upper>
+		<Lower>iv</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>fremd</Origin>
+			<InfClass>NNeut_es_e</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>al</Upper>
+		<Lower>al</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>al</Upper>
+		<Lower>al</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>al</Upper>
+		<Lower>al</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>iker</Upper>
+		<Lower>iker</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NMasc_s_0</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>iker</Upper>
+		<Lower>iker</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>iker</Upper>
+		<Lower>iker</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>lang</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>iv</Upper>
+		<Lower>iv</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>lang</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>iv</Upper>
+		<Lower>iv</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>lang</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>iv</Upper>
+		<Lower>iv</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>frei</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>oid</Upper>
+		<Lower>oid</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+			<InfClass>Adj+e</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ADV</Pos>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ig</Upper>
+		<Lower>ig</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ADV</Pos>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ig</Upper>
+		<Lower>ig</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ADV</Pos>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ig</Upper>
+		<Lower>ig</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>er</Upper>
+		<Lower>er</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NMasc_s_0</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>er</Upper>
+		<Lower>er</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>fremd</Origin>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>o</Upper>
+		<Lower>o</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>gebunden</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>ADJ</Pos>
+		</PrevStem>
+		<Upper>isch</Upper>
+		<Lower>isch</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>ADJ</Pos>
+		</PrevStem>
+		<Upper>isch</Upper>
+		<Lower>isch</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>iater</Upper>
+		<Lower>iatr</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>iater</Upper>
+		<Lower>iater</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NMasc_s_0</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>iater</Upper>
+		<Lower>iater</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>o</Upper>
+		<Lower>o</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>gebunden</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>kurz</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>anz</Upper>
+		<Lower>anz</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NFem_0_en</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>kurz</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>anz</Upper>
+		<Lower>anz</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>lich</Upper>
+		<Lower>lich</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>lich</Upper>
+		<Lower>lich</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>CARD</Pos>
+			<Pos>DIGCARD</Pos>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>er</Upper>
+		<Lower>er</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj0</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>CARD</Pos>
+			<Pos>DIGCARD</Pos>
+			<Pos>NE</Pos>
+		</PrevStem>
+		<Upper>er</Upper>
+		<Lower>er</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NMasc_s_0</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>CARD</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>0</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NFem_0_en</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>CARD</Pos>
+		</PrevStem>
+		<Upper>eck</Upper>
+		<Lower>eck</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NNeut_es_e</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>CARD</Pos>
+		</PrevStem>
+		<Upper>erlei</Upper>
+		<Lower>erlei</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj0</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>CARD</Pos>
+		</PrevStem>
+		<Upper>fach</Upper>
+		<Lower>fach</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>AdjPos</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>CARD</Pos>
+		</PrevStem>
+		<Upper>fach</Upper>
+		<Lower>fach</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>CARD</Pos>
+		</PrevStem>
+		<Upper>mal</Upper>
+		<Lower>mal</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADV</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adv</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>DIGCARD</Pos>
+		</PrevStem>
+		<Upper>-er</Upper>
+		<Lower>-er</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj0</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>DIGCARD</Pos>
+		</PrevStem>
+		<Upper>-er</Upper>
+		<Lower>-er</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NMasc_s_0</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ler</Upper>
+		<Lower>ler</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NMasc_s_0</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ler</Upper>
+		<Lower>ler</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>ler</Upper>
+		<Lower>ler</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>chen</Upper>
+		<Lower>chen</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NNeut-Dimin</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>chen</Upper>
+		<Lower>chen</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>ig</Upper>
+		<Lower>ig</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>ig</Upper>
+		<Lower>ig</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>ORD</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>0</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>AdjNNSuff</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>ORD</Pos>
+		</PrevStem>
+		<Upper>0</Upper>
+		<Lower>0</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>ORD</Pos>
+		</PrevStem>
+		<Upper>el</Upper>
+		<Lower>el</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj0</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>ORD</Pos>
+		</PrevStem>
+		<Upper>el</Upper>
+		<Lower>el</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>ORD</Pos>
+		</PrevStem>
+		<Upper>el</Upper>
+		<Lower>el</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NNeut_s_0</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>ORD</Pos>
+		</PrevStem>
+		<Upper>ens</Upper>
+		<Lower>ens</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADV</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adv</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>ORD</Pos>
+		</PrevStem>
+		<Upper>klässler</Upper>
+		<Lower>klässler</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NMasc_s_0</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>ORD</Pos>
+		</PrevStem>
+		<Upper>klässler</Upper>
+		<Lower>klässler</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>ORD</Pos>
+		</PrevStem>
+		<Upper>klässler</Upper>
+		<Lower>klässler</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>haftig</Upper>
+		<Lower>haftig</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>simplex</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>haftig</Upper>
+		<Lower>haftig</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>e</Upper>
+		<Lower>en</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>e</Upper>
+		<Lower>e</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NMasc_n_n</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>in</Upper>
+		<Lower>innen</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>in</Upper>
+		<Lower>in</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NFem-in</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>gen</Upper>
+		<Lower>gen</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>gen</Upper>
+		<Lower>gen</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>gen</Upper>
+		<Lower>gen</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>graf</Upper>
+		<Lower>grafen</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>graf</Upper>
+		<Lower>graf</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NMasc_en_en</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>graf</Upper>
+		<Lower>graf</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>gramm</Upper>
+		<Lower>gramm</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NNeut_es_e</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>gramm</Upper>
+		<Lower>gramm</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>graph</Upper>
+		<Lower>graphen</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>graph</Upper>
+		<Lower>graph</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NMasc_en_en</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>graph</Upper>
+		<Lower>graph</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>krat</Upper>
+		<Lower>kraten</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>krat</Upper>
+		<Lower>krat</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NMasc_en_en</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>krat</Upper>
+		<Lower>krat</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>log</Upper>
+		<Lower>log</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>gebunden</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>man</Upper>
+		<Lower>manen</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>man</Upper>
+		<Lower>man</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>mane</Upper>
+		<Lower>mane</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NMasc_n_n</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>meter</Upper>
+		<Lower>metr</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>meter</Upper>
+		<Lower>meter</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NNeut_s_0</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>meter</Upper>
+		<Lower>meter</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>naut</Upper>
+		<Lower>nauten</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>naut</Upper>
+		<Lower>naut</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NMasc_en_en</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>naut</Upper>
+		<Lower>naut</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>nom</Upper>
+		<Lower>nomen</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>nom</Upper>
+		<Lower>nom</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NMasc_en_en</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>nom</Upper>
+		<Lower>nom</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>path</Upper>
+		<Lower>pathen</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>path</Upper>
+		<Lower>path</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NMasc_n_n</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>path</Upper>
+		<Lower>path</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>phage</Upper>
+		<Lower>phagen</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>phage</Upper>
+		<Lower>phage</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NMasc_n_n</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>phage</Upper>
+		<Lower>phage</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>phil</Upper>
+		<Lower>phil</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>phil</Upper>
+		<Lower>phil</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>phil</Upper>
+		<Lower>phil</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>phob</Upper>
+		<Lower>phob</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+			<InfClass>AdjPos</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>phob</Upper>
+		<Lower>phob</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>phob</Upper>
+		<Lower>phob</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>se</Upper>
+		<Lower>sen</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>se</Upper>
+		<Lower>se</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NFem_0_n</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>skop</Upper>
+		<Lower>skopn</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>skop</Upper>
+		<Lower>skop</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NNeut_es_e</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>skop</Upper>
+		<Lower>skop</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>soph</Upper>
+		<Lower>sophen</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>soph</Upper>
+		<Lower>soph</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NMasc_en_en</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>soph</Upper>
+		<Lower>soph</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>tisch</Upper>
+		<Lower>tisch</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>tisch</Upper>
+		<Lower>tisch</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>troph</Upper>
+		<Lower>troph</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>troph</Upper>
+		<Lower>troph</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="kompos">
+			<Complexity>suffderiv</Complexity>
+			<Origin>gebunden</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>troph</Upper>
+		<Lower>troph</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>suffderiv</Complexity>
+			<Origin>kurz</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>eur</Upper>
+		<Lower>eurs</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>suffderiv</Complexity>
+			<Origin>kurz</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>eur</Upper>
+		<Lower>eur</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NMasc_s_e</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>suffderiv</Complexity>
+			<Origin>kurz</Origin>
+			<Pos>NN</Pos>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>eur</Upper>
+		<Lower>eur</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>suffderiv</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>isch</Upper>
+		<Lower>isch</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>suffderiv</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>isch</Upper>
+		<Lower>isch</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>suffderiv</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>end</Upper>
+		<Lower>end</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>suffderiv</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>t</Upper>
+		<Lower>t</Lower>
+		<NewStem stem_type="base">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>Adj+</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>suffderiv</Complexity>
+			<Origin>nativ</Origin>
+			<Pos>V</Pos>
+		</PrevStem>
+		<Upper>t</Upper>
+		<Lower>t</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>ADJ</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>ismus</Upper>
+		<Lower>ismus</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+			<InfClass>NMasc-us/en</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>ismus</Upper>
+		<Lower>ismus</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>fremd</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>NE</Pos>
+			<Pos>NN</Pos>
+		</PrevStem>
+		<Upper>ismus</Upper>
+		<Lower>ismus</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>frei</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>CARD</Pos>
+		</PrevStem>
+		<Upper>heit</Upper>
+		<Lower>heits</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>CARD</Pos>
+		</PrevStem>
+		<Upper>heit</Upper>
+		<Lower>heit</Lower>
+		<NewStem stem_type="base">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+			<InfClass>NFem-Deriv</InfClass>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>prefderiv</Complexity>
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ADJ</Pos>
+			<Pos>CARD</Pos>
+		</PrevStem>
+		<Upper>heit</Upper>
+		<Lower>heit</Lower>
+		<NewStem stem_type="deriv">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+	<SuffStem>
+		<PrevStem stem_type="deriv">
+			<Complexity>simplex</Complexity>
+			<Complexity>suffderiv</Complexity>
+			<Origin>frei</Origin>
+			<Origin>nativ</Origin>
+			<Pos>ADJ</Pos>
+		</PrevStem>
+		<Upper>heit</Upper>
+		<Lower>heits</Lower>
+		<NewStem stem_type="kompos">
+			<Pos>NN</Pos>
+			<Origin>nativ</Origin>
+		</NewStem>
+	</SuffStem>
+</smor>

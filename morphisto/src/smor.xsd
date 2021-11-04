@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="smor" type="smorContent"/>
+  <xs:complexType name="smorContent">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element ref="BaseStem"/>
+      <xs:element ref="SuffStem"/>
+      <xs:element ref="DerivStem"/>
+      <xs:element ref="KomposStem"/>
+      <xs:element ref="PrefStem"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:element name="DerivStem" type="DKContent"/>
+  <xs:element name="KomposStem" type="DKContent"/>
+  <xs:element name="BaseStem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="MorphMarker"/>
+        <xs:element ref="Lemma"/>
+        <xs:element ref="Stem"/>
+        <xs:element ref="Pos"/>
+        <xs:element ref="Origin"/>
+        <xs:element ref="InfClass"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="Frequency"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="Editor"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="Source"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Lemma" type="xs:string"/>
+  <xs:element name="Stem" type="xs:string"/>
+  <xs:element name="InfClass" type="InfClassContent"/>
+  <xs:element name="PrefStem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="MorphMarker"/>
+        <xs:element ref="Upper"/>
+        <xs:element ref="Lower"/>
+        <xs:element maxOccurs="unbounded" ref="Pos"/>
+        <xs:element maxOccurs="unbounded" ref="Origin"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="Frequency"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="Editor"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="Source"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Upper" type="xs:string"/>
+  <xs:element name="Lower" type="xs:string"/>
+  <xs:complexType name="DKContent">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" ref="MorphMarker"/>
+      <xs:element ref="Upper"/>
+      <xs:element ref="Lower"/>
+      <xs:element ref="Pos"/>
+      <xs:element ref="Origin"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="Frequency"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="Editor"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="Source"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SuffStem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="MorphMarker"/>
+        <xs:element ref="PrevStem"/>
+        <xs:element ref="Upper"/>
+        <xs:element ref="Lower"/>
+        <xs:element ref="NewStem"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="Frequency"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="Editor"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="Source"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PrevStem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Complexity"/>
+        <xs:element maxOccurs="unbounded" ref="Origin"/>
+        <xs:element maxOccurs="unbounded" ref="Pos"/>
+      </xs:sequence>
+      <xs:attribute name="stem_type" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="deriv"/>
+            <xs:enumeration value="kompos"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Complexity">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="prefderiv"/>
+        <xs:enumeration value="suffderiv"/>
+        <xs:enumeration value="simplex"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="NewStem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Pos"/>
+        <xs:element ref="Origin"/>
+        <xs:element minOccurs="0" ref="InfClass"/>
+      </xs:sequence>
+      <xs:attribute name="stem_type" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="base"/>
+            <xs:enumeration value="deriv"/>
+            <xs:enumeration value="kompos"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:group name="LexicographicContent">
+    <xs:sequence>
+      <xs:element minOccurs="0" ref="Frequency"/>
+      <xs:element minOccurs="0" ref="Editor"/>
+      <xs:element minOccurs="0" ref="Source"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:element name="Frequency" type="xs:string"/>
+  <xs:element name="Editor" type="xs:string"/>
+  <xs:element name="Source" type="xs:string"/>
+  <xs:element name="MorphMarker">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="ge"/>
+        <xs:enumeration value="NoDef"/>
+        <xs:enumeration value="NoHy"/>
+        <xs:enumeration value="Initial"/>
+        <xs:enumeration value="QUANT"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="Pos">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="NN"/>
+        <xs:enumeration value="NE"/>
+        <xs:enumeration value="V"/>
+        <xs:enumeration value="ADJ"/>
+        <xs:enumeration value="ADV"/>
+        <xs:enumeration value="ABK"/>
+        <xs:enumeration value="OTHER"/>
+        <xs:enumeration value="ORD"/>
+        <xs:enumeration value="CARD"/>
+        <xs:enumeration value="DIGCARD"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="Origin">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="frei"/>
+        <xs:enumeration value="fremd"/>
+        <xs:enumeration value="klassisch"/>
+        <xs:enumeration value="nativ"/>
+        <xs:enumeration value="kurz"/>
+        <xs:enumeration value="lang"/>
+        <xs:enumeration value="gebunden"/>
+        <xs:enumeration value="NSFem_0_en"/>
+        <xs:enumeration value="NSFem_0_n"/>
+        <xs:enumeration value="NSMasc-s/$sse"/>
+        <xs:enumeration value="NSMasc_es_$e"/>
+        <xs:enumeration value="NSMasc_es_e"/>
+        <xs:enumeration value="NSNeut_es_e"/>
+        <xs:enumeration value="NGeo-nisch-Adj+"/>
+        <xs:enumeration value="NGeo-ner-NMasc_s_0"/>
+        <xs:enumeration value="NGeo-ner-Adj0-Up"/>
+        <xs:enumeration value="NGeo-er-Adj0-Up"/>
+        <xs:enumeration value="NGeo-land-Name-Neut_s"/>
+        <xs:enumeration value="NGeo-istan-Name-Neut_s"/>
+        <xs:enumeration value="NGeo-isch-Adj+"/>
+        <xs:enumeration value="NGeo-ier-NMasc_s_0"/>
+        <xs:enumeration value="NGeo-ien-Name-Neut_s"/>
+        <xs:enumeration value="NGeo-ianisch-Adj+"/>
+        <xs:enumeration value="NGeo-ianer-NMasc_s_0"/>
+        <xs:enumeration value="NGeo-esisch-Adj+"/>
+        <xs:enumeration value="NGeo-ese-NMasc_n_n"/>
+        <xs:enumeration value="NGeo-erisch-Adj+"/>
+        <xs:enumeration value="NGeo-er-NMasc_s_0"/>
+        <xs:enumeration value="NGeo-0-Adj0-Up"/>
+        <xs:enumeration value="NGeo-0-NMasc_s_0"/>
+        <xs:enumeration value="NGeo-0-Name-Fem_0"/>
+        <xs:enumeration value="NGeo-0-Name-Masc_s"/>
+        <xs:enumeration value="NGeo-0-Name-Neut_s"/>
+        <xs:enumeration value="NGeo-a-Name-Fem_s"/>
+        <xs:enumeration value="NGeo-a-Name-Neut_s"/>
+        <xs:enumeration value="NGeo-aner-Adj0-Up"/>
+        <xs:enumeration value="NGeo-aner-NMasc_s_0"/>
+        <xs:enumeration value="NGeo-anisch-Adj+"/>
+        <xs:enumeration value="NGeo-e-NMasc_n_n"/>
+        <xs:enumeration value="NGeo-e-Name-Fem_0"/>
+        <xs:enumeration value="NGeo-e-Name-Neut_s"/>
+        <xs:enumeration value="NGeo-ei-Name-Fem_0"/>
+        <xs:enumeration value="NGeo-en-Name-Neut_s"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:simpleType name="InfClassContent">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="Adj"/>
+      <xs:enumeration value="Adj$"/>
+      <xs:enumeration value="Adj+"/>
+      <xs:enumeration value="Adj0"/>
+      <xs:enumeration value="AdjComp"/>
+      <xs:enumeration value="Adj$e"/>
+      <xs:enumeration value="Adj+e"/>
+      <xs:enumeration value="Adj+(e)"/>
+      <xs:enumeration value="Adj-el/er"/>
+      <xs:enumeration value="Adj+Lang"/>
+      <xs:enumeration value="AdjoPos"/>
+      <xs:enumeration value="AdjPos"/>
+      <xs:enumeration value="AdjPos "/>
+      <xs:enumeration value="AdjPosAttr"/>
+      <xs:enumeration value="AdjPosPred"/>
+      <xs:enumeration value="AdjSup"/>
+      <xs:enumeration value="Adv"/>
+      <xs:enumeration value="FamName_0"/>
+      <xs:enumeration value="FamName_s"/>
+      <xs:enumeration value="Intj"/>
+      <xs:enumeration value="Name-Fem_0"/>
+      <xs:enumeration value="Name-Fem_s"/>
+      <xs:enumeration value="Name-Invar"/>
+      <xs:enumeration value="Name-Masc_0"/>
+      <xs:enumeration value="Name-Masc_s"/>
+      <xs:enumeration value="Name-Neut_0"/>
+      <xs:enumeration value="Name-Neut_s"/>
+      <xs:enumeration value="Name-Pl_0"/>
+      <xs:enumeration value="Name-Pl_x"/>
+      <xs:enumeration value="Neut_s_$er"/>
+      <xs:enumeration value="NFem_0_$"/>
+      <xs:enumeration value="NFem_0_e"/>
+      <xs:enumeration value="NFem_0_$e"/>
+      <xs:enumeration value="NFem_0_en"/>
+      <xs:enumeration value="NFem_0_n"/>
+      <xs:enumeration value="NFem_0_s"/>
+      <xs:enumeration value="NFem_0_x"/>
+      <xs:enumeration value="NFem-a/en"/>
+      <xs:enumeration value="NFem-in"/>
+      <xs:enumeration value="NFem-is/en"/>
+      <xs:enumeration value="NFem-is/en"/>
+      <xs:enumeration value="NFem-is/iden"/>
+      <xs:enumeration value="NFem/Pl"/>
+      <xs:enumeration value="NFem/Sg"/>
+      <xs:enumeration value="NFem-s/sse"/>
+      <xs:enumeration value="NFem-s/$sse"/>
+      <xs:enumeration value="NMasc_0_x"/>
+      <xs:enumeration value="NMasc_en_en"/>
+      <xs:enumeration value="NMasc_es_e"/>
+      <xs:enumeration value="NMasc_es_$e"/>
+      <xs:enumeration value="NMasc-es_e"/>
+      <xs:enumeration value="NMasc_es_en"/>
+      <xs:enumeration value="NMasc_es_er"/>
+      <xs:enumeration value="NMasc_es_$er"/>
+      <xs:enumeration value="NMasc_n_n"/>
+      <xs:enumeration value="NMasc-ns"/>
+      <xs:enumeration value="NMasc/Pl"/>
+      <xs:enumeration value="NMasc_s"/>
+      <xs:enumeration value="NMasc_s_$"/>
+      <xs:enumeration value="NMasc_s_0"/>
+      <xs:enumeration value="NMasc_s_e"/>
+      <xs:enumeration value="NMasc_s_$e"/>
+      <xs:enumeration value="NMasc_s_en"/>
+      <xs:enumeration value="NMasc/Sg_0"/>
+      <xs:enumeration value="NMasc/Sg_es"/>
+      <xs:enumeration value="NMasc/Sg_s"/>
+      <xs:enumeration value="NMasc_s_n"/>
+      <xs:enumeration value="NMasc_s_s"/>
+      <xs:enumeration value="NMasc-s/Sg"/>
+      <xs:enumeration value="NMasc-s/sse"/>
+      <xs:enumeration value="NMasc-s/$sse"/>
+      <xs:enumeration value="NMasc_s_x"/>
+      <xs:enumeration value="NMasc_s_$x"/>
+      <xs:enumeration value="NMasc-um/en"/>
+      <xs:enumeration value="NMasc-us/en"/>
+      <xs:enumeration value="NMasc-us/i"/>
+      <xs:enumeration value="NNeut_0_e"/>
+      <xs:enumeration value="NNeut-0/ien"/>
+      <xs:enumeration value="NNeut_0_x"/>
+      <xs:enumeration value="NNeut-a/ata"/>
+      <xs:enumeration value="NNeut-a/en"/>
+      <xs:enumeration value="NNeut_es_e"/>
+      <xs:enumeration value="NNeut_es_$e"/>
+      <xs:enumeration value="NNeut_es_en"/>
+      <xs:enumeration value="NNeut_es_er"/>
+      <xs:enumeration value="NNeut_es_$er"/>
+      <xs:enumeration value="NNeut-Herz"/>
+      <xs:enumeration value="NNeut_n_n"/>
+      <xs:enumeration value="NNeut-on/a"/>
+      <xs:enumeration value="NNeut/Pl"/>
+      <xs:enumeration value="NNeut_s_$"/>
+      <xs:enumeration value="NNeut_s_0"/>
+      <xs:enumeration value="NNeut_s_e"/>
+      <xs:enumeration value="NNeut_s_en"/>
+      <xs:enumeration value="NNeut/Sg_0"/>
+      <xs:enumeration value="NNeut/Sg_en"/>
+      <xs:enumeration value="NNeut/Sg_es"/>
+      <xs:enumeration value="NNeut/Sg_n"/>
+      <xs:enumeration value="NNeut/Sg_s"/>
+      <xs:enumeration value="NNeut_s_n"/>
+      <xs:enumeration value="NNeut_s_s"/>
+      <xs:enumeration value="NNeut-s/sse"/>
+      <xs:enumeration value="NNeut-s/$sser"/>
+      <xs:enumeration value="NNeut_s_x"/>
+      <xs:enumeration value="NNeut-um/a"/>
+      <xs:enumeration value="NNeut-um/en"/>
+      <xs:enumeration value="N?/Pl_x"/>
+      <xs:enumeration value="NumAdjFlex"/>
+      <xs:enumeration value="Prefix_Stems"/>
+      <xs:enumeration value="Pref_stems"/>
+      <xs:enumeration value="Pref_Stems"/>
+      <xs:enumeration value="VAImpPl"/>
+      <xs:enumeration value="VAImpSg"/>
+      <xs:enumeration value="VAPres1/3PlInd"/>
+      <xs:enumeration value="VAPres1SgInd"/>
+      <xs:enumeration value="VAPres2PlInd"/>
+      <xs:enumeration value="VAPres2SgInd"/>
+      <xs:enumeration value="VAPres3SgInd"/>
+      <xs:enumeration value="VInf+PPres"/>
+      <xs:enumeration value="VMPast"/>
+      <xs:enumeration value="VMPastKonj"/>
+      <xs:enumeration value="VMPresPl"/>
+      <xs:enumeration value="VMPresSg"/>
+      <xs:enumeration value="VPastIndReg"/>
+      <xs:enumeration value="VPastKonjStr"/>
+      <xs:enumeration value="VPPast"/>
+      <xs:enumeration value="VPresKonj"/>
+      <xs:enumeration value="VPresKonjStr"/>
+      <xs:enumeration value="VVPastIndReg"/>
+      <xs:enumeration value="VVPastIndStr"/>
+      <xs:enumeration value="VVPastKonj"/>
+      <xs:enumeration value="VVPastKonjReg"/>
+      <xs:enumeration value="VVPastKonjStr"/>
+      <xs:enumeration value="VVPastReg"/>
+      <xs:enumeration value="VVPastStr"/>
+      <xs:enumeration value="VVPP-en"/>
+      <xs:enumeration value="VVPP-t"/>
+      <xs:enumeration value="VVPres"/>
+      <xs:enumeration value="VVPres1"/>
+      <xs:enumeration value="VVPres1+Imp"/>
+      <xs:enumeration value="VVPres2"/>
+      <xs:enumeration value="VVPres2+Imp"/>
+      <xs:enumeration value="VVPres2+Imp0"/>
+      <xs:enumeration value="VVPres2t"/>
+      <xs:enumeration value="VVPresPl"/>
+      <xs:enumeration value="VVPresSg"/>
+      <xs:enumeration value="VVReg"/>
+      <xs:enumeration value="VVReg-el"/>
+      <xs:enumeration value="VVReg-el/er"/>
+      <xs:enumeration value="NNeut-Dimin"/>
+      <xs:enumeration value="AdjNNSuff"/>
+      <xs:enumeration value="NFem-Deriv"/>
+      <xs:enumeration value="Adj0-Up"/>
+      <xs:enumeration value="Ptkl-Zu"/>
+      <xs:enumeration value="Ptkl-Neg"/>
+      <xs:enumeration value="Ptkl-Ant"/>
+      <xs:enumeration value="Ptkl-Adj"/>
+      <xs:enumeration value="ProAdv"/>
+      <xs:enumeration value="WAdv"/>
+      <xs:enumeration value="Konj-Inf"/>
+      <xs:enumeration value="Konj-Vgl"/>
+      <xs:enumeration value="Konj-Sub"/>
+      <xs:enumeration value="Konj-Kon"/>
+      <xs:enumeration value="Prep-Dat"/>
+      <xs:enumeration value="Prep-Akk"/>
+      <xs:enumeration value="Prep-Gen"/>
+      <xs:enumeration value="Postp-Gen"/>
+      <xs:enumeration value="Postp-Akk"/>
+      <xs:enumeration value="Postp-Dat"/>
+      <xs:enumeration value="Abk_ADV"/>
+      <xs:enumeration value="Pref/ProAdv"/>
+      <xs:enumeration value="VAPresKonjSg"/>
+      <xs:enumeration value="Pref/Adv"/>
+      <xs:enumeration value="Abk_NE"/>
+      <xs:enumeration value="Abk_NN"/>
+      <xs:enumeration value="Abk_PREP"/>
+      <xs:enumeration value="Adj~+e"/>
+      <xs:enumeration value="Prep/Art-s"/>
+      <xs:enumeration value="Prep/Art-m"/>
+      <xs:enumeration value="Prep/Art-n"/>
+      <xs:enumeration value="Prep/Art-r"/>
+      <xs:enumeration value="Pref/Sep"/>
+      <xs:enumeration value="Abk_ADJ"/>
+      <xs:enumeration value="Abk_ART"/>
+      <xs:enumeration value="Abk_DPRO"/>
+      <xs:enumeration value="Abk_VPPAST"/>
+      <xs:enumeration value="Abk_VPPRES"/>
+      <xs:enumeration value="Pref/Adj"/>
+      <xs:enumeration value="Pref/V"/>
+      <xs:enumeration value="Pref/N"/>
+      <xs:enumeration value="Abk_NE-Low"/>
+      <xs:enumeration value="Abk_NN-Low"/>
+      <xs:enumeration value="Abk_KONJ"/>
+      <xs:enumeration value="Circp"/>
+      <xs:enumeration value="VPastIndStr"/>
+      <xs:enumeration value="VAPastKonj2"/>
+      <xs:enumeration value="VPastKonjStr"/>
+      <xs:enumeration value="VAPres1/3PlInd"/>
+      <xs:enumeration value="VAPresKonjSg"/>
+      <xs:enumeration value="VAPresKonjPl"/>
+      <xs:enumeration value="VPresPlInd"/>
+      <xs:enumeration value="VInf"/>
+      <xs:enumeration value="VPPres"/>
+      <xs:enumeration value="NFem-s/ssen"/>
+      <xs:enumeration value="NFem-s/sse"/>
+      <xs:enumeration value="VPastIndStr-hatte"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

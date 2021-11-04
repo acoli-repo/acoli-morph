@@ -1,0 +1,74 @@
+This is the IDS lexicon for SMOR as used for the TextGrid lemmatizer and 
+published in (Zielinski and Simon 2008). It is based on work done by the 
+IMS Stuttgart (SFST and SMOR, see Schmid el.al. 2004) and the IDS Mannheim 
+(DeReWo - Lemmalist).
+
+Dependencies:
+SFST (includes SMOR) >= 1.1 (stable package, 
+http://www.ims.uni-stuttgart.de/projekte/gramotron/SOFTWARE/SFST.html)
+Python >= 2.4 (http://www.python.org)
+libxml2 and xsltproc (http://xmlsoft.org/index.html)
+
+Validating the lexicon file:
+xmllint lexicon.xml --relaxng smor.rng
+
+Creating a new SMOR lexicon file from lexicon.xml:
+
+	make lexicon
+
+Compiling a new SMOR transducer based on the IDS lexicon:
+1. Install SFST on your system (see SFST documentation)
+2. change to your SMOR directory
+3. rename the supplied lexicon file (e.g. 'mv lexicon lexicon.original')
+4. copy Morphisto's patch file for smor, smor.patch, to your SMOR directory
+   and apply it from within the SMOR directory with all the *.fst files:
+
+   patch -p1 < smor.patch   
+
+5. copy your own lexicon file to the SMOR directory
+
+   NOTE: smor.fst required the lexicon file to be called "lexicon". If
+   you chose a different file name, you have to change the include
+   statement in 'smor.fst' accordingly.
+
+6. compile a new smor automaton:
+   fst-compiler smor.fst smor-ids.a
+
+   NOTE: although the xml source is UTF-8 encoded, the make file produces
+   an iso-8859-1 encoded lexicon file that must be processed by the SFST iso
+   compiler 'fst-compiler'.
+
+7. If you care for performance and statistics, you might be interested in the compact
+   transducer format:
+   fst-compact smor-ids.a smor-ids.ca
+
+8. Using Morphisto:
+   a. interactive analysis and generation: fst-mor smor-ids.a
+   b. batch analysis: fst-infl smor-ids.a <ISO-encoded test corpus>
+   c. performant batch analysis: fst-infl2 smor-ids.ca <ISO-encoded test corpus>
+
+   NOTE: Do not forget to switch into an ISO-encoded working environment when using
+   the SFST tools with ISO-encoded automatons (e.g. export LANG=de_DE.ISO-8859-1). 
+
+9. How to get some statistics for time of analysis, lexicon size, frequencies, etc:
+	
+	sh statistics.sh <automaton in compact format> <ISO-encoded test corpus>
+
+   NOTE: This is only a rudimentary shell script. If you need more sophisticated
+   statistics, you will have dive into the C++ based source code of SFST. 
+
+10.Technically speaking, we only provide you with a lexicon for SMOR. If you want
+   or need to know more about SMOR and the SFST toolkit, confer with the supplied
+   SFST documentation and the references.
+
+References:
+
+1. Schmid, Helmut, Arne Fitschen and Ulrich Heid (2004): SMOR: A German Computational Morphology Covering Derivation, Composition, and 
+Inflection, Proceedings of the IVth International Conference on Language Resources and Evaluation (LREC 2004), p. 1263-1266, Lisbon, Portugal.
+
+2. Korpusbasierte Wortgrundformenliste DeReWo, v-30000g-2007-12-31-0.1, mit Benutzerdokumentation,
+http://www.ids-mannheim.de/kl/derewo/,
+© Institut für Deutsche Sprache, Programmbereich Korpuslinguistik, Mannheim, Deutschland, 2007.
+
+3. Zielinski, Andrea and Christian Simon (Forthcoming): Morphisto: An Open-Source Morphological Analyzer for German,
+Proceedings of the FSMNLP 2008, Ispra, Lago Maggiore, Italy.

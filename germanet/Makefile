@@ -2,7 +2,7 @@ all: deu
 
 deu:	tarql src
 	mkdir deu
-	./tarql --dedup 5000 -t --base http://purl.org/acoli/morph/de/GermaNet16.0 --write-base tsv2ontolex.sparql src/split_compounds_from_GermaNet16.0.txt | gzip -f > deu/deu.ttl.gz
+	./tarql --dedup 5000 -t --base http://purl.org/acoli/morph/de/GermaNet16.0/ --write-base tsv2ontolex.sparql src/split_compounds_from_GermaNet16.0.txt | gzip -f > deu/deu.ttl.gz
 
 src:
 	mkdir src

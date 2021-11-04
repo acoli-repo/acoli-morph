@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="smor">
+      <ref name="smorContent"/>
+    </element>
+  </start>
+  <define name="smorContent">
+    <zeroOrMore>
+      <choice>
+        <ref name="BaseStem"/>
+        <ref name="SuffStem"/>
+        <element name="DerivStem">
+          <ref name="DKContent"/>
+        </element>
+        <element name="KomposStem">
+          <ref name="DKContent"/>
+        </element>
+        <ref name="PrefStem"/>
+      </choice>
+    </zeroOrMore>
+  </define>
+  <define name="BaseStem">
+    <element name="BaseStem">
+      <zeroOrMore>
+        <ref name="MorphMarkerContent"/>
+      </zeroOrMore>
+      <element name="Lemma">
+        <text/>
+      </element>
+      <element name="Stem">
+        <text/>
+      </element>
+      <ref name="PosContent"/>
+      <ref name="OriginContent"/>
+      <element name="InfClass">
+        <ref name="InfClassContent"/>
+      </element>
+      <ref name="LexicographicContent"/>
+    </element>
+  </define>
+  <define name="PrefStem">
+    <element name="PrefStem">
+      <zeroOrMore>
+        <ref name="MorphMarkerContent"/>
+      </zeroOrMore>
+      <element name="Upper">
+        <text/>
+      </element>
+      <element name="Lower">
+        <text/>
+      </element>
+      <oneOrMore>
+        <ref name="PosContent"/>
+      </oneOrMore>
+      <oneOrMore>
+        <ref name="OriginContent"/>
+      </oneOrMore>
+      <ref name="LexicographicContent"/>
+    </element>
+  </define>
+  <define name="DKContent">
+    <zeroOrMore>
+      <ref name="MorphMarkerContent"/>
+    </zeroOrMore>
+    <element name="Upper">
+      <text/>
+    </element>
+    <element name="Lower">
+      <text/>
+    </element>
+    <ref name="PosContent"/>
+    <ref name="OriginContent"/>
+    <ref name="LexicographicContent"/>
+  </define>
+  <define name="SuffStem">
+    <element name="SuffStem">
+      <zeroOrMore>
+        <ref name="MorphMarkerContent"/>
+      </zeroOrMore>
+      <ref name="PrevStem"/>
+      <element name="Upper">
+        <text/>
+      </element>
+      <element name="Lower">
+        <text/>
+      </element>
+      <ref name="NewStem"/>
+      <ref name="LexicographicContent"/>
+    </element>
+  </define>
+  <define name="PrevStem">
+    <element name="PrevStem">
+      <attribute name="stem_type">
+        <choice>
+          <value>deriv</value>
+          <value>kompos</value>
+        </choice>
+      </attribute>
+      <oneOrMore>
+        <element name="Complexity">
+          <choice>
+            <value>prefderiv</value>
+            <value>suffderiv</value>
+            <value>simplex</value>
+          </choice>
+        </element>
+      </oneOrMore>
+      <oneOrMore>
+        <ref name="OriginContent"/>
+      </oneOrMore>
+      <oneOrMore>
+        <ref name="PosContent"/>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="NewStem">
+    <element name="NewStem">
+      <attribute name="stem_type">
+        <choice>
+          <value>base</value>
+          <value>deriv</value>
+          <value>kompos</value>
+        </choice>
+      </attribute>
+      <ref name="PosContent"/>
+      <ref name="OriginContent"/>
+      <optional>
+        <element name="InfClass">
+          <ref name="InfClassContent"/>
+        </element>
+      </optional>
+    </element>
+  </define>
+  <define name="LexicographicContent">
+    <optional>
+      <element name="Frequency">
+        <text/>
+      </element>
+    </optional>
+    <optional>
+      <element name="Editor">
+        <text/>
+      </element>
+    </optional>
+    <optional>
+      <element name="Source">
+        <text/>
+      </element>
+    </optional>
+  </define>
+  <define name="MorphMarkerContent">
+    <element name="MorphMarker">
+      <choice>
+	<value>no-ge</value>
+        <value>ge</value>
+        <value>NoDef</value>
+        <value>NoHy</value>
+        <value>Initial</value>
+        <value>QUANT</value>
+      </choice>
+    </element>
+  </define>
+  <define name="PosContent">
+    <element name="Pos">
+      <choice>
+        <value>NN</value>
+        <value>NE</value>
+        <value>V</value>
+        <value>ADJ</value>
+        <value>ADV</value>
+        <value>ABK</value>
+        <value>OTHER</value>
+        <value>ORD</value>
+        <value>CARD</value>
+        <value>DIGCARD</value>
+      </choice>
+    </element>
+  </define>
+  <define name="OriginContent">
+    <element name="Origin">
+      <choice>
+        <value>frei</value>
+        <value>fremd</value>
+        <value>klassisch</value>
+        <value>nativ</value>
+        <value>kurz</value>
+        <value>lang</value>
+        <value>gebunden</value>
+        <value>NSFem_0_en</value>
+        <value>NSFem_0_n</value>
+        <value>NSMasc-s/$sse</value>
+        <value>NSMasc_es_$e</value>
+        <value>NSMasc_es_e</value>
+        <value>NSNeut_es_e</value>
+        <value>NGeo-nisch-Adj+</value>
+        <value>NGeo-ner-NMasc_s_0</value>
+        <value>NGeo-ner-Adj0-Up</value>
+        <value>NGeo-er-Adj0-Up</value>
+        <value>NGeo-land-Name-Neut_s</value>
+        <value>NGeo-istan-Name-Neut_s</value>
+        <value>NGeo-isch-Adj+</value>
+        <value>NGeo-ier-NMasc_s_0</value>
+        <value>NGeo-ien-Name-Neut_s</value>
+        <value>NGeo-ianisch-Adj+</value>
+        <value>NGeo-ianer-NMasc_s_0</value>
+        <value>NGeo-esisch-Adj+</value>
+        <value>NGeo-ese-NMasc_n_n</value>
+        <value>NGeo-erisch-Adj+</value>
+        <value>NGeo-er-NMasc_s_0</value>
+        <value>NGeo-0-Adj0-Up</value>
+        <value>NGeo-0-NMasc_s_0</value>
+        <value>NGeo-0-Name-Fem_0</value>
+        <value>NGeo-0-Name-Masc_s</value>
+        <value>NGeo-0-Name-Neut_s</value>
+        <value>NGeo-a-Name-Fem_s</value>
+        <value>NGeo-a-Name-Neut_s</value>
+        <value>NGeo-aner-Adj0-Up</value>
+        <value>NGeo-aner-NMasc_s_0</value>
+        <value>NGeo-anisch-Adj+</value>
+        <value>NGeo-e-NMasc_n_n</value>
+        <value>NGeo-e-Name-Fem_0</value>
+        <value>NGeo-e-Name-Neut_s</value>
+        <value>NGeo-ei-Name-Fem_0</value>
+        <value>NGeo-en-Name-Neut_s</value>
+      </choice>
+    </element>
+  </define>
+  <define name="InfClassContent">
+    <choice>
+      <value>Adj</value>
+      <value>Adj$</value>
+      <value>Adj+</value>
+      <value>Adj0</value>
+      <value>AdjComp</value>
+      <value>Adj$e</value>
+      <value>Adj+e</value>
+      <value>Adj+(e)</value>
+      <value>Adj-el/er</value>
+      <value>Adj+Lang</value>
+      <value>AdjoPos</value>
+      <value>AdjPos</value>
+      <value>AdjPos </value>
+      <value>AdjPosAttr</value>
+      <value>AdjPosPred</value>
+      <value>AdjSup</value>
+      <value>Adv</value>
+      <value>FamName_0</value>
+      <value>FamName_s</value>
+      <value>Intj</value>
+      <value>Name-Fem_0</value>
+      <value>Name-Fem_s</value>
+      <value>Name-Invar</value>
+      <value>Name-Masc_0</value>
+      <value>Name-Masc_s</value>
+      <value>Name-Neut_0</value>
+      <value>Name-Neut_s</value>
+      <value>Name-Pl_0</value>
+      <value>Name-Pl_x</value>
+      <value>Neut_s_$er</value>
+      <value>NFem_0_$</value>
+      <value>NFem_0_e</value>
+      <value>NFem_0_$e</value>
+      <value>NFem_0_en</value>
+      <value>NFem_0_n</value>
+      <value>NFem_0_s</value>
+      <value>NFem_0_x</value>
+      <value>NFem-a/en</value>
+      <value>NFem-in</value>
+      <value>NFem-is/en</value>
+      <value>NFem-is/en</value>
+      <value>NFem-is/iden</value>
+      <value>NFem/Pl</value>
+      <value>NFem/Sg</value>
+      <value>NFem-s/sse</value>
+      <value>NFem-s/$sse</value>
+      <value>NMasc_0_x</value>
+      <value>NMasc_en_en</value>
+      <value>NMasc_es_e</value>
+      <value>NMasc_es_$e</value>
+      <value>NMasc-es_e</value>
+      <value>NMasc_es_en</value>
+      <value>NMasc_es_er</value>
+      <value>NMasc_es_$er</value>
+      <value>NMasc_n_n</value>
+      <value>NMasc-ns</value>
+      <value>NMasc/Pl</value>
+      <value>NMasc_s</value>
+      <value>NMasc_s_$</value>
+      <value>NMasc_s_0</value>
+      <value>NMasc_s_e</value>
+      <value>NMasc_s_$e</value>
+      <value>NMasc_s_en</value>
+      <value>NMasc/Sg_0</value>
+      <value>NMasc/Sg_es</value>
+      <value>NMasc/Sg_s</value>
+      <value>NMasc_s_n</value>
+      <value>NMasc_s_s</value>
+      <value>NMasc-s/Sg</value>
+      <value>NMasc-s/sse</value>
+      <value>NMasc-s/$sse</value>
+      <value>NMasc_s_x</value>
+      <value>NMasc_s_$x</value>
+      <value>NMasc-um/en</value>
+      <value>NMasc-us/en</value>
+      <value>NMasc-us/i</value>
+      <value>NNeut_0_e</value>
+      <value>NNeut-0/ien</value>
+      <value>NNeut_0_x</value>
+      <value>NNeut-a/ata</value>
+      <value>NNeut-a/en</value>
+      <value>NNeut_es_e</value>
+      <value>NNeut_es_$e</value>
+      <value>NNeut_es_en</value>
+      <value>NNeut_es_er</value>
+      <value>NNeut_es_$er</value>
+      <value>NNeut-Herz</value>
+      <value>NNeut_n_n</value>
+      <value>NNeut-on/a</value>
+      <value>NNeut/Pl</value>
+      <value>NNeut_s_$</value>
+      <value>NNeut_s_0</value>
+      <value>NNeut_s_e</value>
+      <value>NNeut_s_en</value>
+      <value>NNeut/Sg_0</value>
+      <value>NNeut/Sg_en</value>
+      <value>NNeut/Sg_es</value>
+      <value>NNeut/Sg_n</value>
+      <value>NNeut/Sg_s</value>
+      <value>NNeut_s_n</value>
+      <value>NNeut_s_s</value>
+      <value>NNeut-s/sse</value>
+      <value>NNeut-s/$sser</value>
+      <value>NNeut_s_x</value>
+      <value>NNeut-um/a</value>
+      <value>NNeut-um/en</value>
+      <value>N?/Pl_x</value>
+      <value>NumAdjFlex</value>
+      <value>Prefix_Stems</value>
+      <value>Pref_stems</value>
+      <value>Pref_Stems</value>
+      <value>VAImpPl</value>
+      <value>VAImpSg</value>
+      <value>VAPres1/3PlInd</value>
+      <value>VAPres1SgInd</value>
+      <value>VAPres2PlInd</value>
+      <value>VAPres2SgInd</value>
+      <value>VAPres3SgInd</value>
+      <value>VInf+PPres</value>
+      <value>VMPast</value>
+      <value>VMPastKonj</value>
+      <value>VMPresPl</value>
+      <value>VMPresSg</value>
+      <value>VPastIndReg</value>
+      <value>VPastKonjStr</value>
+      <value>VPPast</value>
+      <value>VPresKonj</value>
+      <value>VPresKonjStr</value>
+      <value>VVPastIndReg</value>
+      <value>VVPastIndStr</value>
+      <value>VVPastKonj</value>
+      <value>VVPastKonjReg</value>
+      <value>VVPastKonjStr</value>
+      <value>VVPastReg</value>
+      <value>VVPastStr</value>
+      <value>VVPP-en</value>
+      <value>VVPP-t</value>
+      <value>VVPres</value>
+      <value>VVPres1</value>
+      <value>VVPres1+Imp</value>
+      <value>VVPres2</value>
+      <value>VVPres2+Imp</value>
+      <value>VVPres2+Imp0</value>
+      <value>VVPres2t</value>
+      <value>VVPresPl</value>
+      <value>VVPresSg</value>
+      <value>VVReg</value>
+      <value>VVReg-el</value>
+      <value>VVReg-el/er</value>
+      <value>NNeut-Dimin</value>
+      <value>AdjNNSuff</value>
+      <value>NFem-Deriv</value>
+      <value>Adj0-Up</value>
+      <value>Ptkl-Zu</value>
+      <value>Ptkl-Neg</value>
+      <value>Ptkl-Ant</value>
+      <value>Ptkl-Adj</value>
+      <value>Ptkl-Vz</value>
+      <value>ProAdv</value>
+      <value>WAdv</value>
+      <value>Konj-Inf</value>
+      <value>Konj-Vgl</value>
+      <value>Konj-Sub</value>
+      <value>Konj-Kon</value>
+      <value>Prep-Dat</value>
+      <value>Prep-Akk</value>
+      <value>Prep-Gen</value>
+      <value>Prep-Nom</value>
+      <value>Postp-Gen</value>
+      <value>Postp-Akk</value>
+      <value>Postp-Dat</value>
+      <value>Abk_ADV</value>
+      <value>Pref/ProAdv</value>
+      <value>VAPresKonjSg</value>
+      <value>Pref/Adv</value>
+      <value>Abk_NE</value>
+      <value>Abk_NN</value>
+      <value>Abk_PREP</value>
+      <value>Adj~+e</value>
+      <value>Prep/Art-s</value>
+      <value>Prep/Art-m</value>
+      <value>Prep/Art-n</value>
+      <value>Prep/Art-r</value>
+      <value>Pref/Sep</value>
+      <value>Abk_ADJ</value>
+      <value>Abk_ART</value>
+      <value>Abk_DPRO</value>
+      <value>Abk_VPPAST</value>
+      <value>Abk_VPPRES</value>
+      <value>Pref/Adj</value>
+      <value>Pref/V</value>
+      <value>Pref/N</value>
+      <value>Abk_NE-Low</value>
+      <value>Abk_NN-Low</value>
+      <value>Abk_KONJ</value>
+      <value>Circp</value>
+      <value>VPastIndStr</value>
+      <value>VAPastKonj2</value>
+      <value>VPastKonjStr</value>
+      <value>VAPres1/3PlInd</value>
+      <value>VAPresKonjSg</value>
+      <value>VAPresKonjPl</value>
+      <value>VPresPlInd</value>
+      <value>VInf</value>
+      <value>VPPres</value>
+      <value>NFem-s/ssen</value>
+      <value>NFem-s/sse</value>
+      <value>VPastIndStr-hatte</value>
+    </choice>
+  </define>
+</grammar>
