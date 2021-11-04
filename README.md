@@ -6,10 +6,13 @@ idea:
 - derivational morphology of an OntoLex entry (morphological segmentation plus linguistic analysis)
 - morphological rules
 
-phenomena covered:
+resources/phenomena covered:
 - [`uder/`](uder): derivation, sample conversion for German, includes bootstrapping of `morph:Morph`s and `morph:DerivationalRule`s
 - [`unimorph/`](unimorph): inflection, sample conversion for German, includes bootstrapping of `morph:Morph`s and `morph:InflectionalRule`s
 - [`germanet/`](germanet): compounding, German only, includes bootstrapping of `morph:Morph`s and `morph:CompoundingRule`s
+- [`links/`](links): `owl:sameAs` links across all aforementioned datasets
+
+in preparation:
 - [`morphisto/`](morphisto): German SFST morphology, focus is the preservation of rules in OntoLex
 
 OntoLex-Morph is still under development, so this is explorative work, mostly. The vocabulary may change.

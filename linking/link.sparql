@@ -1,0 +1,50 @@
+ PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+ PREFIX morph: <http://www.w3.org/ns/lemon/morph#>
+ PREFIX synsem: <http://www.w3.org/ns/lemon/synsem#>
+ PREFIX decomp: <http://www.w3.org/ns/lemon/decomp#>
+ PREFIX vartrans: <http://www.w3.org/ns/lemon/vartrans#>
+ PREFIX lime: <http://www.w3.org/ns/lemon/lime#>
+ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ PREFIX owl: <http://www.w3.org/2002/07/owl#>
+ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+ PREFIX skos: <http://www.w3.org/2004/02/skos#>
+ PREFIX dbr: <http://dbpedia.org/resource/>
+ PREFIX dbo: <http://dbpedia.org/ontology/>
+ PREFIX void: <http://rdfs.org/ns/void#>
+ PREFIX lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#>
+ PREFIX semiotics: <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#>
+ PREFIX oils: <http://lemon-model.net/oils#>
+ PREFIX dct: <http://purl.org/dc/terms/>
+ PREFIX provo: <http://www.w3.org/ns/prov#>
+
+# brute force Linking
+# link everything with the same (lexicalForm|canonicalForm)/writtenRep that does not follow the same URI schema
+
+CONSTRUCT {
+  ?a owl:sameAs ?b
+} WHERE {
+  ?rep ^ontolex:writtenRep ?aform, ?bform.
+  FILTER(?aform != ?bform)
+  FILTER(isblank(?aform) || isblank(?bform) || strbefore(str(?aform),"#")!= strbefore(str(?bform),'#'))
+  ?aform ^(ontolex:lexicalForm|ontolex:canonicalForm) ?a.
+  ?bform ^(ontolex:lexicalForm|ontolex:canonicalForm) ?b.
+  FILTER(?a != ?b)
+  FILTER(strbefore(str(?a),"#")!= strbefore(str(?b),'#'))
+}
+
+
+#INSERT {
+#  ?a owl:sameAs ?b
+#} WHERE {
+#  ?a (ontolex:lexicalForm|ontolex:canonicalForm)/ontolex:writtenRep ?rep.
+#  ?b (ontolex:lexicalForm|ontolex:canonicalForm)/ontolex:writtenRep ?rep.
+#  FILTER(?a != ?b)
+#  FILTER(strbefore(str(?a),"#")!= strbefore(str(?b),'#'))
+#};
+#
+#DELETE {
+#  ?a ?b ?c
+#} WHERE {
+#  ?a ?b ?c
+#  FILTER(?b != owl:sameAs)
+#};
