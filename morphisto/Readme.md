@@ -28,6 +28,8 @@ Note that the current OntoLex encoding of inflection rules is deficient because 
 By default, we would assume that we the path until no more `morph:next` properties are found.
 But this leaves us without validation possibility and violates the Open World Assumption.
 
+Finally, OntoLex-Morph does not provide filters. In FST grammars, these can be used in combination with an overgenerating grammar to produce valid output only. For OntoLex-Morph, we would have to postulate implicit filters, in using a corpus to limit generated output to attested forms.
+
 Build with
 
     $> make

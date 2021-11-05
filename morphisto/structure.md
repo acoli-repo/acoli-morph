@@ -30,7 +30,7 @@ This seems to be for handling stem alternations in derivation.
 
 1. ENTRY_TYPE: `<Deriv_Stems>`
 2. FORM: e.g., "Chaos:t" (to generate both "Chaos" and "Chaot")
-3. BASE_POS: `<ADJ>`, `<NE>`, `<NN>`, `<V>`
+3. POS: `<ADJ>`, `<NE>`, `<NN>`, `<V>`
 4. RULE_TYPE: `<deriv>`
 5. META: `<frei>`, `<fremd>`, `<gebunden>`, `<kurz>`, `<lang>`, `<nativ>`, `<NSFem_0_en>`, `<NSFem_0_n>`, `<NSMasc_es_$e>`, `<NSMasc_es_e>`, `<NSMasc-s/$sse>`, `<NSNeut_es_e>`
 
@@ -55,7 +55,7 @@ Note: `<PREF>` marks where BASE_POS entries begin, but these may occupy more tha
 
 The PARADIGM column represents the start state in the SFST from which possible inflections can be generated. So for `<Name-Neut_s>`, this is generated from the `$FLEXION$` state that replaces the empty tag `<>` by `<Name-Neut_s>` and hands over to the state `$Name-Neut_s$`. But these are just naming conventions, and for linking lexicon and inflection, we go directly from `<Name-Neut_s>` to the URI generated from `$Name-Neut_s$`, i.e., `:type%23%24Name-Neut_s%24`. The problem is that the initial string insertion does not take place.
 
-The META criterion includes information about either origin `<nativ>`, `<fremd>` or morphological patterns (`frei`, `gebunden`). Not clear how this is internally used.
+The META criterion includes information about either origin `<nativ>`, `<fremd>` or morphological patterns (`frei`, `gebunden`). Not clear how this is internally used, but it can overlap with paradigm information (not here).
 
 ### Suff_Stems
 
