@@ -6,7 +6,12 @@ args=argparse.ArgumentParser(description="given an (S)FST lexicon, create an Ont
 args.add_argument("lex",type=str, help="lexicon.lex")
 args.add_argument("-base", "--base_uri", nargs="?", type=str, help="base uri, defaults to #", default="#")
 args.add_argument("-i", "--interactive", action="store_true", help="if set, do not convert, but run an interface for interactive exploration of the lexicon")
+args.add_argument("-anno", "--annotation_model", type=str, help="URI of the annotation model that defines the mapping from FST tags to lexinfo features")
+args.add_argument("-rules", "--rule_model", type=str, nargs="?", help="URI of the model that contains the rules, by default, this is the base uri", default=None)
 args=args.parse_args()
+
+if args.rule_model==None:
+    args.rule_model=args.base_uri
 
 # this defines the Morphisto schema
 # the type is defined in the first column
@@ -25,10 +30,19 @@ type2fields={
     "<QUANT>" : [ "ENTRY_TYPE", "SUB_TYPE"],
     "<NoHy>" : [ "ENTRY_TYPE", "SUB_TYPE"] }
 
+def my(identifier, prefix=""):
+    """ uri escaping and prefix assigment """
+    for symbol in [ "/", ".", "~" ]:
+        if symbol in identifier:
+            identifier="_".join(identifier.split(symbol))
+    return prefix+":"+urllib.parse.quote(identifier)
+
 entries=[]
 # array of dicts
 
 with open(args.lex,"r") as input:
+    sys.stderr.write("reading "+args.lex+"\n")
+    sys.stderr.flush()
     for line in input:
         line=line.strip()
         if len(line)>0:
@@ -73,6 +87,8 @@ with open(args.lex,"r") as input:
             entries.append(entry)
 
 # we now compile all forms out
+sys.stderr.write("preprocessing "+args.lex+"\n")
+sys.stderr.flush()
 for nr in range(len(entries)):
     entry=entries[nr]
     if "FORM" in entry:
@@ -92,6 +108,8 @@ for nr in range(len(entries)):
         entries[nr]=entry
 
 # indexing: point to entries
+sys.stderr.write("indexing "+args.lex+"\n")
+sys.stderr.flush()
 key2val2entries={}
 for id,entry in enumerate(entries):
     for key in entry.keys():
@@ -174,3 +192,55 @@ if args.interactive:
             print("KEYS: "+", ".join(sorted(set(keys)))+"\n")
         sys.stderr.write("> ")
         sys.stderr.flush()
+
+else:
+    sys.stderr.write("production mode: convert to ontolex\n")
+    sys.stderr.flush()
+
+    print("@prefix : <"+args.base_uri+"> .")
+    print("@prefix tags: <"+args.annotation_model+"> .")
+    print("@prefix rules: <"+args.rule_model+"> .")
+
+    print("""
+        @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+        @prefix synsem: <http://www.w3.org/ns/lemon/synsem#> .
+        @prefix decomp: <http://www.w3.org/ns/lemon/decomp#> .
+        @prefix vartrans: <http://www.w3.org/ns/lemon/vartrans#> .
+        @prefix lime: <http://www.w3.org/ns/lemon/lime#> .
+        @prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+
+        @prefix olias: <http://purl.org/olia/olia-system.owl#>.
+        @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+        @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+        @prefix owl: <http://www.w3.org/2002/07/owl#>.
+        @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+        @prefix skos: <http://www.w3.org/2004/02/skos#>.
+        @prefix dbr: <http://dbpedia.org/resource/>.
+        @prefix dbo: <http://dbpedia.org/ontology/>.
+        @prefix void: <http://rdfs.org/ns/void#>.
+        @prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#>.
+        @prefix semiotics: <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#>.
+        @prefix oils: <http://lemon-model.net/oils#>.
+        @prefix dct: <http://purl.org/dc/terms/>.
+        @prefix provo: <http://www.w3.org/ns/prov#>.
+        """)
+
+    paradigms=[]
+
+    for id in key2val2entries["ENTRY_TYPE"]["<Base_Stems>"]:
+        entry=entries[id]
+        uri=my("entry#"+str(id))
+        print(uri+" a ontolex:LexicalEntry.")
+        for form in entry["FORM"]:
+            base=my("base#"+str(id)+"_"+form)
+            print(uri+" morph:baseForm "+base+" .")
+            print(base+" a ontolex:Form; ontolex:writtenRep \""+form+"\".")
+        for paradigm in entry["PARADIGM"]:
+            paradigm="$"+paradigm[1:-1]+"$"
+            itype=my("type#"+"$"+paradigm[1:-1]+"$","rules")
+            puri=my("paradigm#"+paradigm[1:-1])
+            print(uri+" morph:paradigm "+puri+" .")
+            if not paradigm in paradigms:
+                paradigms.append(paradigm)
+                print(puri+" a morph:Paradigm; rdfs:label \""+paradigm+"\"; morph:isParadigmOf "+itype+" .")
+                print(puri+" olias:model "+"<"+args.annotation_model+"> .")

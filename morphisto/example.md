@@ -289,3 +289,9 @@ With this information, we can automatically flesh out the lexical entry by
 This requires an annotation model that:
 - provides tags (tag suffixes and prefixes) for each inflected form along with their lexinfo (or OLiA reference model) features
 - temporary url for annotation model: `http://purl.org/acoli/acoli-morph/owl/morphisto#` under `annomodel.ttl`. To be integrated with OLiA.
+
+### Minor updates
+
+- we maintain the paradigm and `morph:isParadigmOf`, but this is created during dictionary creation, not during fst conversion, because not all states are valid paradigm identifiers, but only those that represent starting points for inflection.
+- we link *the paradigm* with the OLiA annotation model, not the lexical entry. this is because different rule sets may operate on different symbols.
+- for generation, we only need to provide a lexical entry with its base form (or canonical form -- default behaviour wold be to use the base form when provided and the canonical form otherwise) and with a paradigm, from the paradigm we then retrieve the OLiA model. However, this means we need to filter the possible tags against the features of a lexical entry. This may be a relatively loose fit, so that we end up with impossible combinations of values and rules. So, whether a certain feature combination really works for a given lexeme may become evident during the attempt to generate possible forms.

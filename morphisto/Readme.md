@@ -50,9 +50,12 @@ See [example](example.md) for a discussion
 
 contains the data converted from `src/lexicon`.
 plus links to `deu/flexion.ttl` and `annomodel.ttl`.
-TODO: link OLiA annotation model to `lime:Lexicon`.
+
+links to the annotation model are currently added to the `morph:Paradigm` elements. This is sparser than doing that for every lexical entry, and it actually allows to combine different rule sets with different abbreviations to be applied to the same lexical entry (e.g., one that results from a merger).
 
 See [structure](structure.md) for an analysis of the original structure of the lexicon file.
+
+At the moment, we only capture base forms and their inflection. Derivation and composition are not covered, yet.
 
 ### deu/flexion.ttl
 

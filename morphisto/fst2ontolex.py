@@ -21,6 +21,9 @@ args=args.parse_args()
 
 def my(identifier, prefix=""):
     """ uri escaping and prefix assigment """
+    for symbol in [ "/", ".", "~" ]:
+        if symbol in identifier:
+            identifier="_".join(identifier.split(symbol))
     return prefix+":"+urllib.parse.quote(identifier)
 
 state2in2out2next={}
@@ -121,7 +124,7 @@ for state in state2in2out2next:
                 print(itype+" morph:next "+my("type#"+post)+".")
             rule=my("rule#"+state+"_"+source+">"+target)
             print(itype+" morph:inflectionRule "+rule+".")
-            print(rule+" a morph:InflectionRule; morph:example \"..."+source+" > ..."+target+"\"", end="; ")
+            print(rule+" a morph:InflectionRule; morph:example \"\"\"..."+source+" > ..."+target+"\"\"\"", end="; ")
             s=source
             t=target
             if s=="<>":
@@ -133,4 +136,4 @@ for state in state2in2out2next:
                 t=("\\"+symbol).join(t.split(symbol))
 
             replacement="s/"+s+"$/"+t+"/"       # with s+"$", we assume left-to-right replacement: TODO: TBC
-            print("morph:replacement \""+replacement+"\".")
+            print("morph:replacement \"\"\""+replacement+"\"\"\" .")
