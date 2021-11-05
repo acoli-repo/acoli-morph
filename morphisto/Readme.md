@@ -34,6 +34,41 @@ Build with
 
     $> make
 
+### discussion and vocabulary
+
+We introduce the following new vocabulary elements:
+
+    morph:baseForm rdfs:subPropertyOf ontolex:lexicalForm.
+
+    morph:isParadigmOf # inverse of morph:hasParadigm to get from a morph:Paradigm to the morph:InflectionType  
+
+    olia:hasTag, olia:hasTagStartingWith, olia:hasTagEndingWith # from OLiA
+
+See [example](example.md) for a discussion
+
+### deu/lexicon.ttl
+
+contains the data converted from `src/lexicon`.
+plus links to `deu/flexion.ttl` and `annomodel.ttl`.
+TODO: link OLiA annotation model to `lime:Lexicon`.
+
+See [structure](structure.md) for an analysis of the original structure of the lexicon file.
+
+### deu/flexion.ttl
+
+converted from `src/flexion.fst`
+
+idea is to model FST states as `morph:InflectionRule`
+
+note that we don't do surface generation or filtering, but we generate "abstract" morphology. This may be either identical with the surface string or it may contain special symbols that need to be replaced afterwards.
+This final surface generation step is beyond OntoLex-Morph, but may be within a designated "transformation" module that may also cover, for example, transliteration problems.
+
+Note that "paradigms" are not defined here, but in `deu/lexicon.ttl`, because the FST model cannot distinguish paradigm and non-paradigm states. The former are "root nodes" for generating forms, the latter are intermediate.
+
+### annomodel.ttl
+
+contains the OLiA annotation model needed for generating hypothetical forms from base forms. this bundles tags with lexinfo attribute-value pairs. To generate a (hypothetical) form, provide a lexical entry with an OLiA model, a base form (together, these generate the input to the transformer) and a paradigm (this defines the start state of the FST).
+
 ## Source
 
 ### Morphisto - FST-based Morphological Analyzer for German

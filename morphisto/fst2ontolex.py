@@ -31,7 +31,7 @@ with open(args.fst,"r") as input:
             line=line[0:line.index("%")]
         line=line.strip()
         if line!="":
-            print("LINE",line)
+            # print("LINE",line)
             if lhs==None:
                 if "=" in line:
                     lhs=line.split("=")[0].strip()
@@ -45,7 +45,7 @@ with open(args.fst,"r") as input:
                     line=line.strip()
                     rhs=rhs[0:-1]+" "+line
 
-                print("RULE", lhs,"=>",rhs)
+                # print("RULE", lhs,"=>",rhs)
 
                 for rule in rhs.split("|"):
                     rule=re.sub(r"\s+"," ",rule).strip()

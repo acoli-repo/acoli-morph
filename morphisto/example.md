@@ -258,7 +258,7 @@ As there are no cardinality restrictions, we can also use both these properties 
 
 **Note 2:** to use the base form and `olia:hasTag` in combination also allows us to add other kinds of strings to the base form.
 In particular, we can add the mysterious `en` string that the `$VVPres$` rule presupposes but that is not in the lexicon (this rule actually starts with the canonical form, not with the base form, hence the mismatch).
-This is very much a hack, though.
+This is very much a hack, though, and we should skip it from the current modelling.
 
   :entry#152 ontolex:lexicalForm
     [ a ontolex:Form;
@@ -272,3 +272,20 @@ This is very much a hack, though.
       # we define the generation
       olia:hasTagEndingWith "<+V><2><Pl><Pres><Ind>en";
       morph:inflectionType :type#VVPres ] .
+
+### Afterthoughts on paradigm and annotation model
+
+We should maintain the paradigm element introduced above. This is because we have no links between lexical entry and inflection type if we do not provide all these hypothetical forms. However, if we just define
+the annotation model and the paradigm, this is enough information to generate all hypothetical forms from there.
+
+With this information, we can automatically flesh out the lexical entry by
+- creating hypothetical forms for **all combinations** of
+  - objects of baseForm (or a canonicalForm, depending on model and ruleset),
+  - hasTag values from the annotation model,
+  - objects of paradigm  
+- following all generation paths to produce abstract forms (which may be identical with string forms)
+- perform surface generation to produce string forms
+
+This requires an annotation model that:
+- provides tags (tag suffixes and prefixes) for each inflected form along with their lexinfo (or OLiA reference model) features
+- temporary url for annotation model: `http://purl.org/acoli/acoli-morph/owl/morphisto#` under `annomodel.ttl`. To be integrated with OLiA.
