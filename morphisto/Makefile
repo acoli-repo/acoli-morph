@@ -2,15 +2,6 @@ all: src deu
 
 deu: src
 	mkdir deu
-	# cat src/lexicon | \
-	# sed -e s/'\t'/' '/g \
-	# 		-e s/"<>"/"\&lt;\&gt;"/g \
-	# 		-e s/'>'/'>\t'/g \
-	# 		-e s/'<'/'\t<'/g \
-	# 		-e s/'\t\t*'/'\t'/g \
-	# 		-e s/'\&lt;'/'<'/g \
-	# 		-e s/'\&gt;'/'>'/g \
-	# 		> deu/lexicon.tsv
 	python3 fst2ontolex.py \
 		-base "http://purl.org/acoli/morph/morphisto/de/flex/" \
 		src/flexion.fst > deu/flexion.ttl
@@ -20,7 +11,11 @@ deu: src
 		-anno "http://purl.org/acoli/morph/morphisto/de/annomodel#" \
 		src/lexicon | \
 		rapper -i turtle - "http://purl.org/acoli/morph/morphisto/de/lex/" -o turtle > deu/lexicon.ttl
-	python3 generate.py deu/lexicon.ttl -anno annomodel.ttl -flex deu/flexion.ttl -rules rule2sed.sparql | head -n 1000 > deu/sample_output.txt
+	python3 generate.py deu/lexicon.ttl -anno annomodel.ttl -flex deu/flexion.ttl -rules rule2sed.sparql -compact > deu/output-compact.txt &	
+	python3 generate.py deu/lexicon.ttl -anno annomodel.ttl -flex deu/flexion.ttl -rules rule2sed.sparql > deu/output.txt &
+	python3 generate.py deu/lexicon.ttl -anno annomodel.ttl -flex deu/flexion.ttl -rules rule2sed.sparql -o deu/output-compact.ttl -compact &
+	nice python3 generate.py deu/lexicon.ttl -anno annomodel.ttl -flex deu/flexion.ttl -rules rule2sed.sparql -o deu/output-full.ttl
+
 
 src:
 	wget -nc https://storage.googleapis.com/google-code-archive-source/v2/code.google.com/morphisto/source-archive.zip
@@ -32,5 +27,5 @@ src:
 	@(cd src; make)
 
 test: all
-	@# demonstrate how the generated rules work
+	@# demonstrate how the generated rules work, human-readable output
 	python3 generate.py deu/lexicon.ttl -anno annomodel.ttl -flex deu/flexion.ttl -rules rule2sed.sparql

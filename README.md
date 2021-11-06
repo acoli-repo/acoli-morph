@@ -12,8 +12,7 @@ resources/phenomena covered:
 - [`germanet/`](germanet): compounding, German only, includes bootstrapping of `morph:Morph`s and `morph:CompoundingRule`s
 - [`links/`](links): `owl:sameAs` links across all aforementioned datasets
 
-in preparation:
-- [`morphisto/`](morphisto): German SFST morphology, focus is the preservation of rules in OntoLex
+- [`morphisto/`](morphisto): German FST morphology, focus is the preservation of rules in OntoLex, also shows how to use SPARQL to bootstrap a regexp-based morphological generator from `morph:InflectionRule`s.
 
 OntoLex-Morph is still under development, so this is explorative work, mostly. The vocabulary may change.
 

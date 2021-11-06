@@ -1,6 +1,7 @@
 import re,sys,os,traceback,argparse
 from pprint import pprint
 import urllib.parse
+from generate import parse_lfeats
 
 args=argparse.ArgumentParser(description="given an (S)FST lexicon, create an OntoLex-Morph representation. Note that it only supports the entry types of Morphisto/SMOR.")
 args.add_argument("lex",type=str, help="lexicon.lex")
@@ -227,6 +228,47 @@ else:
 
     paradigms=[]
 
+    p2lexinfo= {
+        "Masc": "lexinfo:gender lexinfo:masculine",
+        "Fem": "lexinfo:gender lexinfo:feminine",
+        "Neut": "lexinfo:gender lexinfo:neuter",
+        "Name": "lexinfo:partOfSpeech lexinfo:properNoun",
+        # "Sg": "lexinfo:number lexinfo:singular",
+        # "Pl": "lexinfo:number lexinfo:plural",
+        "Adj": "lexinfo:partOfSpeech lexinfo:adjective",
+        "ADJ" : "lexinfo:partOfSpeech lexinfo:adjective",
+        "Abk" : "lexinfo:partOfSpeech lexinfo:abbreviation",
+        "ADV": "lexinfo:partOfSpeech lexinfo:adverb",
+        "ART": "lexinfo:partOfSpeech lexinfo:determiner",
+        "DPRO": "lexinfo:partOfSpeech lexinfo:demostrativePronoun",
+        "NN": "lexinfo:partOfSpeech lexinfo:commonNoun",
+        "PREP": "lexinfo:partOfSpeech lexinfo:preposition",
+        "NE": "lexinfo:partOfSpeech lexinfo:properNoun",
+        "VA": "lexinfo:partOfSpeech lexinfo:verb",
+        "Ptkl": "lexinfo:partOfSpeech lexinfo:particle",
+        "FamName": "lexinfo:partOfSpeech lexinfo:properNoun",
+        "Intj": "lexinfo:partOfSpeech lexinfo:interjection",
+        "Imp": "lexinfo:verbForm lexinfo:imperative",
+        "Num": "lexinfo:partOfSpeech lexinfo:numeral",
+        "Circp": "lexinfo:partOfSpeech lexinfo:adposition",
+        "Konj-": "lexinfo:partOfSpeech lexinfo:conjunction",
+        # note that we cannot tag Konj, because that could also be subjunctive!
+        "Postp": "lexinfo:partOfSpeech lexinfo:postposition",
+        # "Pres": "lexinfo:tense lexinfo:present",
+        # "Past": "lexinfo:tense lexinfo:past",
+        # "1": "lexinfo:person lexinfo:firstPerson",
+        # "2": "lexinfo:person lexinfo:secondPerson",
+        # "3": "lexinfo:person lexinfo:thirdPerson",
+        # "Ind": "lexinfo:verbForm lexinfo:indicative",
+        # "Inf": "lexinfo:verbForm lexinfo:infinitive",
+        "ProAdv": "lexinfo:partOfSpeech lexinfo:adverb, lexinfo:pronominalAdverb",
+        "VM": "lexinfo:partOfSpeech lexinfo:verb",
+        "VP": "lexinfo:partOfSpeech lexinfo:verb",
+        "VV": "lexinfo:partOfSpeech lexinfo:verb",
+        "PP": "lexinfo:verbForm lexinfo:participle",
+        "N?": "lexinfo:partOfSpeech lexinfo:commonNoun"
+    }
+
     for id in key2val2entries["ENTRY_TYPE"]["<Base_Stems>"]:
         entry=entries[id]
         uri=my("entry#"+str(id))
@@ -240,9 +282,10 @@ else:
             "<ORD>": "lexinfo:ordinalNumber",
             "<V>": "lexinfo:verb"
         }
+        lexinfo=[]
         for pos in entry["POS"]:
             if pos in pos2pos:
-                print(uri+" lexinfo:partOfSpeech "+pos2pos[pos]+".")
+                lexinfo.append("lexinfo:partOfSpeech "+pos2pos[pos])
         for form in entry["FORM"]:
             base=my("base#"+str(id)+"_"+form)
             print(uri+" morph:baseForm "+base+" .")
@@ -256,3 +299,14 @@ else:
                 paradigms.append(paradigm)
                 print(puri+" a morph:Paradigm; rdfs:label \""+paradigm+"\"; morph:isParadigmOf "+itype+" .")
                 print(puri+" olias:model "+"<"+args.annotation_model+"> .")
+            for p in p2lexinfo:
+                if p in paradigm:
+                    lexinfo.append(p2lexinfo[p])
+        lexinfo=";".join(lexinfo)
+        lexinfo=parse_lfeats(lexinfo)
+        lexinfo={ prop : ", ".join(vals) for prop,vals in lexinfo.items() }
+        lexinfo= [ prop+" "+vals for prop,vals in lexinfo.items() ]
+        lexinfo="; ".join(lexinfo)
+        lexinfo=lexinfo.strip()
+        if len(lexinfo)>0:
+            print(uri+" "+lexinfo+" .")

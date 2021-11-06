@@ -2,6 +2,35 @@ import os,sys,re,rdflib,traceback,argparse,subprocess,tempfile
 import hashlib
 from pprint import pprint
 
+def parse_lfeats(lexinfo: str, output_type=dict):
+        """ parse a sequence of ;-separated property-object statements, return a dict of arrays """
+        if lexinfo==None or lexinfo.strip()=="":
+            return {}
+        lexinfo=re.sub(r"\s+"," ",lexinfo).strip()
+        lexinfo=lexinfo.split(";")
+        lexinfo=[ lfeat.strip() for lfeat in lexinfo ]
+        lprop2vals={}
+        for lfeat in set(lexinfo):
+                        lfeat=lfeat.split(" ")
+                        prop=lfeat[0]
+                        vals=" ".join(lfeat[1:]).strip()
+                        for val in vals.split(","):
+                            val=val.strip()
+                            if not prop in lprop2vals:
+                                lprop2vals[prop] = [val]
+                            elif not val in lprop2vals[prop]:
+                                lprop2vals[prop].append(val)
+
+        if output_type==dict:
+            return lprop2vals
+        if output_type==str:
+            lprop2vals=[ prop+" "+", ".join(sorted(set(vals))) for prop,vals in lprop2vals.items() ]
+            lprop2vals="; ".join(sorted(set(lprop2vals)))
+            return lprop2vals
+
+        raise(Exception("unsupported output_type \""+str(output_type)+", choose either str or dict"))
+
+
 class Generator:
 
     def __init__(self, inflection_types, rule_extractor, annotation_model, tmpdir=tempfile.TemporaryDirectory(), skip_incomplete_forms=True, strict_mode=True):
@@ -110,26 +139,6 @@ class Generator:
         print(annotation_model+":",len(concept2tags),"annotation concepts",)
         self.concept2tags=concept2tags
 
-    def _parse_lfeats(self, lexinfo: str):
-        """ parse a sequence of ;-separated property-object statements, return a dict of arrays """
-        if lexinfo==None or lexinfo.strip()=="":
-            return {}
-        lexinfo=re.sub(r"\s+"," ",lexinfo).strip()
-        lexinfo=lexinfo.split(";")
-        lexinfo=[ lfeat.strip() for lfeat in lexinfo ]
-        lprop2vals={}
-        for lfeat in set(lexinfo):
-                        lfeat=lfeat.split(" ")
-                        prop=lfeat[0]
-                        vals=" ".join(lfeat[1:]).strip()
-                        for val in vals.split(","):
-                            val=val.strip()
-                            if not prop in lprop2vals:
-                                lprop2vals[prop] = [val]
-                            elif not val in lprop2vals[prop]:
-                                lprop2vals[prop].append(val)
-
-        return lprop2vals
 
     def generate(self, baseform, itype, lexinfo=None, concepts=None,skip_incomplete_forms=None, strict_mode=None):
         """ return dictionary of form -> features
@@ -151,7 +160,7 @@ class Generator:
         if concepts==None or len(concepts)==0:
             concepts=concept2tags.keys()
 
-        lexinfo=self._parse_lfeats(lexinfo)
+        lexinfo=parse_lfeats(lexinfo)
         if len(lexinfo)==0 and strict_mode:
             raise Exception("no lexinfo features given, revise or run with strict_mode=False")
         result={}
@@ -160,7 +169,7 @@ class Generator:
             for left, right, tag_feats in concept2tags[concept]:
                 compatible=True
                 overlap=False
-                tag_feats=self._parse_lfeats(tag_feats)
+                tag_feats=parse_lfeats(tag_feats)
                 for prop in lexinfo:
                     if prop in tag_feats:
                         overlap=True
@@ -209,6 +218,16 @@ class Generator:
                             if t!=u and t in u:
                                 skip=True
                                 break
+                        if not skip:
+                            tterms=" ".join(t.split(","))
+                            tterms=" ".join(t.split(";"))
+                            for u in result[form]:
+                                if u!=t and not skip:
+                                    skip==True
+                                    for tterm in tterms.split(" "):
+                                        if not tterm in u:
+                                            skip==False
+                                            break
                     if not skip:
                         tags.append(t)
                 pruned[form]=tags
@@ -241,16 +260,25 @@ class Generator:
                 "sed script:\n"+("="*80)+"\n"+sed_script+"\n"+("="*80))
         return result.strip()
 
-    def generate_for_dict(self, inputsource, skip_incomplete_forms=None,strict_mode=None):
+    def generate_for_dict(self, inputsource, skip_incomplete_forms=None,strict_mode=None, output_file=None, compact=False):
         """ given an OntoLex resource with paradigm/inflection type annotations,
             generate all hyppthetical inflected forms
             at the moment, this is for debugging only, so we just print to stdout
+            if output_file==None, we write human-readable output to stdout
+            otherwise, we write OntoLex data into this file
+            if compact==True, we lump all features together, if compact==False, we consider each combination of features a separate form
         """
 
         if skip_incomplete_forms==None:
             skip_incomplete_forms=self.skip_incomplete_forms
         if strict_mode==None:
             strict_mode=self.strict_mode
+        if output_file!=None:
+            output_file=open(output_file,"wt")
+            output_file.write("""
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX morph: <http://www.w3.org/ns/lemon/morph#>
+            """)
 
         itype2rules=self.itype2rules
         concept2tags=self.concept2tags
@@ -306,6 +334,8 @@ class Generator:
             }
         """
 
+        generated=0
+        processed_entries=[]
         qres = lex.query(query)
         for row in qres:
             if row.baseform!=None:
@@ -315,25 +345,54 @@ class Generator:
                 try:
                     output=self.generate(baseform, itype, lexinfo=row.lexinfo, skip_incomplete_forms=skip_incomplete_forms,strict_mode=strict_mode)
                     if len(output)>0:
-                        print(baseform+" "+re.sub(r"<[^>\#]*[\#/]([^\#/>]*)>",r"lexinfo:\1",str(row.lexinfo)))
-                        for form, tags in output.items():
-                            for tag in tags:
-                                tag=re.sub(r"<[^>\#]*[\#/]([^\#/>]*)>",r"lexinfo:\1",tag)   # simplified
-                                print(form+" "+tag)
-                                form=" "*len(form)
-                        print()
+                        if compact==True:
+                            output={ form : [ parse_lfeats("; ".join(tags), str) ] for form,tags in output.items() }
+                        if output_file==None:
+                            print(baseform+" "+re.sub(r"<[^>\#]*[\#/]([^\#/>]*)>",r"lexinfo:\1",str(row.lexinfo)))
+                            for form, tags in output.items():
+                                for tag in tags:
+                                    tag=re.sub(r"<[^>\#]*[\#/]([^\#/>]*)>",r"lexinfo:\1",tag)   # simplified
+                                    print(form+" "+tag)
+                                    form=" "*len(form)
+                            print()
+                        else:
+                            for form, tags in output.items():
+                                for tag in tags:
+                                    generated+=1
+                                    myuri="<"+str(row.entry)+"_hypo_"+str(generated)+">"
+                                    output_file.write(entry+" ontolex:lexicalForm "+myuri+".\n")
+                                    if form.startswith("*"):
+                                        form=form[1:]
+                                    output_file.write(myuri+" a ontolex:Form, morph:HypotheticalForm;\n")
+                                    output_file.write("  ontolex:writtenRep \""+form+"\";\n")
+                                    if len(tags)>0:
+                                        output_file.write("  "+tag+";\n")
+                                    output_file.write("  morph:inflectionType "+"<"+itype+">.\n\n")
+                                    output_file.flush()
+
                 except:
                     traceback.print_exc()
+            if not entry in processed_entries:
+                processed_entries.append(entry)
+            if output_file!=None:
+                sys.stderr.write(str(generated)+" forms generated for "+str(len(processed_entries))+" entries\r")
+                sys.stderr.flush()
+        if output_file!=None:
+            output_file.close()
+            sys.stderr.write("\n")
+            sys.stderr.flush()
 
 if __name__ == "__main__":
 
     args=argparse.ArgumentParser(description="given OntoLex-Morph inflection rules and an OntoLex dictionary, generate all forms; rule extraction is written in SPARQL. Note that internally, we use sed, so make sure this is installed on your system ;)")
     args.add_argument("lex", type=str, help="OntoLex dictionary")
-    args.add_argument("-anno", "--annotation_model", type=str, help="OLiA annotation model that defines possible pairs of lexinfo features and tags, defaults to the value of lex", default=None)
+    args.add_argument("-anno", "--annotation_model", type=str, help="OLiA annotation model that defines possible pairs of lexinfo features and tags, defaults to the value of lex")
     args.add_argument("-flex","--inflection_types", type=str, nargs="?", help="OntoLex inflection rules, defaults to the value of lex; however, it's much faster if it is clearly separated ;)",default=None)
     args.add_argument("-rules", "--rule_extractor", type=str, nargs="?", help="SPARQL script to retrieve rules from the flex argument, defaults to rule2sed.sparql in the local directory; note: we expect it to return the following variable names ?itype ?transformation", default=None)
     args.add_argument("-no_stars", "--skip_incomplete_forms", action="store_true", help="by default, we return all generation hypotheses, including those that are marked for postprocessing with morphophonological rules. With this flag, we only return completed forms")
     args.add_argument("-loose", "--disable_strict_mode", action="store_true", help="in strict (default) mode, we generate on the basis of the lexinfo:partOfSpeech of a lexical entry, in loose mode, we try *all possible parts of speech* if no POS is provided")
+    args.add_argument("-compact", "--compact_features", action="store_true",help="if set, lump all features of a given form together, by default, each combination of features constitutes a new form")
+    args.add_argument("-o","--ontolex", type=str, nargs="?", help="instead of human-readable output to stdout, write OntoLex data into output file",default=None)
     args=args.parse_args()
 
     if args.inflection_types==None:
@@ -344,4 +403,4 @@ if __name__ == "__main__":
         args.rule_extractor="rule2sed.sparql"
 
     generator=Generator(args.inflection_types, args.rule_extractor, args.annotation_model, skip_incomplete_forms=args.skip_incomplete_forms,strict_mode=not args.disable_strict_mode)
-    generator.generate_for_dict(args.lex)
+    generator.generate_for_dict(args.lex,output_file=args.ontolex,compact=args.compact_features)
