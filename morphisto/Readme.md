@@ -76,7 +76,7 @@ contains the OLiA annotation model needed for generating hypothetical forms from
 
 ## Generation
 
-With the current modelling of replacements, we can use SPARQL to generate sed or perl (or, with little more effort, Java, Python or even SPARQL scripts) scripts that implement the rules, see `rule2sed.sparql`. However, some escapes need to be undone, and the final removal of tags is heuristic. Also, the morphophonological rules and filters (that would be triggered by these tags) are not covered. We thus add two extra rules to `rule2sed.sparql`: Put `*` in front of the form if the final form contains any tag, then remove all tags.
+With the current modelling of replacements, we can use SPARQL to generate sed or perl (or, with little more effort, Java, Python or even SPARQL) scripts that implement the rules, see `rule2sed.sparql`. However, some escapes need to be undone, and the final removal of tags is heuristic. Also, the morphophonological rules and filters (that would be triggered by these tags) are not covered. We thus add two extra rules to `rule2sed.sparql`: Put `*` in front of the form if the final form contains any tag, then remove all tags.
 
 Try it with
 
