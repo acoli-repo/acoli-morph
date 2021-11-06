@@ -46,6 +46,8 @@ We introduce the following new vocabulary elements:
 
 See [example](example.md) for a discussion
 
+For navigation from lexical entry to inflection type, it is VERY unfortunate that these properties have the same name, because we must disambiguate them via their object class
+
 ### deu/lexicon.ttl
 
 contains the data converted from `src/lexicon`.
@@ -71,6 +73,14 @@ Note that "paradigms" are not defined here, but in `deu/lexicon.ttl`, because th
 ### annomodel.ttl
 
 contains the OLiA annotation model needed for generating hypothetical forms from base forms. this bundles tags with lexinfo attribute-value pairs. To generate a (hypothetical) form, provide a lexical entry with an OLiA model, a base form (together, these generate the input to the transformer) and a paradigm (this defines the start state of the FST).
+
+## Generation
+
+With the current modelling of replacements, we can use SPARQL to generate sed or perl (or, with little more effort, Java, Python or even SPARQL scripts) scripts that implement the rules, see `rule2sed.sparql`. However, some escapes need to be undone, and the final removal of tags is heuristic. Also, the morphophonological rules and filters (that would be triggered by these tags) are not covered. We thus add two extra rules to `rule2sed.sparql`: Put `*` in front of the form if the final form contains any tag, then remove all tags.
+
+Try it with
+
+    $> make test
 
 ## Source
 

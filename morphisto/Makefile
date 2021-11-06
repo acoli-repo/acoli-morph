@@ -29,3 +29,7 @@ src:
 	@(for file in `find src | egrep '/.svn$$'`; do rm -rf $$file; done)
 	rm -rf tmp
 	@(cd src; make)
+
+test: all
+	@# demonstrate how the generated rules work
+	python3 generate.py deu/lexicon.ttl -anno annomodel.ttl -flex deu/flexion.ttl -rules rule2sed.sparql

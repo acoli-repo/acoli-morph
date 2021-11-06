@@ -19,6 +19,22 @@ args=args.parse_args()
 # for the conversion we point from the form to the inflection type, this is the
 # nonterminal state (symbol) from which the sequence of inflection types is called
 
+def encode(string):
+    """ string encoding for Turtle """
+    replacements={
+        "^" : "\\u005e",
+        "/" : "\\u002f",
+        '"' : "\\u0022",
+        "$" : "\\u0024",
+        "&" : "\\u0026"
+        }
+    for s,t in replacements.items():
+        while s in string:
+            idx=string.index(s)
+            string=string[0:idx]+t+string[idx+len(s):]
+
+    return " \""+string+"\" "
+
 def my(identifier, prefix=""):
     """ uri escaping and prefix assigment """
     for symbol in [ "/", ".", "~" ]:
@@ -117,14 +133,14 @@ print("""
 
 for state in state2in2out2next:
     itype=my("type#"+state)
-    print(itype+" a ontolex:InflectionType ; rdfs:label \""+state+"\".")
+    print(itype+" a morph:InflectionType ; rdfs:label"+encode(state)+".")
     for source in state2in2out2next[state]:
         for target in state2in2out2next[state][source]:
             for post in state2in2out2next[state][source][target]:
                 print(itype+" morph:next "+my("type#"+post)+".")
             rule=my("rule#"+state+"_"+source+">"+target)
             print(itype+" morph:inflectionRule "+rule+".")
-            print(rule+" a morph:InflectionRule; morph:example \"\"\"..."+source+" > ..."+target+"\"\"\"", end="; ")
+            print(rule+" a morph:InflectionRule; morph:example "+encode(source+" > ..."+target), end="; ")
             s=source
             t=target
             if s=="<>":
@@ -136,4 +152,4 @@ for state in state2in2out2next:
                 t=("\\"+symbol).join(t.split(symbol))
 
             replacement="s/"+s+"$/"+t+"/"       # with s+"$", we assume left-to-right replacement: TODO: TBC
-            print("morph:replacement \"\"\""+replacement+"\"\"\" .")
+            print("morph:replacement"+encode(replacement)+".")
