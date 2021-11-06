@@ -1,5 +1,6 @@
 import os,sys,re,rdflib,traceback,argparse,subprocess,tempfile
 import hashlib
+from pprint import pprint
 
 class Generator:
 
@@ -108,7 +109,83 @@ class Generator:
         print(annotation_model+":",len(concept2tags),"annotation concepts",)
         self.concept2tags=concept2tags
 
-    def generate(self,sed_script,input):
+    def _parse_lfeats(self, lexinfo: str):
+        """ parse a sequence of ;-separated property-object statements, return a dict of arrays """
+        if lexinfo==None or lexinfo.strip()=="":
+            return {}
+        lexinfo=re.sub(r"\s+"," ",lexinfo).strip()
+        lexinfo=lexinfo.split(";")
+        lexinfo=[ lfeat.strip() for lfeat in lexinfo ]
+        lprop2vals={}
+        for lfeat in set(lexinfo):
+                        lfeat=lfeat.split(" ")
+                        prop=lfeat[0]
+                        vals=" ".join(lfeat[1:]).strip()
+                        for val in vals.split(","):
+                            val=val.strip()
+                            if not prop in lprop2vals:
+                                lprop2vals[prop] = [val]
+                            elif not val in lprop2vals[prop]:
+                                lprop2vals[prop].append(val)
+
+        return lprop2vals
+
+    def generate(self, baseform, itype, lexinfo=None, concepts=None,skip_incomplete_forms=None):
+        """ return dictionary of form -> features
+            concept is a candidate concept from OLiA, empty => any
+            lexinfo is a string of ;-separated lexinfo properties and values
+            that describe the (lexical entry of the) base form
+        """
+        itype2rules=self.itype2rules
+        concept2tags=self.concept2tags
+        if skip_incomplete_forms==None:
+            skip_incomplete_forms=self.skip_incomplete_forms
+
+        if not itype in itype2rules:
+            raise Exception("did not find paradigm (inflection type) \""+itype+"\"")
+
+        if concepts==None or len(concepts)==0:
+            concepts=concept2tags.keys()
+
+        lexinfo=self._parse_lfeats(lexinfo)
+        result={}
+        input2feats={}
+        for concept in concepts:
+            for left, right, tag_feats in concept2tags[concept]:
+                compatible=True
+                tag_feats=self._parse_lfeats(tag_feats)
+                for prop in lexinfo:
+                    if prop in tag_feats:
+                        vals=[ val for val in lexinfo[prop] if val in tag_feats[prop] ]
+                        if len(vals)==0:
+                            compatible=False
+                            break;
+                        else:
+                            tag_feats[prop] = vals
+                if compatible:
+                    #print(tag_feats)
+                    tag_feats = { prop : ", ".join(sorted(vals)) for prop,vals in tag_feats.items() }
+                    tag_feats = [ prop+" "+vals for (prop,vals) in tag_feats.items() ]
+                    tag_feats= "; ".join(sorted(tag_feats))
+                    #print(tag_feats)
+                    input=left+baseform+right
+                    if not input in input2feats:
+                        input2feats[input]=[tag_feats]
+                    elif not tag_feats in input2feats[input]:
+                        input2feats[input].append(feats)
+        for input in input2feats:
+            for rule in itype2rules[itype]:
+                output=self._generate(rule,input)
+                if not skip_incomplete_forms or not output.startswith("*"):
+                    if not output in result:
+                        result[output]=input2feats[input]
+                    else:
+                        result[output]+=input2feats[input]
+
+        result = { output: sorted(set(feats)) for (output, feats) in result.items() }
+        return result
+
+    def _generate(self,sed_script,input):
         result=""
         error=""
         hash=hashlib.md5(sed_script.encode('utf-8')).hexdigest()
@@ -202,58 +279,15 @@ class Generator:
                 entry="<"+str(row.entry)+">"
                 baseform=str(row.baseform)
                 itype=str(row.itype)
-                if not itype in itype2rules:
-                    sys.stderr.write("warning: did not find paradigm "+itype+"\n")
-                    sys.stderr.flush()
-                else:
-                    lexinfo=row.lexinfo
-                    concepts=sorted(set(concept2tags.keys())) # olia concepts
-                    if lexinfo!=None:
-                        lexinfo=str(lexinfo)
-                        concepts=[]
-                        lfeats=lexinfo.split(";")
-                        lfeats=[ lfeat.strip().split(" ") for lfeat in lfeats ]
-                        lfeats=[ (lfeat[0],lfeat[-1]) for lfeat in lfeats ]
-                        lexinfo={}
-                        for feat,val in lfeats:
-                            if not feat in lexinfo:
-                                lexinfo[feat]=[feat+" "+val]
-                            elif not val in lexinfo[feat]:
-                                lexinfo[feat].append(feat+" "+val)
-
-                        # filter limit to compatible concepts
-                        # i.e., those that either don't use the same lexinfo properties or that provide the same value for them
-                        for concept in concept2tags:
-                            for _,_,lfeats in concept2tags[concept]:
-                                if not concept in concepts:
-                                    for feat in lexinfo:
-                                        if feat in lfeats:  # if a lexinfo property matches
-                                            same_val=False
-                                            for lfeat in lexinfo[feat]:
-                                                if lfeat in lfeats:
-                                                    same_val=True
-                                                    break
-                                            if same_val:
-                                                concepts.append(concept)
-                                                break
-
-                    input2feats={}
-                    for concept in concepts:
-                            for left,right,lexinfo in concept2tags[concept]:
-                                input=left+baseform+right
-                                if not input in input2feats:
-                                    input2feats[input]=[lexinfo]
-                                elif not lexinfo in input2feats[input]:
-                                    input2feats[input].append(lexinfo)
-                    for input, feats in input2feats.items():
-                        feats=";".join(feats)
-                        feats=feats.split(";")
-                        feats=sorted(set([ f.strip() for f in feats ]))
-                        feats="; ".join(feats)
-                        for rule in itype2rules[itype]:
-                            string=self.generate(rule,input)
-                            if not skip_incomplete_forms or not string.startswith("*"):
-                                print(baseform,string,row.lexinfo,feats,itype)
+                try:
+                    for form, tags in self.generate(baseform, itype, lexinfo=row.lexinfo).items():
+                        form=baseform+" > "+form
+                        for tag in tags:
+                            tag=re.sub(r"<[^>\#]*[\#/]([^\#/>]*)>",r"lexinfo:\1",tag)   # simplified
+                            print(form+"\t"+tag)
+                            form=" "*len(form)
+                except:
+                    traceback.print_exc()
 
 if __name__ == "__main__":
 
