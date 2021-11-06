@@ -218,7 +218,7 @@ else:
         @prefix dbr: <http://dbpedia.org/resource/>.
         @prefix dbo: <http://dbpedia.org/ontology/>.
         @prefix void: <http://rdfs.org/ns/void#>.
-        @prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#>.
+        @prefix lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>.
         @prefix semiotics: <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#>.
         @prefix oils: <http://lemon-model.net/oils#>.
         @prefix dct: <http://purl.org/dc/terms/>.
@@ -231,6 +231,18 @@ else:
         entry=entries[id]
         uri=my("entry#"+str(id))
         print(uri+" a ontolex:LexicalEntry.")
+        pos2pos={
+            "<ABK>": "lexinfo:abbreviation",
+            "<ADJ>": "lexinfo:adjective",
+            "<ADV>": "lexinfo:adverb",
+            "<NE>": "lexinfo:properNoun",
+            "<NN>": "lexinfo:commonNoun",
+            "<ORD>": "lexinfo:ordinalNumber",
+            "<V>": "lexinfo:verb"
+        }
+        for pos in entry["POS"]:
+            if pos in pos2pos:
+                print(uri+" lexinfo:partOfSpeech "+pos2pos[pos]+".")
         for form in entry["FORM"]:
             base=my("base#"+str(id)+"_"+form)
             print(uri+" morph:baseForm "+base+" .")

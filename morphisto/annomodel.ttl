@@ -8,10 +8,10 @@ PREFIX : <http://purl.org/acoli/morph/morphisto/de/annomodel#>
 :ABK_DEMPRO	olias:hasTagEndingWith	"<^ABK><+DEMPRO>"; lexinfo:partOfSpeech lexinfo:abbreviation; lexinfo:partOfSpeech lexinfo:demonstrativePronoun.
 :ABK_KONJ	olias:hasTagEndingWith	"<^ABK><+KONJ>"; lexinfo:partOfSpeech lexinfo:abbreviation.
 :ABK_NE	olias:hasTagEndingWith	"<^ABK><+NE>"; lexinfo:partOfSpeech lexinfo:abbreviation.
-:ABK_NN	olias:hasTagEndingWith	"<^ABK><+NN>"; lexinfo:partOfSpeech lexinfo:abbreviation; lexinfo:partofSpeech lexinfo:commonNoun.
+:ABK_NN	olias:hasTagEndingWith	"<^ABK><+NN>"; lexinfo:partOfSpeech lexinfo:abbreviation; lexinfo:partOfSpeech lexinfo:commonNoun.
 :ABK_PREP	olias:hasTagEndingWith	"<^ABK><+PREP>"; lexinfo:partOfSpeech lexinfo:abbreviation; lexinfo:partOfSpeech lexinfo:preposition.
-:ABK_VPAST_ADJ	olias:hasTagEndingWith	"<^ABK><^VPAST><+ADJ>"; lexinfo:partOfSpeech lexinfo:abbreviation; lexinfo:partOfSpeech lexinfo:adjective, lexinfo:verb; lexinfo:tense lexinfo:pastTense.
-:ABK_VPRES_ADJ	olias:hasTagEndingWith	"<^ABK><^VPRES><+ADJ>"; lexinfo:partOfSpeech lexinfo:abbreviation; lexinfo:partOfSpeech lexinfo:adjective, lexinfo:verb; lexinfo:tense lexinfo:presentTense.
+:ABK_VPAST_ADJ	olias:hasTagEndingWith	"<^ABK><^VPAST><+ADJ>"; lexinfo:partOfSpeech lexinfo:abbreviation; lexinfo:partOfSpeech lexinfo:adjective, lexinfo:verb; lexinfo:tense lexinfo:past.
+:ABK_VPRES_ADJ	olias:hasTagEndingWith	"<^ABK><^VPRES><+ADJ>"; lexinfo:partOfSpeech lexinfo:abbreviation; lexinfo:partOfSpeech lexinfo:adjective, lexinfo:verb; lexinfo:tense lexinfo:present.
 :ADJ_Comp_Adv	olias:hasTagEndingWith	"<+ADJ><Comp><Adv>"; lexinfo:degree lexinfo:comparative; lexinfo:partOfSpeech lexinfo:adjective; lexinfo:partOfSpeech  lexinfo:adverb.
 :ADJ_Comp_Pred	olias:hasTagEndingWith	"<+ADJ><Comp><Pred>"; lexinfo:degree lexinfo:comparative; lexinfo:partOfSpeech lexinfo:adjective.
 :ADJ_Invar	olias:hasTagEndingWith	"<+ADJ><Invar>"; lexinfo:partOfSpeech lexinfo:adjective.
@@ -62,7 +62,7 @@ PREFIX : <http://purl.org/acoli/morph/morphisto/de/annomodel#>
 :Gen_Pl	olias:hasTagEndingWith	"<Gen><Pl>"; lexinfo:number lexinfo:plural; lexinfo:case lexinfo:genitive.
 :Gen_Sg	olias:hasTagEndingWith	"<Gen><Sg>"; lexinfo:case lexinfo:genitive; lexinfo:number lexinfo:singular.
 :INDEF_Invar	olias:hasTagEndingWith	"<+INDEF><Invar>".
-:INTJ	olias:hasTagEndingWith	"<+INTJ>"; lexinfo:partofSpeech lexinfo:interjection.
+:INTJ	olias:hasTagEndingWith	"<+INTJ>"; lexinfo:partOfSpeech lexinfo:interjection.
 :IP_Komma	olias:hasTagEndingWith	"<+IP><Komma>".
 :IP_links	olias:hasTagEndingWith	"<+IP><links>".
 :IP_Norm	olias:hasTagEndingWith	"<+IP><Norm>".
@@ -85,44 +85,44 @@ PREFIX : <http://purl.org/acoli/morph/morphisto/de/annomodel#>
 :Neut_Gen_Sg	olias:hasTagEndingWith	"<Neut><Gen><Sg>"; lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular.
 :Neut_Nom_Sg_St_Mix	olias:hasTagEndingWith	"<Neut><Nom><Sg><St/Mix>"; lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular.
 :Neut_Nom_Sg_Sw	olias:hasTagEndingWith	"<Neut><Nom><Sg><Sw>"; lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular.
-:NN_Fem_Akk_Sg	olias:hasTagEndingWith	"<+NN><Fem><Akk><Sg>"; lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:feminine; lexinfo:partofSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
-:NN_Fem_Dat_Sg_St	olias:hasTagEndingWith	"<+NN><Fem><Dat><Sg><St>"; lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:feminine; lexinfo:partofSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
-:NN_Fem_Dat_Sg_Sw_Mix	olias:hasTagEndingWith	"<+NN><Fem><Dat><Sg><Sw/Mix>"; lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:feminine; lexinfo:partofSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
-:NN_Fem_Gen_Sg_St	olias:hasTagEndingWith	"<+NN><Fem><Gen><Sg><St>"; lexinfo:gender lexinfo:feminine; lexinfo:case lexinfo:genitive; lexinfo:partofSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
-:NN_Fem_Gen_Sg_Sw_Mix	olias:hasTagEndingWith	"<+NN><Fem><Gen><Sg><Sw/Mix>"; lexinfo:gender lexinfo:feminine; lexinfo:case lexinfo:genitive; lexinfo:partofSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
-:NN_Fem_Nom_Sg	olias:hasTagEndingWith	"<+NN><Fem><Nom><Sg>"; lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:feminine; lexinfo:partofSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
-:NN_Masc_Akk_Pl_St	olias:hasTagEndingWith	"<+NN><Masc><Akk><Pl><St>"; lexinfo:case lexinfo:accusative; lexinfo:number lexinfo:plural; lexinfo:gender lexinfo:masculine; lexinfo:partofSpeech lexinfo:commonNoun.
-:NN_Masc_Akk_Pl_Sw_Mix	olias:hasTagEndingWith	"<+NN><Masc><Akk><Pl><Sw/Mix>"; lexinfo:case lexinfo:accusative; lexinfo:number lexinfo:plural; lexinfo:gender lexinfo:masculine; lexinfo:partofSpeech lexinfo:commonNoun.
-:NN_Masc_Akk_Sg	olias:hasTagEndingWith	"<+NN><Masc><Akk><Sg>"; lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:masculine; lexinfo:partofSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
-:NN_Masc_Dat_Pl	olias:hasTagEndingWith	"<+NN><Masc><Dat><Pl>"; lexinfo:case lexinfo:dative; lexinfo:number lexinfo:plural; lexinfo:gender lexinfo:masculine; lexinfo:partofSpeech lexinfo:commonNoun.
-:NN_Masc_Dat_Sg	olias:hasTagEndingWith	"<+NN><Masc><Dat><Sg>"; lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:partofSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
-:NN_Masc_Dat_Sg_St	olias:hasTagEndingWith	"<+NN><Masc><Dat><Sg><St>"; lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:partofSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
-:NN_Masc_Dat_Sg_Sw_Mix	olias:hasTagEndingWith	"<+NN><Masc><Dat><Sg><Sw/Mix>"; lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:partofSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
-:NN_Masc_Gen_Pl_St	olias:hasTagEndingWith	"<+NN><Masc><Gen><Pl><St>"; lexinfo:number lexinfo:plural; lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:partofSpeech lexinfo:commonNoun.
-:NN_Masc_Gen_Pl_Sw_Mix	olias:hasTagEndingWith	"<+NN><Masc><Gen><Pl><Sw/Mix>"; lexinfo:number lexinfo:plural; lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:partofSpeech lexinfo:commonNoun.
-:NN_Masc_Gen_Sg	olias:hasTagEndingWith	"<+NN><Masc><Gen><Sg>"; lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:partofSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
-:NN_Masc_Nom_Pl_St	olias:hasTagEndingWith	"<+NN><Masc><Nom><Pl><St>"; lexinfo:case lexinfo:nominative; lexinfo:number lexinfo:plural; lexinfo:gender lexinfo:masculine; lexinfo:partofSpeech lexinfo:commonNoun.
-:NN_Masc_Nom_Pl_Sw_Mix	olias:hasTagEndingWith	"<+NN><Masc><Nom><Pl><Sw/Mix>"; lexinfo:case lexinfo:nominative; lexinfo:number lexinfo:plural; lexinfo:gender lexinfo:masculine; lexinfo:partofSpeech lexinfo:commonNoun.
-:NN_Masc_Nom_Sg	olias:hasTagEndingWith	"<+NN><Masc><Nom><Sg>"; lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:partofSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
-:NN_Masc_Nom_Sg_St_Mix	olias:hasTagEndingWith	"<+NN><Masc><Nom><Sg><St/Mix>"; lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:partofSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
-:NN_Masc_Nom_Sg_Sw	olias:hasTagEndingWith	"<+NN><Masc><Nom><Sg><Sw>"; lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:partofSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
-:NN_Neut_Akk_Sg	olias:hasTagEndingWith	"<+NN><Neut><Akk><Sg>"; lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:neuter; lexinfo:partofSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
-:NN_Neut_Akk_Sg_St_Mix	olias:hasTagEndingWith	"<+NN><Neut><Akk><Sg><St/Mix>"; lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:neuter; lexinfo:partofSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
-:NN_Neut_Akk_Sg_Sw	olias:hasTagEndingWith	"<+NN><Neut><Akk><Sg><Sw>"; lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:neuter; lexinfo:partofSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
-:NN_Neut_Dat_Sg	olias:hasTagEndingWith	"<+NN><Neut><Dat><Sg>"; lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:neuter; lexinfo:partofSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
-:NN_Neut_Dat_Sg_St	olias:hasTagEndingWith	"<+NN><Neut><Dat><Sg><St>"; lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:neuter; lexinfo:partofSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
-:NN_Neut_Dat_Sg_Sw_Mix	olias:hasTagEndingWith	"<+NN><Neut><Dat><Sg><Sw/Mix>"; lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:neuter; lexinfo:partofSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
-:NN_Neut_Gen_Sg	olias:hasTagEndingWith	"<+NN><Neut><Gen><Sg>"; lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:neuter; lexinfo:partofSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
-:NN_Neut_Nom_Sg	olias:hasTagEndingWith	"<+NN><Neut><Nom><Sg>"; lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:neuter; lexinfo:partofSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
-:NN_Neut_Nom_Sg_St_Mix	olias:hasTagEndingWith	"<+NN><Neut><Nom><Sg><St/Mix>"; lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:neuter; lexinfo:partofSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
-:NN_Neut_Nom_Sg_Sw	olias:hasTagEndingWith	"<+NN><Neut><Nom><Sg><Sw>"; lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:neuter; lexinfo:partofSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
-:NN_NoGend_Akk_Pl_St	olias:hasTagEndingWith	"<+NN><NoGend><Akk><Pl><St>"; lexinfo:case lexinfo:accusative; lexinfo:number lexinfo:plural; lexinfo:case lexinfo:genitive; lexinfo:partofSpeech lexinfo:commonNoun.
-:NN_NoGend_Akk_Pl_Sw_Mix	olias:hasTagEndingWith	"<+NN><NoGend><Akk><Pl><Sw/Mix>"; lexinfo:case lexinfo:accusative; lexinfo:number lexinfo:plural; lexinfo:case lexinfo:genitive; lexinfo:partofSpeech lexinfo:commonNoun.
-:NN_NoGend_Dat_Pl	olias:hasTagEndingWith	"<+NN><NoGend><Dat><Pl>"; lexinfo:case lexinfo:dative; lexinfo:number lexinfo:plural; lexinfo:case lexinfo:genitive; lexinfo:partofSpeech lexinfo:commonNoun.
-:NN_NoGend_Gen_Pl_St	olias:hasTagEndingWith	"<+NN><NoGend><Gen><Pl><St>"; lexinfo:number lexinfo:plural; lexinfo:case lexinfo:genitive; lexinfo:partofSpeech lexinfo:commonNoun.
-:NN_NoGend_Gen_Pl_Sw_Mix	olias:hasTagEndingWith	"<+NN><NoGend><Gen><Pl><Sw/Mix>"; lexinfo:number lexinfo:plural; lexinfo:case lexinfo:genitive; lexinfo:partofSpeech lexinfo:commonNoun.
-:NN_NoGend_Nom_Pl_St	olias:hasTagEndingWith	"<+NN><NoGend><Nom><Pl><St>"; lexinfo:case lexinfo:nominative; lexinfo:number lexinfo:plural; lexinfo:case lexinfo:genitive; lexinfo:partofSpeech lexinfo:commonNoun.
-:NN_NoGend_Nom_Pl_Sw_Mix	olias:hasTagEndingWith	"<+NN><NoGend><Nom><Pl><Sw/Mix>"; lexinfo:case lexinfo:nominative; lexinfo:number lexinfo:plural; lexinfo:case lexinfo:genitive; lexinfo:partofSpeech lexinfo:commonNoun.
+:NN_Fem_Akk_Sg	olias:hasTagEndingWith	"<+NN><Fem><Akk><Sg>"; lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:feminine; lexinfo:partOfSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
+:NN_Fem_Dat_Sg_St	olias:hasTagEndingWith	"<+NN><Fem><Dat><Sg><St>"; lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:feminine; lexinfo:partOfSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
+:NN_Fem_Dat_Sg_Sw_Mix	olias:hasTagEndingWith	"<+NN><Fem><Dat><Sg><Sw/Mix>"; lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:feminine; lexinfo:partOfSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
+:NN_Fem_Gen_Sg_St	olias:hasTagEndingWith	"<+NN><Fem><Gen><Sg><St>"; lexinfo:gender lexinfo:feminine; lexinfo:case lexinfo:genitive; lexinfo:partOfSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
+:NN_Fem_Gen_Sg_Sw_Mix	olias:hasTagEndingWith	"<+NN><Fem><Gen><Sg><Sw/Mix>"; lexinfo:gender lexinfo:feminine; lexinfo:case lexinfo:genitive; lexinfo:partOfSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
+:NN_Fem_Nom_Sg	olias:hasTagEndingWith	"<+NN><Fem><Nom><Sg>"; lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:feminine; lexinfo:partOfSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
+:NN_Masc_Akk_Pl_St	olias:hasTagEndingWith	"<+NN><Masc><Akk><Pl><St>"; lexinfo:case lexinfo:accusative; lexinfo:number lexinfo:plural; lexinfo:gender lexinfo:masculine; lexinfo:partOfSpeech lexinfo:commonNoun.
+:NN_Masc_Akk_Pl_Sw_Mix	olias:hasTagEndingWith	"<+NN><Masc><Akk><Pl><Sw/Mix>"; lexinfo:case lexinfo:accusative; lexinfo:number lexinfo:plural; lexinfo:gender lexinfo:masculine; lexinfo:partOfSpeech lexinfo:commonNoun.
+:NN_Masc_Akk_Sg	olias:hasTagEndingWith	"<+NN><Masc><Akk><Sg>"; lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:masculine; lexinfo:partOfSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
+:NN_Masc_Dat_Pl	olias:hasTagEndingWith	"<+NN><Masc><Dat><Pl>"; lexinfo:case lexinfo:dative; lexinfo:number lexinfo:plural; lexinfo:gender lexinfo:masculine; lexinfo:partOfSpeech lexinfo:commonNoun.
+:NN_Masc_Dat_Sg	olias:hasTagEndingWith	"<+NN><Masc><Dat><Sg>"; lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:partOfSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
+:NN_Masc_Dat_Sg_St	olias:hasTagEndingWith	"<+NN><Masc><Dat><Sg><St>"; lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:partOfSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
+:NN_Masc_Dat_Sg_Sw_Mix	olias:hasTagEndingWith	"<+NN><Masc><Dat><Sg><Sw/Mix>"; lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:partOfSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
+:NN_Masc_Gen_Pl_St	olias:hasTagEndingWith	"<+NN><Masc><Gen><Pl><St>"; lexinfo:number lexinfo:plural; lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:partOfSpeech lexinfo:commonNoun.
+:NN_Masc_Gen_Pl_Sw_Mix	olias:hasTagEndingWith	"<+NN><Masc><Gen><Pl><Sw/Mix>"; lexinfo:number lexinfo:plural; lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:partOfSpeech lexinfo:commonNoun.
+:NN_Masc_Gen_Sg	olias:hasTagEndingWith	"<+NN><Masc><Gen><Sg>"; lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:partOfSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
+:NN_Masc_Nom_Pl_St	olias:hasTagEndingWith	"<+NN><Masc><Nom><Pl><St>"; lexinfo:case lexinfo:nominative; lexinfo:number lexinfo:plural; lexinfo:gender lexinfo:masculine; lexinfo:partOfSpeech lexinfo:commonNoun.
+:NN_Masc_Nom_Pl_Sw_Mix	olias:hasTagEndingWith	"<+NN><Masc><Nom><Pl><Sw/Mix>"; lexinfo:case lexinfo:nominative; lexinfo:number lexinfo:plural; lexinfo:gender lexinfo:masculine; lexinfo:partOfSpeech lexinfo:commonNoun.
+:NN_Masc_Nom_Sg	olias:hasTagEndingWith	"<+NN><Masc><Nom><Sg>"; lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:partOfSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
+:NN_Masc_Nom_Sg_St_Mix	olias:hasTagEndingWith	"<+NN><Masc><Nom><Sg><St/Mix>"; lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:partOfSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
+:NN_Masc_Nom_Sg_Sw	olias:hasTagEndingWith	"<+NN><Masc><Nom><Sg><Sw>"; lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:partOfSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
+:NN_Neut_Akk_Sg	olias:hasTagEndingWith	"<+NN><Neut><Akk><Sg>"; lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:neuter; lexinfo:partOfSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
+:NN_Neut_Akk_Sg_St_Mix	olias:hasTagEndingWith	"<+NN><Neut><Akk><Sg><St/Mix>"; lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:neuter; lexinfo:partOfSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
+:NN_Neut_Akk_Sg_Sw	olias:hasTagEndingWith	"<+NN><Neut><Akk><Sg><Sw>"; lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:neuter; lexinfo:partOfSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
+:NN_Neut_Dat_Sg	olias:hasTagEndingWith	"<+NN><Neut><Dat><Sg>"; lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:neuter; lexinfo:partOfSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
+:NN_Neut_Dat_Sg_St	olias:hasTagEndingWith	"<+NN><Neut><Dat><Sg><St>"; lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:neuter; lexinfo:partOfSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
+:NN_Neut_Dat_Sg_Sw_Mix	olias:hasTagEndingWith	"<+NN><Neut><Dat><Sg><Sw/Mix>"; lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:neuter; lexinfo:partOfSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
+:NN_Neut_Gen_Sg	olias:hasTagEndingWith	"<+NN><Neut><Gen><Sg>"; lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:neuter; lexinfo:partOfSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
+:NN_Neut_Nom_Sg	olias:hasTagEndingWith	"<+NN><Neut><Nom><Sg>"; lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:neuter; lexinfo:partOfSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
+:NN_Neut_Nom_Sg_St_Mix	olias:hasTagEndingWith	"<+NN><Neut><Nom><Sg><St/Mix>"; lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:neuter; lexinfo:partOfSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
+:NN_Neut_Nom_Sg_Sw	olias:hasTagEndingWith	"<+NN><Neut><Nom><Sg><Sw>"; lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:neuter; lexinfo:partOfSpeech lexinfo:commonNoun; lexinfo:number lexinfo:singular.
+:NN_NoGend_Akk_Pl_St	olias:hasTagEndingWith	"<+NN><NoGend><Akk><Pl><St>"; lexinfo:case lexinfo:accusative; lexinfo:number lexinfo:plural; lexinfo:case lexinfo:genitive; lexinfo:partOfSpeech lexinfo:commonNoun.
+:NN_NoGend_Akk_Pl_Sw_Mix	olias:hasTagEndingWith	"<+NN><NoGend><Akk><Pl><Sw/Mix>"; lexinfo:case lexinfo:accusative; lexinfo:number lexinfo:plural; lexinfo:case lexinfo:genitive; lexinfo:partOfSpeech lexinfo:commonNoun.
+:NN_NoGend_Dat_Pl	olias:hasTagEndingWith	"<+NN><NoGend><Dat><Pl>"; lexinfo:case lexinfo:dative; lexinfo:number lexinfo:plural; lexinfo:case lexinfo:genitive; lexinfo:partOfSpeech lexinfo:commonNoun.
+:NN_NoGend_Gen_Pl_St	olias:hasTagEndingWith	"<+NN><NoGend><Gen><Pl><St>"; lexinfo:number lexinfo:plural; lexinfo:case lexinfo:genitive; lexinfo:partOfSpeech lexinfo:commonNoun.
+:NN_NoGend_Gen_Pl_Sw_Mix	olias:hasTagEndingWith	"<+NN><NoGend><Gen><Pl><Sw/Mix>"; lexinfo:number lexinfo:plural; lexinfo:case lexinfo:genitive; lexinfo:partOfSpeech lexinfo:commonNoun.
+:NN_NoGend_Nom_Pl_St	olias:hasTagEndingWith	"<+NN><NoGend><Nom><Pl><St>"; lexinfo:case lexinfo:nominative; lexinfo:number lexinfo:plural; lexinfo:case lexinfo:genitive; lexinfo:partOfSpeech lexinfo:commonNoun.
+:NN_NoGend_Nom_Pl_Sw_Mix	olias:hasTagEndingWith	"<+NN><NoGend><Nom><Pl><Sw/Mix>"; lexinfo:case lexinfo:nominative; lexinfo:number lexinfo:plural; lexinfo:case lexinfo:genitive; lexinfo:partOfSpeech lexinfo:commonNoun.
 :NoGend_Akk_Pl_St	olias:hasTagEndingWith	"<NoGend><Akk><Pl><St>"; lexinfo:case lexinfo:accusative; lexinfo:number lexinfo:plural; lexinfo:case lexinfo:genitive.
 :NoGend_Akk_Pl_Sw_Mix	olias:hasTagEndingWith	"<NoGend><Akk><Pl><Sw/Mix>"; lexinfo:case lexinfo:accusative; lexinfo:number lexinfo:plural; lexinfo:case lexinfo:genitive.
 :NoGend_Dat_Pl	olias:hasTagEndingWith	"<NoGend><Dat><Pl>"; lexinfo:case lexinfo:dative; lexinfo:number lexinfo:plural; lexinfo:case lexinfo:genitive.
@@ -160,7 +160,7 @@ PREFIX : <http://purl.org/acoli/morph/morphisto/de/annomodel#>
 :V_PPres_zu	olias:hasTagEndingWith	"<+V><PPres><zu>"; lexinfo:verbForm lexinfo:participle; lexinfo:tense lexinfo:present; lexinfo:partOfSpeech lexinfo:verb.
 :VPRE_Adj	olias:hasTagEndingWith	"<+VPRE><Adj>"; lexinfo:partOfSpeech lexinfo:adjective.
 :VPRE_Adv	olias:hasTagEndingWith	"<+VPRE><Adv>"; lexinfo:partOfSpeech  lexinfo:adverb.
-:VPRE_NN	olias:hasTagEndingWith	"<+VPRE><NN>"; lexinfo:partofSpeech lexinfo:commonNoun.
+:VPRE_NN	olias:hasTagEndingWith	"<+VPRE><NN>"; lexinfo:partOfSpeech lexinfo:commonNoun.
 :VPRE	olias:hasTagEndingWith	"<+VPRE>".
 :VPRE_ProAdv	olias:hasTagEndingWith	"<+VPRE><ProAdv>"; lexinfo:partOfSpeech  lexinfo:adverb, lexinfo:pronominalAdverb.
 :VPRE_V	olias:hasTagEndingWith	"<+VPRE><V>"; lexinfo:partOfSpeech lexinfo:verb.

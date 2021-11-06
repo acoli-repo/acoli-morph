@@ -1,0 +1,1000 @@
+rule2sed.sparql: 268 rules for 268 paradigms
+annomodel.ttl: 163 annotation concepts
+Aachen lexinfo:partOfSpeech lexinfo:commonNoun
+*Aachens lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+         lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+
+Aal lexinfo:partOfSpeech lexinfo:commonNoun
+*Aale lexinfo:case lexinfo:accusative, lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+      lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+      lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+      lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+      lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+      lexinfo:case lexinfo:dative, lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+      lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+      lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+      lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+      lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+      lexinfo:case lexinfo:genitive, lexinfo:nominative; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+      lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+      lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+      lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+      lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+      lexinfo:case lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+      lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+      lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+      lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+      lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+
+Adel lexinfo:partOfSpeech lexinfo:commonNoun
+*Adeles lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+
+Bildnis lexinfo:partOfSpeech lexinfo:commonNoun
+*Bildnise lexinfo:case lexinfo:accusative, lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:dative, lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:genitive, lexinfo:nominative; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+
+enthüll lexinfo:partOfSpeech lexinfo:verb
+*enthüllt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entkomm lexinfo:partOfSpeech lexinfo:verb
+*entkommen lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entkräft lexinfo:partOfSpeech lexinfo:verb
+*entkräftt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entlad lexinfo:partOfSpeech lexinfo:verb
+*entladen lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entlad lexinfo:partOfSpeech lexinfo:verb
+*entladend lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+Bildung lexinfo:partOfSpeech lexinfo:commonNoun
+*Bildungen lexinfo:case lexinfo:accusative, lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:dative, lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:genitive, lexinfo:nominative; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+
+entlarv lexinfo:partOfSpeech lexinfo:verb
+*entlarvt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entlass lexinfo:partOfSpeech lexinfo:verb
+*entlassen lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entlass lexinfo:partOfSpeech lexinfo:verb
+*entlassend lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entlast lexinfo:partOfSpeech lexinfo:verb
+*entlastt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entlauf lexinfo:partOfSpeech lexinfo:verb
+*entlaufen lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+Billard lexinfo:partOfSpeech lexinfo:commonNoun
+*Billarde lexinfo:case lexinfo:accusative, lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:dative, lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:genitive, lexinfo:nominative; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+
+entlauf lexinfo:partOfSpeech lexinfo:verb
+*entlaufend lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entledig lexinfo:partOfSpeech lexinfo:verb
+*entledigt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entleer lexinfo:partOfSpeech lexinfo:verb
+*entleert lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entlock lexinfo:partOfSpeech lexinfo:verb
+*entlockt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entlohn lexinfo:partOfSpeech lexinfo:verb
+*entlohnt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entmacht lexinfo:partOfSpeech lexinfo:verb
+*entmachtt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entmutig lexinfo:partOfSpeech lexinfo:verb
+*entmutigt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entnehm lexinfo:partOfSpeech lexinfo:verb
+*entnehmend lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entnehm lexinfo:partOfSpeech lexinfo:verb
+*entnehmen lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entnomm lexinfo:partOfSpeech lexinfo:verb
+*entnommen lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entnerv lexinfo:partOfSpeech lexinfo:verb
+*entnervt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entpupp lexinfo:partOfSpeech lexinfo:verb
+*entpuppt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entreiß lexinfo:partOfSpeech lexinfo:verb
+*entreißen lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entriss lexinfo:partOfSpeech lexinfo:verb
+*entrissen lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entricht lexinfo:partOfSpeech lexinfo:verb
+*entrichtt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+Billett lexinfo:partOfSpeech lexinfo:commonNoun
+*Billette lexinfo:case lexinfo:accusative, lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:dative, lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:genitive, lexinfo:nominative; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+
+entrinn lexinfo:partOfSpeech lexinfo:verb
+*entrinnen lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entronn lexinfo:partOfSpeech lexinfo:verb
+*entronnen lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entrück lexinfo:partOfSpeech lexinfo:verb
+*entrückt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entrüst lexinfo:partOfSpeech lexinfo:verb
+*entrüstt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entschädig lexinfo:partOfSpeech lexinfo:verb
+*entschädigt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+             lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+             lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entschärf lexinfo:partOfSpeech lexinfo:verb
+*entschärft lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+Billion lexinfo:partOfSpeech lexinfo:commonNoun
+*Billionen lexinfo:case lexinfo:accusative, lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:dative, lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:genitive, lexinfo:nominative; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+
+entscheid lexinfo:partOfSpeech lexinfo:verb
+*entscheiden lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+             lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+             lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entschied lexinfo:partOfSpeech lexinfo:verb
+*entschieden lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+             lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+             lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entschließ lexinfo:partOfSpeech lexinfo:verb
+*entschließen lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+              lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+              lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entschloss lexinfo:partOfSpeech lexinfo:verb
+*entschlossen lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+              lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+              lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entschlüssel lexinfo:partOfSpeech lexinfo:verb
+*entschlüsselt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+               lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+               lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entschlüssel lexinfo:partOfSpeech lexinfo:verb
+*entschlüsselt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+               lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+               lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entschuld lexinfo:partOfSpeech lexinfo:verb
+*entschuldt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entschuldig lexinfo:partOfSpeech lexinfo:verb
+*entschuldigt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+              lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+              lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+Binde lexinfo:partOfSpeech lexinfo:commonNoun
+*Binden lexinfo:case lexinfo:accusative, lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:dative, lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:genitive, lexinfo:nominative; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+
+entschwind lexinfo:partOfSpeech lexinfo:verb
+*entschwinden lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+              lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+              lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entschwund lexinfo:partOfSpeech lexinfo:verb
+*entschwunden lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+              lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+              lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entsand lexinfo:partOfSpeech lexinfo:verb
+*entsandt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entsend lexinfo:partOfSpeech lexinfo:verb
+*entsendt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entsend lexinfo:partOfSpeech lexinfo:verb
+*entsendt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entsorg lexinfo:partOfSpeech lexinfo:verb
+*entsorgt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entspann lexinfo:partOfSpeech lexinfo:verb
+*entspannt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+Bindung lexinfo:partOfSpeech lexinfo:commonNoun
+*Bindungen lexinfo:case lexinfo:accusative, lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:dative, lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:genitive, lexinfo:nominative; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+           lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+
+entspinn lexinfo:partOfSpeech lexinfo:verb
+*entspinnen lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entsponn lexinfo:partOfSpeech lexinfo:verb
+*entsponnen lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entsprech lexinfo:partOfSpeech lexinfo:verb
+*entsprechend lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+              lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+              lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entsprech lexinfo:partOfSpeech lexinfo:verb
+*entsprechen lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+             lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+             lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entsproch lexinfo:partOfSpeech lexinfo:verb
+*entsprochen lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+             lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+             lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entspring lexinfo:partOfSpeech lexinfo:verb
+*entspringen lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+             lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+             lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entsprung lexinfo:partOfSpeech lexinfo:verb
+*entsprungen lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+             lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+             lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entstamm lexinfo:partOfSpeech lexinfo:verb
+*entstammt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entstand lexinfo:partOfSpeech lexinfo:verb
+*entstanden lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entsteh lexinfo:partOfSpeech lexinfo:verb
+*entstehen lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entsteig lexinfo:partOfSpeech lexinfo:verb
+*entsteigen lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entstieg lexinfo:partOfSpeech lexinfo:verb
+*entstiegen lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entstell lexinfo:partOfSpeech lexinfo:verb
+*entstellt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+Bingen lexinfo:partOfSpeech lexinfo:commonNoun
+*Bingens lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+         lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+
+enttarn lexinfo:partOfSpeech lexinfo:verb
+*enttarnt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+enttäusch lexinfo:partOfSpeech lexinfo:verb
+*enttäuscht lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entwachs lexinfo:partOfSpeech lexinfo:verb
+*entwachsen lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entwachs lexinfo:partOfSpeech lexinfo:verb
+*entwachsend lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+             lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+             lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entwaffn lexinfo:partOfSpeech lexinfo:verb
+*entwaffnt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+Aden lexinfo:partOfSpeech lexinfo:commonNoun
+*Adens lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+       lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+
+Binse lexinfo:partOfSpeech lexinfo:commonNoun
+*Binsen lexinfo:case lexinfo:accusative, lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:dative, lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:genitive, lexinfo:nominative; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+
+entweich lexinfo:partOfSpeech lexinfo:verb
+*entweichen lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entwich lexinfo:partOfSpeech lexinfo:verb
+*entwichen lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entwand lexinfo:partOfSpeech lexinfo:verb
+*entwandt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entwend lexinfo:partOfSpeech lexinfo:verb
+*entwendt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entwend lexinfo:partOfSpeech lexinfo:verb
+*entwendt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entwend lexinfo:partOfSpeech lexinfo:verb
+*entwendt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entwerf lexinfo:partOfSpeech lexinfo:verb
+*entwerfend lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entwerf lexinfo:partOfSpeech lexinfo:verb
+*entwerfen lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entworf lexinfo:partOfSpeech lexinfo:verb
+*entworfen lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+Bio lexinfo:partOfSpeech lexinfo:commonNoun
+*Bios lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+      lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+
+entwert lexinfo:partOfSpeech lexinfo:verb
+*entwertt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entwickel lexinfo:partOfSpeech lexinfo:verb
+*entwickelt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entwürdig lexinfo:partOfSpeech lexinfo:verb
+*entwürdigt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entwurzel lexinfo:partOfSpeech lexinfo:verb
+*entwurzelt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entzauber lexinfo:partOfSpeech lexinfo:verb
+*entzaubert lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entzieh lexinfo:partOfSpeech lexinfo:verb
+*entziehen lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entzog lexinfo:partOfSpeech lexinfo:verb
+*entzogen lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entziffer lexinfo:partOfSpeech lexinfo:verb
+*entziffert lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+Biografie lexinfo:partOfSpeech lexinfo:commonNoun
+*Biografien lexinfo:case lexinfo:accusative, lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:dative, lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:genitive, lexinfo:nominative; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+
+entzück lexinfo:partOfSpeech lexinfo:verb
+*entzückt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entzünd lexinfo:partOfSpeech lexinfo:verb
+*entzündt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+entzwei lexinfo:partOfSpeech lexinfo:verb
+*entzweit lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+eracht lexinfo:partOfSpeech lexinfo:verb
+*erachtt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+         lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+         lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erahn lexinfo:partOfSpeech lexinfo:verb
+*erahnt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+        lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+        lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erarbeit lexinfo:partOfSpeech lexinfo:verb
+*erarbeitt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erb lexinfo:partOfSpeech lexinfo:verb
+*erbt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+      lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+      lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erbau lexinfo:partOfSpeech lexinfo:verb
+*erbaut lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+        lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+        lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erbeut lexinfo:partOfSpeech lexinfo:verb
+*erbeutt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+         lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+         lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+Biograph lexinfo:partOfSpeech lexinfo:commonNoun
+*Biographen lexinfo:case lexinfo:accusative, lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:dative, lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:genitive, lexinfo:nominative; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+            lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+
+erbeth lexinfo:partOfSpeech lexinfo:verb
+*erbethen lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erbitt lexinfo:partOfSpeech lexinfo:verb
+*erbitten lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erblick lexinfo:partOfSpeech lexinfo:verb
+*erblickt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erbos lexinfo:partOfSpeech lexinfo:verb
+*erbost lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+        lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+        lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erbrech lexinfo:partOfSpeech lexinfo:verb
+*erbrechend lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erbrech lexinfo:partOfSpeech lexinfo:verb
+*erbrechen lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erbroch lexinfo:partOfSpeech lexinfo:verb
+*erbrochen lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+Biographie lexinfo:partOfSpeech lexinfo:commonNoun
+*Biographien lexinfo:case lexinfo:accusative, lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+             lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+             lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+             lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+             lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+             lexinfo:case lexinfo:dative, lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+             lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+             lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+             lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+             lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+             lexinfo:case lexinfo:genitive, lexinfo:nominative; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+             lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+             lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+             lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+             lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+             lexinfo:case lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+             lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+             lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+             lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+             lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+
+erbrach lexinfo:partOfSpeech lexinfo:verb
+*erbracht lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erbring lexinfo:partOfSpeech lexinfo:verb
+*erbringt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erd lexinfo:partOfSpeech lexinfo:verb
+*erdt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+      lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+      lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erdach lexinfo:partOfSpeech lexinfo:verb
+*erdacht lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+         lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+         lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erdenk lexinfo:partOfSpeech lexinfo:verb
+*erdenkt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+         lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+         lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erdenk lexinfo:partOfSpeech lexinfo:verb
+*erdenkt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+         lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+         lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erdrossel lexinfo:partOfSpeech lexinfo:verb
+*erdrosselt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+            lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+Biologe lexinfo:partOfSpeech lexinfo:commonNoun
+*Biologen lexinfo:case lexinfo:accusative, lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:dative, lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:genitive, lexinfo:nominative; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+          lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+
+erdrück lexinfo:partOfSpeech lexinfo:verb
+*erdrückt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erduld lexinfo:partOfSpeech lexinfo:verb
+*erduldt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+         lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+         lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+ereign lexinfo:partOfSpeech lexinfo:verb
+*ereignt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+         lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+         lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+ereil lexinfo:partOfSpeech lexinfo:verb
+*ereilt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+        lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+        lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erfahr lexinfo:partOfSpeech lexinfo:verb
+*erfahren lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erfahr lexinfo:partOfSpeech lexinfo:verb
+*erfahrend lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erfass lexinfo:partOfSpeech lexinfo:verb
+*erfasst lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+         lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+         lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erfaß lexinfo:partOfSpeech lexinfo:verb
+*erfaßt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+        lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+        lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erfass lexinfo:partOfSpeech lexinfo:verb
+*erfasst lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+         lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+         lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erfecht lexinfo:partOfSpeech lexinfo:verb
+*erfechten lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erfocht lexinfo:partOfSpeech lexinfo:verb
+*erfochten lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erfind lexinfo:partOfSpeech lexinfo:verb
+*erfinden lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erfund lexinfo:partOfSpeech lexinfo:verb
+*erfunden lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+Biotop lexinfo:partOfSpeech lexinfo:commonNoun
+*Biotope lexinfo:case lexinfo:accusative, lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+         lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+         lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+         lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+         lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+         lexinfo:case lexinfo:dative, lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+         lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+         lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+         lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+         lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+         lexinfo:case lexinfo:genitive, lexinfo:nominative; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+         lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+         lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+         lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+         lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+         lexinfo:case lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+         lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+         lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+         lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+         lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+
+erfolg lexinfo:partOfSpeech lexinfo:verb
+*erfolgt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+         lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+         lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erforder lexinfo:partOfSpeech lexinfo:verb
+*erfordert lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erforsch lexinfo:partOfSpeech lexinfo:verb
+*erforscht lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erfrag lexinfo:partOfSpeech lexinfo:verb
+*erfragt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+         lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+         lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erfreu lexinfo:partOfSpeech lexinfo:verb
+*erfreut lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+         lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+         lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erfreu lexinfo:partOfSpeech lexinfo:verb
+*erfreut lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+         lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+         lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erfrier lexinfo:partOfSpeech lexinfo:verb
+*erfrieren lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erfror lexinfo:partOfSpeech lexinfo:verb
+*erfroren lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+          lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+Birke lexinfo:partOfSpeech lexinfo:commonNoun
+*Birken lexinfo:case lexinfo:accusative, lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:accusative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:dative, lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:dative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:genitive, lexinfo:nominative; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:genitive; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:genitive; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:feminine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:plural; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:masculine; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+        lexinfo:case lexinfo:nominative; lexinfo:gender lexinfo:neuter; lexinfo:number lexinfo:singular; lexinfo:partOfSpeech lexinfo:commonNoun
+
+erfrisch lexinfo:partOfSpeech lexinfo:verb
+*erfrischt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+erfüll lexinfo:partOfSpeech lexinfo:verb
+*erfüllt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+         lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+         lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+ergänz lexinfo:partOfSpeech lexinfo:verb
+*ergänzt lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+         lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+         lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+ergatter lexinfo:partOfSpeech lexinfo:verb
+*ergattert lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
+           lexinfo:partOfSpeech lexinfo:verb; lexinfo:verbForm lexinfo:infinitive
+
+ergeb lexinfo:partOfSpeech lexinfo:verb
+*ergeben lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:past; lexinfo:verbForm lexinfo:participle
+         lexinfo:partOfSpeech lexinfo:verb; lexinfo:tense lexinfo:present; lexinfo:verbForm lexinfo:participle
