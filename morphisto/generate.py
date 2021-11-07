@@ -235,30 +235,70 @@ class Generator:
 
         return pruned
 
+    hash2reps={}
+
     def _generate(self,sed_script,input):
         result=""
         error=""
+
+        sed2unescape={
+            "\\u005e": "\\^",
+            "\\u002f": "/",
+            "\\u0022": '\\"',
+            "\\u0024": "\\$",
+            "\\u0026": "&",
+            "\\(": "(",
+            "\\)": ")"
+            #q "\\(":"(",
+            # "\\)":")",
+            #"\\u":"\\\\u"
+        }
         hash=hashlib.md5(sed_script.encode('utf-8')).hexdigest()
+        if not hash in self.hash2reps:
+            self.hash2reps[hash]=[]
+            replacements=sed_script.split("; s")
+            replacements=[ rep.split("/") for rep in replacements ]
+            replacements=[ (rep[1],rep[2]) for rep in replacements if len(rep)>2 ]
+            for src,tgt in replacements:
+                for sed,py in sed2unescape.items():
+                    if sed in src:
+                        src=py.join(src.split(sed))
+                    if sed in tgt:
+                        tgt=py.join(tgt.split(sed))
+                self.hash2reps[hash].append((src,tgt))
 
-        tmpfile=os.path.join(self.tmpdir.name,hash+".sed")
-        if not os.path.exists(tmpfile):
-            with open(tmpfile,"wt") as output:
-                output.write(sed_script)
+        output=input
+        try:
+            for src, tgt in self.hash2reps[hash]:
+                output=re.sub(src,tgt,output)
+            if output.startswith("\\*"):
+                output=output[1:]
+        except:
+            traceback.print_exc()
+            sys.exit()
+        return output.strip()
 
-        sed=["sed","-f",tmpfile]
-        sed=subprocess.Popen(sed,stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
 
-        result,error=sed.communicate((input.strip()+"\n").encode("utf-8"))
-        if result!=None:
-            result=result.decode("utf-8")
-        if error!=None:
-            error=error.decode("utf-8").strip()
-        # print(result,error)
-        if error!=None and len(error)>0:
-            raise Exception(error+"\n"+\
-                "input: \""+input+"\"\n"+\
-                "sed script:\n"+("="*80)+"\n"+sed_script+"\n"+("="*80))
-        return result.strip()
+        # the same with using external sed (slower, requires writing to disk)
+        # tmpfile=os.path.join(self.tmpdir.name,hash+".sed")
+        # if not os.path.exists(tmpfile):
+        #     with open(tmpfile,"wt") as output:
+        #         output.write(sed_script)
+        #
+        # sed=["sed","-f",tmpfile]
+        # sed=subprocess.Popen(sed,stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+        #
+        # result,error=sed.communicate((input.strip()+"\n").encode("utf-8"))
+        # if result!=None:
+        #     result=result.decode("utf-8")
+        # if error!=None:
+        #     error=error.decode("utf-8").strip()
+        # # print(result,error)
+        # if error!=None and len(error)>0:
+        #     raise Exception(error+"\n"+\
+        #         "input: \""+input+"\"\n"+\
+        #         "sed script:\n"+("="*80)+"\n"+sed_script+"\n"+("="*80))
+        # return result.strip()
 
     def generate_for_dict(self, inputsource, skip_incomplete_forms=None,strict_mode=None, output_file=None, compact=False):
         """ given an OntoLex resource with paradigm/inflection type annotations,

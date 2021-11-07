@@ -78,16 +78,18 @@ contains the OLiA annotation model needed for generating hypothetical forms from
 
 ## Generation
 
-With the current modelling of replacements, we can use SPARQL to generate sed or perl (or, with little more effort, Java, Python or even SPARQL) scripts that implement the rules, see `rule2sed.sparql`. However, some escapes need to be undone, and the final removal of tags is heuristic. Also, the morphophonological rules and filters (that would be triggered by these tags) are not covered. We thus add two extra rules to `rule2sed.sparql`: Put `*` in front of the form if the final form contains any tag, then remove all tags.
+With the current modelling of replacements, we can use SPARQL to generate sed or perl (or, with little more effort, Java, Python or even SPARQL) scripts that implement the rules, see `rule2sed.sparql`. Originally, this was directly executed by `sed`, but as this requires access to disk, we now read the sed script to Python and process it using `re.sub` (some escapes need to be undone). Note that the final removal of tags is heuristic, and, in particular, the morphophonological rules and filters (that would be triggered by these tags) are not covered. We thus add two extra rules to `rule2sed.sparql`: Put `*` in front of the form if the final form contains any tag, then remove all tags. When writing OntoLex output, this `*` is removed, but the generated form is marked as a `morph:HypotheticalForm`.
 
 Try it with
 
     $> make test
 
-A general problem is that the initial inflection type typically allows to generate multiple different forms but that our current approach merges these into a single (sequence of) regular expressions.
-This also means that sometimes the initial features don't match the lexinfo features because multiple different forms are generated from the same inflection type. In the current implementation, this means that all infinitives are incorrect (because instead of infinitive, the regular expressions produces a 3rd person singular indicative present form or participle form before the infinitive replacement applies).
-
 As we do not include the morphophonological rules of Morphisto/SMOR, all generated forms are flagged as non-final/hypothetical (and marked with `*`). For such unconfirmed forms, we only return forms that differ from the base form. However, all forms are generated, but just suppressed from output.
+
+We provide two rule extraction scripts:
+
+- `rule2sed.sparql` is a best effort to disentangle all possible paths. However, this is relatively slow in execution and it takes about a minute to retrieve the `sed` scripts: For Morphisto, we have > 1000 rules, and these are combined with all possible OLiA tags that a lexical entry can have (up to 167, in loose mode), so we have up to 180.000 transformations per base form.
+- `rule2sed-greedy.sparql` will create a single transformation for every paradigm. This is reasonably fast, but only generate on form per inflection type. However, as these represent FST states, they can potentially generate multiple outputs. With greedy rules, we have 268 rules, so only up to 45.000 transformations per base form.
 
 ### Sample output
 

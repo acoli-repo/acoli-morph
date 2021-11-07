@@ -1,0 +1,56 @@
+# given an OntoLex-Morph vocabulary with inflection rules
+# for every inflection type, generate sed scripts to produce all follow-up states
+
+#########################
+# greedy implementation #
+#########################
+# we return a single path for every itype
+# PRO: in general, this is very efficient, as it limits the search/generation space
+# CON: all paths originating from a single itype will be mixed up
+
+PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+PREFIX synsem: <http://www.w3.org/ns/lemon/synsem#>
+PREFIX decomp: <http://www.w3.org/ns/lemon/decomp#>
+PREFIX vartrans: <http://www.w3.org/ns/lemon/vartrans#>
+PREFIX lime: <http://www.w3.org/ns/lemon/lime#>
+PREFIX morph: <http://www.w3.org/ns/lemon/morph#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos#>
+PREFIX dbr: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX void: <http://rdfs.org/ns/void#>
+PREFIX lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#>
+PREFIX semiotics: <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#>
+PREFIX oils: <http://lemon-model.net/oils#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX provo: <http://www.w3.org/ns/prov#>
+
+SELECT ?itype ?transformation
+WHERE {
+  ?a a morph:InflectionType.
+  # this is actually problematic, because we can mix up multiple paths if they go to the same end state
+  # BTW: we have no guarantees that the order does stay intact, should be with Apache Jena
+  { SELECT ?a (GROUP_CONCAT(?repl; separator="; ") as ?replacements)
+    WHERE {
+      ?a a morph:InflectionType; morph:next* ?b.
+      ?b morph:inflectionRule/morph:replacement ?repl.
+      FILTER(?repl != "s/$//")
+    } GROUP BY ?a
+  }
+
+  # some last-minute renaming
+  BIND(?a as ?itype)
+
+  # a transformation succeeds if no tags remain in the result
+  # we cannot get there because we don't have the morphophonological rules
+  # a brute force approximation is to drop all tags
+  # but we mark non-complete forms with a *
+  BIND(concat(?replacements, "; s/^\\(.*<\\)/\\*\\1/; s/<[^>]*>//g;") as ?transformation)
+
+  # a Morphisto/SMOR convention seems to be that tags have the same name as the associated states
+  # and final states are marked with #
+
+}
