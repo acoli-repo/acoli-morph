@@ -15,7 +15,7 @@ deu: src
 	# python3 generate.py deu/lexicon.ttl -anno annomodel.ttl -flex deu/flexion.ttl -rules rule2sed.sparql > deu/output-full.txt &
 	# nice python3 generate.py deu/lexicon.ttl -anno annomodel.ttl -flex deu/flexion.ttl -rules rule2sed.sparql -o deu/output-full.ttl &
 	nice python3 generate.py deu/lexicon.ttl -anno annomodel.ttl -flex deu/flexion.ttl -rules rule2sed.sparql -o deu/output-compact.ttl -compact
-	gzip output-compact.t*
+	gzip deu/output-compact.t*
 
 src:
 	wget -nc https://storage.googleapis.com/google-code-archive-source/v2/code.google.com/morphisto/source-archive.zip
