@@ -26,9 +26,13 @@ PREFIX unimorph: <https://unimorph.github.io/>
 
  CONSTRUCT {
   ?entry a ontolex:LexicalEntry;
-         ontolex:canonicalForm [ ontolex:writtenRep ?lemma ];
+         ontolex:canonicalForm ?cForm;
          ontolex:otherForm ?form;
          morph:paradigm ?paradigm.
+  ?paradigm a morph:Paradigm.
+
+  ?canonicalForm a ontolex:Form;
+        ontolex:writtenRep ?lemma.
 
   ?form a ontolex:Form;
         ontolex:writtenRep ?rep;
@@ -45,7 +49,9 @@ PREFIX unimorph: <https://unimorph.github.io/>
 
   ?morph a morph:Morph, ?morphclass;
          ontolex:lexicalForm ?morph_form;
-         morph:grammaticalMeaning [ rdfs:label ?feats ].
+         morph:grammaticalMeaning ?gmeaning.
+
+  ?gmeaning rdfs:label ?feats.
 
  } WHERE {
 
@@ -62,10 +68,11 @@ PREFIX unimorph: <https://unimorph.github.io/>
   BIND(?c as ?feats)
 
   # paradigm: here: one paradigm per word class
-  BIND(uri(concat("paradigm#",encode_for_uri(ucase(substr(?feats,1,2))))) as ?paradigm)
-
-  BIND(uri(concat("entry#",encode_for_uri(concat(?lemma, "_",?paradigm)))) as ?entry)
-  BIND(uri(concat("form#",encode_for_uri(concat(?lemma,"_",?paradigm,"_",?form)))) as ?form)
+  BIND(uri(concat("paradigm#",encode_for_uri(ucase(substr(str(?feats),1,1))))) as ?paradigm)
+  BIND(uri(concat("entry#",encode_for_uri(concat(?lemma, "_",substr(str(?feats),1,1))))) as ?entry)
+  BIND(uri(concat("form#",encode_for_uri(concat(?lemma,"_",substr(str(?feats),1,1),"_",?rep)))) as ?form)
+  BIND(uri(concat("form#",encode_for_uri(concat(?lemma,"_",substr(str(?feats),1,1),"_",?lemma)))) as ?cForm)
+  BIND(uri(concat("feats#",encode_for_uri(?feats))) as ?gmeaning)
 
   ################
   # "generative" #
@@ -73,14 +80,14 @@ PREFIX unimorph: <https://unimorph.github.io/>
   # bootstrap inflection rules from string matches
   # note that this will fail for cases where the lemma form is derived from the base, e.g.,
   # German verbs, where the lemma is baseform + "-en"
-  BIND(concat(?lemma, " > ", ?form) as ?example)
+  BIND(concat(?lemma, " > ", ?rep) as ?example)
 
   # replacement returns blank node if our heuristics don't work
   BIND(lcase(str(?lemma)) as ?lnorm)
   BIND(lcase(str(?rep)) as ?fnorm)
   BIND(if(strstarts(?fnorm,?lnorm), concat("s/$/",strafter(?fnorm,?lnorm),"/"),
        if(strends(?fnorm,?lnorm), concat("s/^/",strbefore(?fnorm,?lnorm),"/"),
-       if(contains(?form,?lnorm), concat("s/^(.*)$/",strbefore(?fnorm,?lnorm),"${1}",strafter(?fnorm,?lnorm),"/"),
+       if(contains(?fnorm,?lnorm), concat("s/^(.*)$/",strbefore(?fnorm,?lnorm),"${1}",strafter(?fnorm,?lnorm),"/"),
        bnode()))) as ?replacement)
 
   # this replacement is basically a diff, and normally, this diff should correspond to exactly one morph:Morph
