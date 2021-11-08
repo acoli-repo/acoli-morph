@@ -18,7 +18,7 @@
  PREFIX provo: <http://www.w3.org/ns/prov#>
 
 # brute force Linking
-# link everything with the same (lexicalForm|canonicalForm)/writtenRep that does not follow the same URI schema
+# link everything with the same (lexicalForm|canonicalForm|morph:baseForm)/writtenRep that does not follow the same URI schema
 
 CONSTRUCT {
   ?a owl:sameAs ?b
@@ -26,25 +26,8 @@ CONSTRUCT {
   ?rep ^ontolex:writtenRep ?aform, ?bform.
   FILTER(?aform != ?bform)
   FILTER(isblank(?aform) || isblank(?bform) || strbefore(str(?aform),"#")!= strbefore(str(?bform),'#'))
-  ?aform ^(ontolex:lexicalForm|ontolex:canonicalForm) ?a.
-  ?bform ^(ontolex:lexicalForm|ontolex:canonicalForm) ?b.
+  ?aform ^(ontolex:lexicalForm|ontolex:canonicalForm|morph:baseForm) ?a.
+  ?bform ^(ontolex:lexicalForm|ontolex:canonicalForm|morph:baseForm) ?b.
   FILTER(?a != ?b)
   FILTER(strbefore(str(?a),"#")!= strbefore(str(?b),'#'))
 }
-
-
-#INSERT {
-#  ?a owl:sameAs ?b
-#} WHERE {
-#  ?a (ontolex:lexicalForm|ontolex:canonicalForm)/ontolex:writtenRep ?rep.
-#  ?b (ontolex:lexicalForm|ontolex:canonicalForm)/ontolex:writtenRep ?rep.
-#  FILTER(?a != ?b)
-#  FILTER(strbefore(str(?a),"#")!= strbefore(str(?b),'#'))
-#};
-#
-#DELETE {
-#  ?a ?b ?c
-#} WHERE {
-#  ?a ?b ?c
-#  FILTER(?b != owl:sameAs)
-#};

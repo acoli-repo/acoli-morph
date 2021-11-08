@@ -70,4 +70,4 @@ links: init
 				done;\
 			done;\
 		done;\
-		#rm links/*/*tmp
+		rm links/*/*tmp*
