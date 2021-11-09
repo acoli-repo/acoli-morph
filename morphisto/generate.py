@@ -235,70 +235,50 @@ class Generator:
 
         return pruned
 
-    hash2reps={}
+    hash2replacements={}
 
     def _generate(self,sed_script,input):
         result=""
         error=""
-
-        sed2unescape={
-            "\\u005e": "\\^",
-            "\\u002f": "/",
-            "\\u0022": '\\"',
-            "\\u0024": "\\$",
-            "\\u0026": "&",
-            "\\(": "(",
-            "\\)": ")"
-            #q "\\(":"(",
-            # "\\)":")",
-            #"\\u":"\\\\u"
-        }
         hash=hashlib.md5(sed_script.encode('utf-8')).hexdigest()
-        if not hash in self.hash2reps:
-            self.hash2reps[hash]=[]
-            replacements=sed_script.split("; s")
-            replacements=[ rep.split("/") for rep in replacements ]
-            replacements=[ (rep[1],rep[2]) for rep in replacements if len(rep)>2 ]
-            for src,tgt in replacements:
-                for sed,py in sed2unescape.items():
+
+        if not hash in self.hash2replacements:
+            replacements=sed_script.split(";")
+            replacements=[ repl.strip().split("/") for repl in replacements ]
+            replacements=[ (repl[1],repl[2]) for repl in replacements if len(repl)>2 ]
+
+            sed2py={
+                "\\u005e" : "\\^",
+                "\\u002f" : "/",
+                "\\u0022" : '\\"',
+                "\\u0024" : "$",
+                "\\u0026" : "&",
+                "\\(": "(",
+                "\\)": ")"
+            }
+
+            for n,(src,tgt) in enumerate(replacements):
+                for sed,py in sed2py.items():
                     if sed in src:
                         src=py.join(src.split(sed))
                     if sed in tgt:
-                        tgt=py.join(tgt.split(sed))
-                self.hash2reps[hash].append((src,tgt))
+                        tgt=py.join(src.split(tgt))
+                replacements[n]=(src,tgt)
+            # print(replacements)
+            self.hash2replacements[hash] = replacements
 
         output=input
-        try:
-            for src, tgt in self.hash2reps[hash]:
-                output=re.sub(src,tgt,output)
-            if output.startswith("\\*"):
-                output=output[1:]
-        except:
-            traceback.print_exc()
-            sys.exit()
+        for src, tgt in self.hash2replacements[hash]:
+            if output.endswith("$"): # not sure why this is happening, something in the sed2python transition and the escaping in regexpes
+                output=output[0:-1]
+            output=re.sub(src,tgt,output)
+            if output.endswith("$"):
+                output=output[0:-1]
+        output=output.strip()
+        if output.startswith("\*"):
+            output=output[1:]
+
         return output.strip()
-
-
-        # the same with using external sed (slower, requires writing to disk)
-        # tmpfile=os.path.join(self.tmpdir.name,hash+".sed")
-        # if not os.path.exists(tmpfile):
-        #     with open(tmpfile,"wt") as output:
-        #         output.write(sed_script)
-        #
-        # sed=["sed","-f",tmpfile]
-        # sed=subprocess.Popen(sed,stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
-        #
-        # result,error=sed.communicate((input.strip()+"\n").encode("utf-8"))
-        # if result!=None:
-        #     result=result.decode("utf-8")
-        # if error!=None:
-        #     error=error.decode("utf-8").strip()
-        # # print(result,error)
-        # if error!=None and len(error)>0:
-        #     raise Exception(error+"\n"+\
-        #         "input: \""+input+"\"\n"+\
-        #         "sed script:\n"+("="*80)+"\n"+sed_script+"\n"+("="*80))
-        # return result.strip()
 
     def generate_for_dict(self, inputsource, skip_incomplete_forms=None,strict_mode=None, output_file=None, compact=False):
         """ given an OntoLex resource with paradigm/inflection type annotations,
@@ -390,25 +370,30 @@ class Generator:
                         if output_file==None:
                             print(baseform+" "+re.sub(r"<[^>\#]*[\#/]([^\#/>]*)>",r"lexinfo:\1",str(row.lexinfo)))
                             for form, tags in output.items():
-                                for tag in tags:
-                                    tag=re.sub(r"<[^>\#]*[\#/]([^\#/>]*)>",r"lexinfo:\1",tag)   # simplified
-                                    print(form+" "+tag)
-                                    form=" "*len(form)
+                                if not form.startswith("*") or form[1:] != baseform: # return hypotheses only if different from baseform
+                                    for tag in tags:
+                                        if isinstance(tag,str):
+                                            tag=re.sub(r"<[^>\#]*[\#/]([^\#/>]*)>",r"lexinfo:\1",tag)   # simplified
+                                        else:
+                                            print("warning: expected string but got",tag))      # for debugging
+                                        print(form+" "+tag)
+                                        form=" "*len(form)
                             print()
                         else:
                             for form, tags in output.items():
-                                for tag in tags:
-                                    generated+=1
-                                    myuri="<"+str(row.entry)+"_hypo_"+str(generated)+">"
-                                    output_file.write(entry+" ontolex:lexicalForm "+myuri+".\n")
+                                if not form.startswith("*") or form[1:] != baseform: # return hypotheses only if different from baseform
                                     if form.startswith("*"):
                                         form=form[1:]
-                                    output_file.write(myuri+" a ontolex:Form, morph:HypotheticalForm;\n")
-                                    output_file.write("  ontolex:writtenRep \""+form+"\";\n")
-                                    if len(tags)>0:
-                                        output_file.write("  "+tag+";\n")
-                                    output_file.write("  morph:inflectionType "+"<"+itype+">.\n\n")
-                                    output_file.flush()
+                                    for tag in tags:
+                                        generated+=1
+                                        myuri="<"+str(row.entry)+"_hypo_"+str(generated)+">"
+                                        output_file.write(entry+" ontolex:lexicalForm "+myuri+".\n")
+                                        output_file.write(myuri+" a ontolex:Form, morph:HypotheticalForm;\n")
+                                        if len(tag)>0 and isinstance(tag,str):
+                                            output_file.write("  "+tag+";\n")
+                                        output_file.write("  morph:inflectionType "+"<"+itype+">;")
+                                        output_file.write("  ontolex:writtenRep \""+form+"\" .\n\n")
+                                        output_file.flush()
 
                 except:
                     traceback.print_exc()
