@@ -1,0 +1,74 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX olias: <http://purl.org/olia/system.owl#>
+PREFIX olia: <http://purl.org/olia/olia.owl#>
+PREFIX oliat: <http://purl.org/olia/olia-top.owl#>
+PREFIX umodel: <http://purl.org/olia/uder.owl#>
+PREFIX apf: <http://jena.apache.org/ARQ/property#>
+PREFIX lexinfo2: <http://www.lexinfo.net/ontology/2.0/lexinfo#>
+PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+
+#
+# bootstrapping mapping from uder labels to OLiA classes and lexinfo features
+#################################################################################
+# we expect OLiA to be loaded in default graph
+## currently, it isn't loaded
+
+#SELECT REDUCED ?umprop ?umlabel ?oliaclass ?lprop ?lobject
+CONSTRUCT {
+  [a ?oliaclass ] ?lprop ?lobject; ?umprop ?umlabel.
+}
+WHERE {
+
+  # (loose graph name match to account for using local *or* remote files)
+
+  # uder
+  ###########
+
+  GRAPH <olia/uder.owl> {
+    ?um a/rdfs:subClassOf* ?umclass.
+    ?um ?umprop ?umlabel.
+    FILTER(?umprop in (olias:hasTag,olias:hasTagStartingWith,olias:hasTagEndingWith, olias:hasTagContaining, olias:hasTagMatching))
+  }
+
+  { GRAPH <olia/uder-link.rdf> {
+      MINUS { ?umclass (rdfs:subClassOf|owl:equivalentClass|owl:intersectionOf|owl:joinOf) [] }
+    }
+  } UNION
+  {
+    # uder => OLiA
+    ##################
+
+    GRAPH <olia/uder-link.rdf> {
+        ?umclass (rdfs:subClassOf|owl:equivalentClass|((owl:intersectionOf|owl:joinOf)/rdf:rest*/rdf:first))+ ?oliaclass.
+        FILTER(contains(str(?oliaclass), "olia.owl"))
+        FILTER(contains(str(?umclass), "uder"))
+    }
+
+      # OLiA => lexinfo
+      #################
+      # direct dependents, only
+      # for indirect matches, look into ?olia (default graph)
+
+      {
+        GRAPH ?llink {
+          MINUS { [] a|rdfs:subClassOf ?oliaclass }
+        }
+        FILTER(strends(str(?llink),"lexinfo-link.rdf"))
+      } UNION {
+
+        GRAPH ?llink {
+          ?lobject a/rdfs:subClassOf* ?oliaclass
+        }
+        FILTER(strends(str(?llink),"lexinfo-link.rdf"))
+
+
+        GRAPH ?lexinfo {
+          ?lprop rdfs:range ?lfeat.
+          ?lobject a ?lfeat.
+        }
+        FILTER(strends(str(?lexinfo),"lexinfo.owl"))
+      }
+    }
+} ORDER BY ?umlabel

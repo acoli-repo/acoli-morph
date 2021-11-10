@@ -38,5 +38,5 @@ WHERE {
   FILTER(
     (?umprop = umodel:hasLabel && (?feats = ?c || strstarts(?feats,concat(?c,';')) || strends(?feats,concat(";",?c)) || contains(?feats,concat(";",?c,";"))) ) ||
     (?umprop = umodel:hasLabelStartingWith && strstarts(?feats,?c)) ||
-    (?umprop = umodel:hasLabelMatching && ( exists { ?feat apf:strSplit (?feats ";") FILTER(regex(?c,?feat)) })))
+    (?umprop = umodel:hasLabelMatching && ( exists { ?feat apf:strSplit (?feats ";") FILTER(regex(?feat,?c)) })))
 }

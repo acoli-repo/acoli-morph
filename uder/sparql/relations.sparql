@@ -106,7 +106,7 @@ PREFIX uder: <https://ufal.mff.cuni.cz/universal-derivations/>
   BIND(lcase(str(?brep)) as ?bnorm)
   BIND(if(strstarts(?bnorm,?anorm), concat("s/$/",strafter(?bnorm,?anorm),"/"),
        if(strends(?bnorm,?anorm), concat("s/^/",strbefore(?bnorm,?anorm),"/"),
-       if(contains(?bnorm,?arorm), concat("s/^(.*)$/",strbefore(?bnorm,?anorm),"${1}",strafter(?bnorm,?anorm),"/),
+       if(contains(?bnorm,?anorm), concat("s/^(.*)$/",strbefore(?bnorm,?anorm),"${1}",strafter(?bnorm,?anorm),"/"),
        bnode()))) as ?replacement)
 
   # this replacement is basically a diff, and normally, this diff should correspond to exactly one morph:Morph

@@ -1,0 +1,42 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX olias: <http://purl.org/olia/system.owl#>
+PREFIX olia: <http://purl.org/olia/olia.owl#>
+PREFIX oliat: <http://purl.org/olia/olia-top.owl#>
+PREFIX uder:  <https://ufal.mff.cuni.cz/universal-derivations/>
+PREFIX apf: <http://jena.apache.org/ARQ/property#>
+PREFIX lexinfo2: <http://www.lexinfo.net/ontology/2.0/lexinfo#>
+PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+
+# SELECT * #?form ?feats ?um ?oliaclass ?lobject ?lfeat ?lprop
+CONSTRUCT {
+ ?form a ?oliaclass; ?lprop ?lobject
+}
+WHERE {
+
+  #########
+  # query #
+  #########
+
+  # form => uder:POS
+  #####################
+  ?form uder:POS ?feats.
+
+  # um => olia => lexinfo
+  ########################
+
+  GRAPH ?g {
+      ?object a ?oliaclass; ?hasTag ?c.
+      FILTER(?hasTag in (olias:hasTag,olias:hasTagStartingWith,olias:hasTagEndingWith,olias:hasTagContaining,olias:hasTagMatching))
+      OPTIONAL { ?object ?lprop ?lobject FILTER(contains(str(?lobject),"lexinfo")) } # all versions ;)
+  } FILTER(strends(str(?g),"lexinfo2uder.ttl"))
+
+  FILTER(
+    (?hasTag = olias:hasTag && ?feats = ?c) ||
+    (?hasTag = olias:hasTagStartingWith && strstarts(?feats,?c)) ||
+    (?hasTag = olias:hasTagEndingWith && strends(?feats,?c)) ||
+    (?hasTag = olias:hasTagContaining && contains(?feats,?c)) ||
+    (?hasTag = olias:hasTagMatching && regex(?feats,?c))
+    )
+}
