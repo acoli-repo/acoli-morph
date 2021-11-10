@@ -1,0 +1,118 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX olias: <http://purl.org/olia/system.owl#>
+PREFIX olia: <http://purl.org/olia/olia.owl#>
+PREFIX oliat: <http://purl.org/olia/olia-top.owl#>
+PREFIX udata:  <https://unimorph.github.io/>
+PREFIX umodel: <http://purl.org/olia/unimorph/unimorph.owl#>
+PREFIX apf: <http://jena.apache.org/ARQ/property#>
+PREFIX lexinfo2: <http://www.lexinfo.net/ontology/2.0/lexinfo#>
+PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+
+#
+# working, but somewhat inefficient
+#
+
+#SELECT ?form ?feats ?um ?oliaclass ?lobject ?lfeat ?lprop
+CONSTRUCT {
+  ?form a ?oliaclass; ?lprop ?lobject
+} WHERE {
+
+{
+  ####################
+  # establish graphs #
+  ####################
+  # (loose name match to account for using local *or* remote files)
+
+  GRAPH ?unimorph {
+    [] rdfs:subClassOf []
+  }
+  FILTER(strends(str(?unimorph),"unimorph.owl"))
+
+  GRAPH ?ulink {
+    [] rdfs:subClassOf []
+  }
+  FILTER(strends(str(?ulink),"unimorph-link.rdf"))
+
+  GRAPH ?olia {
+    [] rdfs:subClassOf []
+  }
+  FILTER(strends(str(?olia),"olia.owl"))
+
+  GRAPH ?llink {
+    [] rdfs:subClassOf []
+  }
+  FILTER(strends(str(?llink),"lexinfo-link.rdf"))
+
+  GRAPH ?lexinfo {
+    [] rdfs:subClassOf []
+  }
+  FILTER(strends(str(?lexinfo),"lexinfo.owl"))
+
+  #########
+  # query #
+  #########
+
+  # OLiA <= lexinfo
+  #################
+  # direct dependents, only
+  # for indirect matches, consider looking into ?olia
+
+  GRAPH ?lexinfo {
+    ?lobject a ?lfeat.
+    ?lprop rdfs:range ?lfeat.
+  }
+
+  GRAPH ?llink {
+    ?lobject a/rdfs:subClassOf* ?oliaclass
+  }
+
+
+  # unimorph <= OLiA
+  ##################
+
+  GRAPH ?ulink {
+    ?umclass (rdfs:subClassOf|owl:equivalentClass|((owl:intersectionOf|owl:joinOf)/rdf:rest*/rdf:first))+ ?oliaclass.
+    FILTER(contains(str(?oliaclass), "olia.owl"))
+  }
+
+  GRAPH ?unimorph {
+    ?um a/rdfs:subClassOf* ?umclass.
+  }
+}
+{
+    # form => udata:feats
+    #####################
+    ?form udata:feats ?feats.
+
+    # udata:feats => unimorph
+    #########################
+      # note that the Unimorph ontology doesn't use conventional olias:hasTag, etc.
+      # instead, it assumes that tags are *broken* along ; and then matched against umodel:hasLabel
+
+    { # direct match
+      GRAPH ?unimorph {
+        ?um umodel:hasLabel ?c.
+      }
+      ?form udata:feats ?feats.
+      FILTER( ?feats = ?c || strstarts(?feats,concat(?c,';')) || strends(?feats,concat(";",?c)) || contains(?feats,concat(";",?c,";")))
+    } UNION {
+      # startingWith
+      GRAPH ?unimorph {
+        ?um umodel:hasLabelStartingWith ?c
+      }
+      ?form udata:feats ?feats.
+      FILTER(strstarts(?feats,?c))
+    } UNION {
+      # matching
+      # this uses an Apache Jena-specific extension, to use regexp would be imprecise because we might match elements of different strings
+      GRAPH ?unimorph {
+        ?um umodel:hasLabelMatching ?c
+      }
+      ?form udata:feats ?feats.
+      ?feat apf:strSplit (?feats ";")
+      FILTER(regex(?c,?feat))
+    }
+}
+}

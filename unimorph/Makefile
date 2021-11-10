@@ -4,6 +4,14 @@ src/deu:
 	mkdir -p src/deu
 	git clone https://github.com/unimorph/deu src/deu
 
+olia:
+	@echo create local mirror of relevant OLiA concepts
+	wget -nc https://raw.githubusercontent.com/acoli-repo/olia/master/owl/experimental/unimorph/unimorph.owl -P olia/
+	wget -nc https://raw.githubusercontent.com/acoli-repo/olia/master/owl/experimental/unimorph/unimorph-link.rdf -P olia/
+	wget -nc https://raw.githubusercontent.com/acoli-repo/olia/master/owl/core/olia.owl -P olia/
+	wget -nc https://raw.githubusercontent.com/acoli-repo/olia/master/owl/stable/lexinfo-link.rdf -P olia/
+	wget -nc https://raw.githubusercontent.com/acoli-repo/olia/master/owl/stable/lexinfo.owl -P olia/
+
 bin:
 	        mkdir bin
 
@@ -16,7 +24,12 @@ bin/tarql: bin
 tarql: bin/tarql
 	        @if [ ! -e tarql ]; then ln -s bin/tarql/bin/tarql tarql ; fi
 
-deu: src/deu tarql
-		 @echo build German sample data
+deu: src/deu tarql olia
 	   mkdir deu
-		 ./tarql --dedup 5000 -t --base http://purl.org/acoli/morph/UniMorph/deu/ --write-base -H tsv2ontolex.sparql src/deu/deu | gzip -f > deu/deu.ttl.gz
+		 @echo build German sample data
+		 ./tarql --dedup 5000 -t --base http://purl.org/acoli/morph/UniMorph/deu/ --write-base -H tsv2ontolex.sparql src/deu/deu > deu/deu.ttl
+		 @echo bootstrap lexinfo from UniMorph-OLiA linking
+		 arq --data deu/deu.ttl \
+					--namedGraph olia/unimorph.owl --namedGraph olia/unimorph-link.rdf --namedGraph olia/olia.owl --namedGraph olia/lexinfo-link.rdf --namedGraph olia/lexinfo.owl \
+				  --query olia-link.sparql >> deu/deu.ttl
+		gzip deu/deu.ttl
