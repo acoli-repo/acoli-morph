@@ -11,6 +11,12 @@ olia:
 	wget -nc https://raw.githubusercontent.com/acoli-repo/olia/master/owl/core/olia.owl -P olia/
 	wget -nc https://raw.githubusercontent.com/acoli-repo/olia/master/owl/stable/lexinfo-link.rdf -P olia/
 	wget -nc https://raw.githubusercontent.com/acoli-repo/olia/master/owl/stable/lexinfo.owl -P olia/
+	arq  --data olia/olia.owl \
+			 --namedGraph olia/unimorph.owl \
+			 --namedGraph olia/unimorph-link.rdf \
+			 --namedGraph olia/lexinfo-link.rdf \
+			 --namedGraph olia/lexinfo.owl \
+			 --query unimorph2lexinfo.sparql > olia/lexinfo2unimorph.ttl
 
 bin:
 	        mkdir bin
@@ -30,6 +36,6 @@ deu: src/deu tarql olia
 		 ./tarql --dedup 5000 -t --base http://purl.org/acoli/morph/UniMorph/deu/ --write-base -H tsv2ontolex.sparql src/deu/deu > deu/deu.ttl
 		 @echo bootstrap lexinfo from UniMorph-OLiA linking
 		 arq --data deu/deu.ttl \
-					--namedGraph olia/unimorph.owl --namedGraph olia/unimorph-link.rdf --namedGraph olia/olia.owl --namedGraph olia/lexinfo-link.rdf --namedGraph olia/lexinfo.owl \
-				  --query olia-link.sparql >> deu/deu.ttl
+		 		 --namedGraph olia/lexinfo2unimorph.ttl   \
+				 --query olia-link.sparql >> deu/deu.ttl
 		gzip deu/deu.ttl
