@@ -35,7 +35,7 @@ PREFIX apf: <http://jena.apache.org/ARQ/property#>
   ?hform a ontolex:Form; ontolex:writtenRep ?head.
 
   # morph:CompoundRelation to mark the head
-  [ a morph:CompoundRelation ]
+  ?rel a morph:CompoundRelation;
       vartrans:source ?hentry;
       vartrans:target ?centry;
       morph:contains ?morph.
@@ -44,7 +44,7 @@ PREFIX apf: <http://jena.apache.org/ARQ/property#>
     ontolex:lexicalForm ?mform_uri.
   ?mform_uri ontolex:writtenRep ?morph_form.
 
-  # decomp to mark the elements of the composition (but not the morph -- in the current design the simulfix is detected only if between all modifiers and head)
+  # decomp to mark the elements of the composition (but not the morph -- in the current design the interfix is detected only if between all modifiers and head)
   ?centry decomp:subterm ?hentry, ?mentry.
 
   # rule should be bound only if morph_form is bound
@@ -101,10 +101,11 @@ PREFIX apf: <http://jena.apache.org/ARQ/property#>
   # these should produce rules only if ?morph_form is not a blank node
   BIND(if(!bound(?morph_form), ?nothing, uri(concat("morph#",encode_for_uri(?morph_form)))) as ?morph)
   BIND(if(!bound(?morph_form), ?nothing, uri(concat("rule#",encode_for_uri(?morph_form)))) as ?rule)
-  BIND(if(!bound(?morph_form), ?nothing, morph:Simulfix) as ?morphcat)
+  BIND(if(!bound(?morph_form), ?nothing, morph:Interfix) as ?morphcat)
 
   BIND(if(!bound(?morph_form), ?nothing,uri(concat("form#",encode_for_uri(concat("-",?morph_form,"-"))))) as ?mform_uri)
+  BIND(if(!bound(?morph_form), ?nothing,uri(concat("rel#",encode_for_uri(concat("-",?morph_form,"-"))))) as ?rel)
 
-  # how can we encode constraints on source and target POS? e.g., simulfix -s- in German requires a nominal modifier
+  # how can we encode constraints on source and target POS? e.g., interfix -s- in German requires a nominal modifier
 
  }
