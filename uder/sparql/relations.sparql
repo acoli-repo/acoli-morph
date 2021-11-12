@@ -90,7 +90,7 @@ PREFIX uder: <https://ufal.mff.cuni.cz/universal-derivations/>
   BIND(strafter(?b,'_') as ?bpos)
   BIND(uri(concat("entry#",encode_for_uri(?b))) as ?bentry)
 
-  BIND(uri(concat("rel#",encode_for_uri(?c))) as ?rel)
+  BIND(bnode() as ?rel)
   BIND(uri(concat("rule#",encode_for_uri(?c))) as ?rule)
 
   ################
