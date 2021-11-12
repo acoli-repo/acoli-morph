@@ -81,7 +81,7 @@ PREFIX uder: <https://ufal.mff.cuni.cz/universal-derivations/>
   # "descriptive" #
   #################
   BIND(strbefore(?a,'_') as ?arep )
-  BIND(uri(concat("form#",encode_for_uri(?a),"_form")) as ?aform)
+  BIND(uri(concat("form#",encode_for_uri(?a))) as ?aform)
   BIND(strafter(?a,'_') as ?apos)
   BIND(uri(concat("entry#",encode_for_uri(?a))) as ?aentry)
 
