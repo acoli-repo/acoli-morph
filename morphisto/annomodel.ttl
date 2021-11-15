@@ -1,9 +1,9 @@
 PREFIX olias: <http://purl.org/olia/system.owl#>
-#PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
 PREFIX : <http://purl.org/acoli/morph/morphisto/de/annomodel#>
 
-# for compatibility with UniMorph and UDer:
-PREFIX lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#>
+# TODO: for compatibility with UniMorph and UDer:
+# PREFIX lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#>
 
 :ABK_ADJ	olias:hasTagEndingWith	"<^ABK><+ADJ>"; lexinfo:partOfSpeech lexinfo:abbreviation; lexinfo:partOfSpeech lexinfo:adjective.
 :ABK_ADV	olias:hasTagEndingWith	"<^ABK><+ADV>"; lexinfo:partOfSpeech lexinfo:abbreviation; lexinfo:partOfSpeech  lexinfo:adverb.

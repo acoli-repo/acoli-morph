@@ -364,6 +364,7 @@ class Generator:
                 itype=str(row.itype)
                 try:
                     output=self.generate(baseform, itype, lexinfo=row.lexinfo, skip_incomplete_forms=skip_incomplete_forms,strict_mode=strict_mode)
+                    print(output)
                     if len(output)>0:
                         if compact==True:
                             output={ form : [ parse_lfeats("; ".join(tags), str) ] for form,tags in output.items() }
@@ -375,8 +376,8 @@ class Generator:
                                         if isinstance(tag,str):
                                             tag=re.sub(r"<[^>\#]*[\#/]([^\#/>]*)>",r"lexinfo:\1",tag)   # simplified
                                         else:
-                                            print("warning: expected string but got",tag))      # for debugging
-                                        print(form+" "+tag)
+                                            print("warning: expected string but got "+str(tag))      # for debugging
+                                        print(form+" "+str(tag))
                                         form=" "*len(form)
                             print()
                         else:
@@ -427,5 +428,11 @@ if __name__ == "__main__":
     if args.rule_extractor==None:
         args.rule_extractor="rule2sed.sparql"
 
+    sys.stderr.write("build generator (this may take a while)\n")
+    sys.stderr.flush()
     generator=Generator(args.inflection_types, args.rule_extractor, args.annotation_model, skip_incomplete_forms=args.skip_incomplete_forms,strict_mode=not args.disable_strict_mode)
+    sys.stderr.write("start generation\n")
+    sys.stderr.flush()
     generator.generate_for_dict(args.lex,output_file=args.ontolex,compact=args.compact_features)
+    sys.stderr.write("generation completed\n")
+    sys.stderr.flush()
