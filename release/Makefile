@@ -11,6 +11,15 @@ deu:
 			cat $$file; \
 		fi >>$$tgt; \
 	done; \
+	for file in ../morphisto/deu/output-compact.ttl.gz; do \
+		tgt=deu/`echo $$file | sed s/'^[^\/]*\/\([^\/]*\)\/.*'/'\1'/g;`-generated.ttl;\
+		echo $$tgt;\
+		if echo $$file | egrep 'gz' >/dev/null; then \
+			gunzip -c $$file;\
+		else \
+			cat $$file; \
+		fi >>$$tgt; \
+	done; \
 	for file in deu/*ttl; do \
 		rdf2hdt -i $$file `echo $$file | sed s/'\.ttl$$'//`.hdt; \
 		rm $$file;\
