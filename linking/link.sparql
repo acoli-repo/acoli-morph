@@ -19,6 +19,7 @@
 
 # brute force Linking
 # link everything with the same (lexicalForm|canonicalForm|morph:baseForm)/writtenRep that does not follow the same URI schema
+# filter out mismatches in lexinfo feats
 
 CONSTRUCT {
   ?a owl:sameAs ?b
@@ -30,4 +31,14 @@ CONSTRUCT {
   ?bform ^(ontolex:lexicalForm|ontolex:canonicalForm|morph:baseForm) ?b.
   FILTER(?a != ?b)
   FILTER(strbefore(str(?a),"#")!= strbefore(str(?b),'#'))
+
+  # link entries with corresponding forms
+  { ?rep ^ontolex:writtenRep ?aform, ?bform.  # that have lexinfo properties
+    ?aform ?lprop ?lval FILTER(contains(str(?lprop),"lexinfo")). # with the same
+    ?bform ?lprop ?lval } UNION               # value, or
+  { MINUS {
+    ?rep ^ontolex:writtenRep ?aform, ?bform.  # do not share a lexinfo property
+      ?aform ?lprop [] FILTER(contains(str(?lprop),"lexinfo")).
+      ?bform ?lprop [] } }
+
 }

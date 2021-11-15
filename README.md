@@ -10,9 +10,11 @@ resources/phenomena covered:
 - [`uder/`](uder): derivation, sample conversion for German, includes bootstrapping of `morph:Morph`s and `morph:DerivationalRule`s
 - [`unimorph/`](unimorph): inflection, sample conversion for German, includes bootstrapping of `morph:Morph`s and `morph:InflectionalRule`s
 - [`germanet/`](germanet): compounding, German only, includes bootstrapping of `morph:Morph`s and `morph:CompoundingRule`s
-- [`links/`](links): `owl:sameAs` links across all aforementioned datasets
-
 - [`morphisto/`](morphisto): German FST morphology, focus is the preservation of rules in OntoLex, also shows how to use SPARQL to bootstrap a regexp-based morphological generator from `morph:InflectionRule`s.
+- [`linking/`](linking): `owl:sameAs` links across all aforementioned datasets
+
+release:
+- [`release/`](release): release of the interlined graph in binary (RDF-HDT) format
 
 OntoLex-Morph is still under development, so this is explorative work, mostly. The vocabulary may change.
 
