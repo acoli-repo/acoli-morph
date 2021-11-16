@@ -1,4 +1,4 @@
-all: src deu
+all: src deu eval
 
 deu: src
 	mkdir deu
@@ -12,8 +12,8 @@ deu: src
 		src/lexicon | \
 		rapper -i turtle - "http://purl.org/acoli/morph/morphisto/de/lex/" -o turtle > deu/lexicon.ttl
 	python3 generate.py deu/lexicon.ttl -anno annomodel.ttl -flex deu/flexion.ttl -rules rule2sed.sparql -compact > deu/output-compact.txt &
-	# python3 generate.py deu/lexicon.ttl -anno annomodel.ttl -flex deu/flexion.ttl -rules rule2sed.sparql > deu/output-full.txt &
-	# nice python3 generate.py deu/lexicon.ttl -anno annomodel.ttl -flex deu/flexion.ttl -rules rule2sed.sparql -o deu/output-full.ttl &
+	@# python3 generate.py deu/lexicon.ttl -anno annomodel.ttl -flex deu/flexion.ttl -rules rule2sed.sparql > deu/output-full.txt &
+	@# nice python3 generate.py deu/lexicon.ttl -anno annomodel.ttl -flex deu/flexion.ttl -rules rule2sed.sparql -o deu/output-full.ttl &
 	nice python3 generate.py deu/lexicon.ttl -anno annomodel.ttl -flex deu/flexion.ttl -rules rule2sed.sparql -o deu/output-compact.ttl -compact
 	gzip deu/output-compact.t*
 
@@ -44,7 +44,19 @@ clear:
 # 		fi;
 #
 #
-# sfst: src
-# 	git clone https://github.com/santhoshtr/sfst
-# 	cp src/*fst sfst/data/SMOR
-# 	cd sfst/data/SMOR; make smor.a
+
+sfst: src
+	git clone https://github.com/santhoshtr/sfst
+	cp src/*fst src/lexicon sfst/data/SMOR
+	cd sfst/data/SMOR; make smor.a
+
+eval: sfst deu
+	@if [ -e deu/eval.log ]; then cat deu/eval.log; \
+	else \
+		echo validate deu/output-compact.ttl.gz against SFST 1>&2; \
+		total=`gunzip -c deu/output-compact.ttl.gz | grep '"' | sed -e s/'^[^"]*"'// -e s/'"'/'\n'/g | egrep '[a-zA-Z]' | sort -u | wc -l`; \
+		echo for $$total forms 1>&2;
+		failures=`gunzip -c deu/output-compact.ttl.gz | grep '"' | sed -e s/'^[^"]*"'// -e s/'"'/'\n'/g | egrep '[a-zA-Z]' | sort -u | \
+							fst-parse sfst/data/SMOR/smor.a | grep 'no analysis for' | wc -l;` \
+		echo $$failures "/" $$total forms could not be parsed |tee  deu/eval.log;\
+	fi 1>&2;

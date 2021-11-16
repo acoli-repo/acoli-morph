@@ -134,6 +134,13 @@ We provide two rule extraction scripts:
 
 ## Source
 
+### SMOR / SFST
+
+Stuttgart FST system, install on Ubuntu with `sudo apt-get install fst` or on Python with `pip install sfst`.
+Contains a baseline grammar, but only a toy lexicon. This lexicon is provided by Morphisto.
+
+Local installation needed for evaluation of the generated forms.
+
 ### Morphisto - FST-based Morphological Analyzer for German
 
 excerpt from *https://code.google.com/archive/p/morphisto/*
