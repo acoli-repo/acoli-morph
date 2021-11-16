@@ -27,6 +27,6 @@ deu:
 
 
 clear:
-	rm -rf deu *.hdt
+	@rm -rf deu
 
 refresh: clear all

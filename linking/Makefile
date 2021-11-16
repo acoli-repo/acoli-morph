@@ -70,4 +70,9 @@ links: init
 				done;\
 			done;\
 		done;\
-		rm links/*/*tmp*
+		for file in links/*/*tmp*; do\
+			if [ -e $$file ]; then rm $$file; fi; \
+		done
+
+clear:
+	@if [ -e links ]; then rm -rf links; fi

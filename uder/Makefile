@@ -49,3 +49,6 @@ de/DErivBase/0.5: src/py3env tarql olia
 				--query sparql/olia-link.sparql >> $$file;\
 	done;\
 	gzip de/DErivBase/0.5/*.ttl
+
+clear:
+	@for dir in olia de; do if [ -e $$dir ]; then rm -rf $$dir; fi; done

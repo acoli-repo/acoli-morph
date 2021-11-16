@@ -29,3 +29,6 @@ src:
 test: all
 	@# demonstrate how the generated rules work, human-readable output
 	python3 generate.py deu/lexicon.ttl -anno annomodel.ttl -flex deu/flexion.ttl -rules rule2sed.sparql
+
+clear:
+	@if [ -e deu ]; then rm -rf deu; fi;

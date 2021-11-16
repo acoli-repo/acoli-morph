@@ -39,3 +39,6 @@ deu: src/deu tarql olia
 		 		 --namedGraph olia/lexinfo2unimorph.ttl   \
 				 --query olia-link.sparql >> deu/deu.ttl
 		gzip deu/deu.ttl
+
+clear:
+	@for dir in olia deu; do if [ -e $$dir ]; then rm -rf $$dir; fi; done

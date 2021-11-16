@@ -20,3 +20,6 @@ bin/tarql: bin
 
 tarql: bin/tarql
 		@if [ ! -e tarql ]; then ln -s bin/tarql/bin/tarql tarql ; fi
+
+clear:
+	@if [ -e deu ]; then rm -rf deu; fi
