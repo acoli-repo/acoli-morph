@@ -10,6 +10,7 @@ can be readily accessed and queried using conventional RDF technology, see https
 - `deu/unimorph.hdt` (inflection, German, nouns and verbs, only)
 - `deu/morphisto.hdt` (inflection, German, all parts of speech)
 - `deu/linking.hdt` (`owl:sameAs` links between lexical entries of the other data sets)
+- `deu/morphisto-generated.hdt` (inflected forms derived from Morphisto)
 
 ## How to use it
 
