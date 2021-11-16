@@ -364,7 +364,7 @@ class Generator:
                 itype=str(row.itype)
                 try:
                     output=self.generate(baseform, itype, lexinfo=row.lexinfo, skip_incomplete_forms=skip_incomplete_forms,strict_mode=strict_mode)
-                    print(output)
+                    # print(output)
                     if len(output)>0:
                         if compact==True:
                             output={ form : [ parse_lfeats("; ".join(tags), str) ] for form,tags in output.items() }

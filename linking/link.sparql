@@ -39,6 +39,8 @@ CONSTRUCT {
   { MINUS {
     ?rep ^ontolex:writtenRep ?aform, ?bform.  # do not share a lexinfo property
       ?aform ?lprop [] FILTER(contains(str(?lprop),"lexinfo")).
-      ?bform ?lprop [] } }
+      ?bform ?lprop []
+    }
+  }
 
 }

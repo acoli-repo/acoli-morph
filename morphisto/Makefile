@@ -32,3 +32,19 @@ test: all
 
 clear:
 	@if [ -e deu ]; then rm -rf deu; fi;
+
+# eval_smor:
+# 	@if [ ! -e UD_German-HDT.txt ]; then \
+# 	  if [ ! -e UD_German-HDT ]; then git clone https://github.com/UniversalDependencies/UD_German-HDT; fi; \
+# 		cat UD_German-HDT/*conllu | \
+# 			egrep '^[0-9]' | \
+# 			sed s/'^1\s'/'\n&'/ | \
+# 			cut -f 2 | \
+# 			perl -pe 's/([^\n])\n/\1 /g;' > UD_German-HDT.txt;\
+# 		fi;
+#
+#
+# sfst: src
+# 	git clone https://github.com/santhoshtr/sfst
+# 	cp src/*fst sfst/data/SMOR
+# 	cd sfst/data/SMOR; make smor.a

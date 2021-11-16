@@ -16,6 +16,10 @@ resources/phenomena covered:
 release:
 - [`release/`](release): release of the interlined graph in binary (RDF-HDT) format
 
+The repository contains the release data, to re-build from scratch, run
+
+    $> make refresh
+
 OntoLex-Morph is still under development, so this is explorative work, mostly. The vocabulary may change.
 
 At the moment, it is relatively unclear how replacements are to be specified. We have a consensus to use regular expressions for the purpose, but there is a single `morph:replacement` property only, and it seems to be an object property.
