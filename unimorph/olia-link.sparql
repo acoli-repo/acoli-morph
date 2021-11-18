@@ -9,10 +9,11 @@ PREFIX umodel: <http://purl.org/olia/unimorph/unimorph.owl#>
 PREFIX apf: <http://jena.apache.org/ARQ/property#>
 PREFIX lexinfo2: <http://www.lexinfo.net/ontology/2.0/lexinfo#>
 PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+PREFIX morph: <http://www.w3.org/ns/lemon/morph#>
 
-# SELECT * #?form ?feats ?um ?oliaclass ?lobject ?lfeat ?lprop
+# SELECT * #?annotable ?feats ?um ?oliaclass ?lobject ?lfeat ?lprop
 CONSTRUCT {
- ?form a ?oliaclass; ?lprop ?lobject
+ ?annotable a ?oliaclass; ?lprop ?lobject
 }
 WHERE {
 
@@ -20,9 +21,11 @@ WHERE {
   # query #
   #########
 
-  # form => udata:feats
-  #####################
-  ?form udata:feats ?feats.
+  # annotables
+  #############
+  { ?annotable udata:feats ?feats. } UNION                                               # form => udata:feats
+  { ?annotable a morph:Paradigm BIND(strafter(str(?annotable),'#') AS ?feats) } UNION    # paradigm => fragment identifier
+  { [ a morph:Morph ] morph:grammaticalMeaning ?annotable. ?annotable rdfs:label ?feats} # (morph =>) grammatical meaning
 
   # um => olia => lexinfo
   ########################

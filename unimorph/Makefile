@@ -40,5 +40,9 @@ deu: src/deu tarql olia
 				 --query olia-link.sparql >> deu/deu.ttl
 		gzip deu/deu.ttl
 
+generate: all
+	@# not integrated with overall make yet, this is an experimental feature
+	arq --data deu/deu.ttl.gz --query generate.sparql > deu/deu-generated.ttl 
+
 clear:
 	@for dir in olia deu; do if [ -e $$dir ]; then rm -rf $$dir; fi; done
