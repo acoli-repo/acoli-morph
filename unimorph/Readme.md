@@ -12,6 +12,29 @@ To (re)build sample data, run
 
     $> make
 
+## Experimental extensions
+
+UniMorph does not provide explicit paradigms, so the converter just creates one
+paradigm object per part-of-speech.
+
+As an alternative, paradigms can also be bootstrapped from the combination of part
+of speech and the end of the word. Such an induction is provided by `induce-paradigms.py`
+and can be integrated into a refined conversion process. However, this is partially
+language-specific and works only on languages that prefer derivation by suffix over
+derivation by prefix.
+
+For German, this boosts f-measure from 56% (use the most frequent paradigm per POS)
+to 70% (use the paradigm with the longest string overlap and the same POS) on a 10%
+random test set, mostly with improvements in precision. Recall stagnates below 60% in
+all configurations, this is because our morpheme induction does not extend to forms whose
+formation cannot be reduced to concatenating the canonical form (we don't have base forms,
+here!) with a prefix and/or suffix.
+
+Direct generation from UniMorph data is not recommended, because these contextual
+statistics need to be calculated either explicitly (as here) or with other context-aware
+techniques (e.g., the use of character embeddings). The Python module calculates them
+from the raw file, but they can be equally calculated over the RDF graph.
+
 ## Source data
 
 *excerpt from website*: https://unimorph.github.io/
