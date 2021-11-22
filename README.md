@@ -22,4 +22,9 @@ The repository contains the release data, to re-build from scratch, run
 
 OntoLex-Morph is still under development, so this is explorative work, mostly. The vocabulary may change.
 
-At the moment, it is relatively unclear how replacements are to be specified. We have a consensus to use regular expressions for the purpose, but there is a single `morph:replacement` property only, and it seems to be an object property.
+At the moment, OntoLex-Morph is capable of covering one-level morphologies, but not two-level morphologies. Morphisto is a two-level morphology for which we provide a reconstruction. The drop in performance in comparison to the native implementation is the omission of two-level morphology rules (i.e., filters and morphophonological processes that operate over "deep" morphology created in the first level)
+
+## Multilingual extension
+
+At the moment, we focus on German. However, the converters can be extended to other languages
+more or less directly.

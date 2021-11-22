@@ -1,10 +1,17 @@
-# Morphisto
+# Morphisto / SMOR
 
-German morphological analyzer
+German morphological generator/analyzer
+- SMOR: morphology
+- Morphisto: lexicon
 
 links:
 - https://code.google.com/archive/p/morphisto/
-- based on [SMOR](https://www.ims.uni-stuttgart.de/en/research/resources/tools/smor/), German SFST morphology; accessible after email request only
+- based on [SMOR](https://www.ims.uni-stuttgart.de/en/research/resources/tools/smor/), German SFST morphology; accessible after email request only, no longer separately distributed
+- SMOR now bundled with the SFST release, see https://www.cis.uni-muenchen.de/~schmid/tools/SFST/ and https://github.com/santhoshtr/sfst
+
+Disclaimer:
+- OntoLex is limited (by design) to support context-free one-level morphologies only. As we generate sed-style replacements, it supports capturing groups, but no explicit variables. Also, from a two-level morphology like Morphisto/SMOR, it will only capture the first level ("deep generation") but not the second (morphophonological rules and filters, "surface generation").
+- Two-level morphologies are a requirement that future OntoLex editions may address
 
 ## OntoLex-Morph edition
 
