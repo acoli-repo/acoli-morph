@@ -27,4 +27,19 @@ At the moment, OntoLex-Morph is capable of covering one-level morphologies, but 
 ## Multilingual extension
 
 At the moment, we focus on German. However, the converters can be extended to other languages
-more or less directly.
+more or less directly:
+
+- UniMorph: 142 languages
+- UDer/DeriNet: 20 languages (open source data only: Catalan, Croatian, Czech, English, Estonian, Finnish, French, Gaelic, German, Italian, Latin, Persian, Polish, Portuguese, Russian, Serbo-Croatian, Slovenian, Spanish, Swedish, Turkish)
+
+For SFST grammars (ala Morphisto), this is a bit more complicated, as converters need to be adjusted for internal naming conventions. But numerous SFST-based generators/analyzers are in existence, e.g.,
+
+- English	EMOR [SFST]	https://www.cis.lmu.de/~schmid/tools/SFST/data/EMOR.zip
+- Finnish	Omorfi [HFST]	https://github.com/flammie/omorfi
+- Kazakh	Apertium [HFST]	https://wiki.apertium.org/wiki/Hfst
+- Latin	LatMor [SFST]	https://www.cis.lmu.de/~schmid/tools/LatMor
+- Malayalam	mlmorph [SFST]	https://github.com/smc/mlmorph
+- Northern Sámi	Apertium [HFST]	https://wiki.apertium.org/wiki/Hfst
+- Tatar	Apertium [HFST]	https://wiki.apertium.org/wiki/Hfst
+- Turkish	TRMOR [SFST]	https://www.cis.lmu.de/~schmid/tools/SFST/data/TRMOR-190220.zip
+- Turkish	Apertium [HFST]	https://wiki.apertium.org/wiki/Trmorph
